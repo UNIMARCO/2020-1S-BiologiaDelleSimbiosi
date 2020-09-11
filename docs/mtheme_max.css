@@ -284,23 +284,23 @@ a, a > code {
     padding-top: 1em;
   }
   .left-column50 {
-        width: 40%;
+        width: 45%;
       height: 92%;
       float: left;
-      padding-right:3em;
+     /* padding-right:3em; */
     }
   .right-column50 {
-    width: 47%;
+    width: 45%;
     height: 92%;
     float: left;
   }
   .pull-left {
     float: left;
-    width: 47%;
+    width: 50%;
   }
   .pull-right {
     float: right;
-    width: 47%;
+    width: 50%;
   }
   .pull-left-wide {
     float: left;
@@ -424,7 +424,7 @@ a, a > code {
       }
       
       .title-slide > h1  {
-        color: #FFB300;
+        color: #2D2F36;
           font-size: 45px;
         text-shadow: none;
         font-weight: 400;
@@ -435,7 +435,7 @@ a, a > code {
       .title-slide > h2  {
         margin-top: -25px;
         padding-bottom: -20px;
-        color: #FFB300;
+        color: #2D2F36;
           text-shadow: none;
         font-weight: 300;
         font-size: 35px;

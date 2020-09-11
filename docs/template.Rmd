@@ -1,0 +1,147 @@
+---
+title: "Microbiota"
+subtitle: "Lesson 1"
+author: "Marco Chiapello"
+date: "???"
+output:
+  xaringan::moon_reader:
+    css: ["scrollable.css", "mtheme_max.css", "fonts_mtheme_max.css"]
+    self_contained: false
+    lib_dir: libs
+    chakra: libs/remark-latest.min.js
+    nature:
+      ratio: '16:9'
+      highlightStyle: github
+      highlightLines: true
+    countIncrementalSlides: false
+    seal: false  
+---
+
+```{r setup, include=FALSE, cache=FALSE}
+# set working directory to docs folder
+setwd(here::here("docs"))
+
+# Set global R options
+options(htmltools.dir.version = FALSE, servr.daemon = TRUE)
+
+# Set global knitr chunk options
+knitr::opts_chunk$set(
+  fig.align = "center", 
+  cache = TRUE,
+  error = FALSE,
+  message = FALSE, 
+  warning = FALSE, 
+  collapse = TRUE 
+)
+
+# This is good for getting the ggplot background consistent with
+# the html background color
+library(ggplot2)
+thm <- theme_bw()
+theme_set(thm)
+
+library(RefManageR)
+BibOptions(check.entries = FALSE,
+           bib.style = "authoryear",
+           cite.style = "authoryear",
+           style = "markdown",
+           hyperlink = FALSE,
+           dashed = FALSE)
+bib <- ReadBib("biblio/bib.bib", check = FALSE)
+```
+
+class: title-slide
+
+<br>
+# .font200[TITLE]
+## .font180[Subtitle]
+
+<br>
+.marco[
+Marco Chiapello
+<br>
+June 8, 2020
+]
+
+---
+layout: true
+# Slide title
+
+---
+
+reference `r Cite(bib, author = "Bigeard")`
+
+- item1
+
+- .font60[.green[item2]]
+
+.content-box-purple[MARCO]
+
+.blur.content-box-title[FABIANA]
+
+.rotate-left.content-box-red[MARCO]
+
+---
+
+Text text text
+
+---
+layout: false
+
+.left-column[
+# Sidebar text
+
+- ~~Item1~~
+
+- Item2
+]
+
+.right-column[
+# Text on the right that spreads longer then the left one
+
+## Subtitle
+
+Normal text 
+]
+
+---
+class: clear
+
+.font200.center.orange.f500[TITLE]
+
+.left-column50[
+text on the left until middle of the page
+]
+
+.right-column50[
+text on the right until middle of the page
+]
+
+---
+
+```{r rmark2, echo=FALSE, out.width = "420px"}
+knitr::include_graphics("images/RMarkdownOutputFormats.png")
+```
+
+Image `r emo::ji("grinning face")`
+
+---
+class: inverse
+
+<br><br>
+.center.font200.f400.white[
+Reproducible research Tools
+]
+
+----
+<br><br><br><br>
+.right.white[pippo]
+
+---
+
+
+# References
+```{r refs, echo=FALSE, results="asis"}
+PrintBibliography(bib)
+```
+

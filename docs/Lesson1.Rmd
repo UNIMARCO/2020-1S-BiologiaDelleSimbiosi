@@ -98,7 +98,9 @@ knitr::include_graphics("images/microbioma.jpg")
 
 ???
 
-la differenza che passa tra i due termini è la stessa che esiste tra popolazione umana e genoma umano
+- batteri, funghi, protozoi, elminti e virus 
+ 
+- la differenza che passa tra i due termini è la stessa che esiste tra popolazione umana e genoma umano
 ---
 
 
@@ -120,25 +122,26 @@ la differenza che passa tra i due termini è la stessa che esiste tra popolazion
 .pull-right[.center[.font180[.bold[microBIOMA]]]]
 
 <br>
-```{r echo=FALSE, out.width = "1000px"}
+```{r echo=FALSE, out.width = "550px"}
 # library(tidyverse)
+# library(gganimate)
 # # Read data
-# mt <- read_delim("data/microbiotaPublications.txt", delim = "\t") %>% 
-#   drop_na %>% 
+# mt <- read_delim("data/microbiotaPublications.txt", delim = "\t") %>%
+#   drop_na %>%
 #   mutate(Year = as.numeric(`Publication Years`),
-#          title = "microbiota") %>% 
-#   filter(Year > 2001, Year < 2020) %>% 
+#          title = "microbiota") %>%
+#   filter(Year > 2001, Year < 2020) %>%
 #   select(Year, records, title)
-# mm <- read_delim("data/microbiomaPublications.txt", delim = "\t")%>% 
-#   drop_na%>% 
+# mm <- read_delim("data/microbiomaPublications.txt", delim = "\t")%>%
+#   drop_na%>%
 #   mutate(Year = as.numeric(`Publication Years`),
-#          title = "microbioma") %>% 
-#   filter(Year > 2001, Year < 2020) %>% 
+#          title = "microbioma") %>%
+#   filter(Year > 2001, Year < 2020) %>%
 #   select(Year, records, title)
 # 
 # # Combine data for printing
-# p <- mt %>% 
-#   bind_rows(mm) %>% 
+# mt %>%
+#   bind_rows(mm) %>%
 #   ggplot(aes(x = Year,
 #              y = records)) +
 #   geom_line(aes(color = title), size = 1) +
@@ -151,12 +154,63 @@ la differenza che passa tra i due termini è la stessa che esiste tra popolazion
 #         panel.grid.major.y = element_line()) +
 #   labs(x = "", y = "",
 #        title = "Numero di pubblicazioni con parola chiave microbiota o micromioma",
-#        caption = "ISI Web of Science",
-#        subtitle = "Ricerca effettuata a Settembre 2020\nIntervallo tra 2002 e 2019")
+#        caption = "Source: ISI Web of Science",
+#        subtitle = "Ricerca effettuata a Settembre 2020\nAnno: Year: {round(frame_along, 0)}") +
+#   transition_reveal(Year)
+# anim_save("docs/images/microPublications.gif")
 # 
-# ggsave("docs/images/microPublications.jpg", units = "cm", 
+# ggsave("docs/images/microPublications.jpg", units = "cm",
 #        width = 20, height = 10, dpi = 300)
-knitr::include_graphics("images/microPublications.jpg")
+knitr::include_graphics("images/microPublications.gif")
+```
+
+---
+<br><br><br>
+.center[.font600[.fontW7[HMP]]]
+.center[.font140[Human Microbiome Project]]
+
+---
+
+Il **progetto microbioma umano** è una iniziativa dei National Institutes of Health statunitensi con il fine di **identificare e caratterizzare i microrganismi ed il loro rapporto con lo stato di salute e di malattia dell'uomo**. 
+
+```{r echo=FALSE, out.width = "700px"}
+#  df1 <- tibble(G = c(rep("numero totale di cellule", 2),
+#                      rep("numero totale di geni", 2)),
+#                S = c(rep(c("Human", "Microbes"), 2)),
+#                N = c(1, 10, 1, 100))
+#  df1 %>%
+#   ggplot(aes(x = G, y = N, fill = S)) +
+#    geom_col(position = position_dodge()) +
+#    labs(x = "", y = "") +
+#    theme_classic() +
+#    theme(legend.title = element_blank(),
+#          axis.text = element_text(size = 15),
+#          legend.position = "top",
+#          legend.text = element_text(size = 12)) +
+# scale_fill_manual(values = c("#ef8a62", "#999999"))
+#  ggsave("docs/images/microNubers.jpg", units = "cm",
+#           width = 50/3, height = 30/3, dpi = 300)
+knitr::include_graphics("images/microNubers.jpg")
+```
+
+???
+
+- Il numero totale di cellule microbiche presenti in un organismo umano può superare di dieci volte il numero di cellule dell'organismo stesso
+
+-  i geni di origine microbica possono superare di cento volte il numero di geni presenti nel genoma umano (composto da circa 20.000 geni). 
+
+---
+
+<br><br><br>
+.content-box-grey[.font180[.fontW7[L'essere umano va concepito come composto da cellule umane e microbiche]]]
+
+---
+```{r, echo=FALSE, out.height="600px", out.width="750px", include=TRUE}
+# library(magick)
+# x <- image_read("docs/images/humanDiversity.pdf")
+# x <- image_convert(x, "png")
+# image_write(x, "docs/images/humanDiversity.png")
+knitr::include_graphics("images/humanDiversity.png")
 ```
 
 ---

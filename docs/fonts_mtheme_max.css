@@ -29,6 +29,18 @@ ul, ol {
     font-weight:100;
 }
 
+.fontW3 {
+  font-weight:300;
+}
+
+.fontW4 {
+  font-weight:400;
+}
+
+.fontW7 {
+  font-weight:700;
+}
+
 .remark-code, .remark-inline-code {
   font-family: 'Source Code Pro', 'Lucida Console', Monaco, monospace;
   font-size: 80%;
@@ -182,6 +194,13 @@ ul, ol {
 }
 .font300 {
   font-size: 300%;
+}
+.font600 {
+  font-size: 600%;
+}
+
+.alignV {
+  vertical-align: center;
 }
 
 .opacity10{

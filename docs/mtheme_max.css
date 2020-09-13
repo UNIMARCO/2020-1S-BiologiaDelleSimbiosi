@@ -485,7 +485,24 @@ a, a > code {
   font-family: 'Fira Sans';
   font-weight: normal;
   font-size: 45px;
-  margin-top: -95px;
+  margin-top: -1px;
   margin-left: -00px;
+  color: #FFFFFF;
+}
+
+.clear > h2 {
+  font-family: 'Fira Sans';
+  font-weight: normal;
+  font-size: 35px;
+  margin-top: -1px;
+  margin-left: -00px;
+  color: #FFFFFF;
+}
+
+.clear > h3 {
+  font-family: 'Roboto';
+  font-weight: normal;
+  margin-top: -30px;
+  font-size: 25px;
   color: #FFFFFF;
 }

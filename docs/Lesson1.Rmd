@@ -52,22 +52,48 @@ bib <- ReadBib("biblio/bib.bib", check = FALSE)
 
 class: title-slide
 
-Corso di laurea in XXX
-<br>
-# .font200[MICROBIOMES]
 
 
-<br><br>
+# .font170[MICROBIOMA E MICROBIOTA]
+
+
+<br><br><br>
 .marco[
 Marco Chiapello
 <br>
 `r Sys.Date()`
 ]
 
+
+.marco[
+[`r fontawesome::fa("globe", fill = "steelblue")`](https://orcid.org/0000-0001-7768-3047) orcID - [`r fontawesome::fa("linkedin", fill = "steelblue")`](https://www.linkedin.com/in/marco-chiapello-20b58750/) @marcochiapello
+<br>
+.font90[[`r fontawesome::fa("twitter", fill = "steelblue")`](https://twitter.com/marpello1980) @marpello1980 - [`r fontawesome::fa("envelope", fill = "steelblue")`](mailto:chiapello.m@gmail.com) chiapello.m@gmail.com - `r fontawesome::fa("skype", fill = "steelblue")` @marpello]
+]
+
 ---
 layout: true
 class: clear
 
+---
+
+.font180[.bold[Agenda]]
+
+
+- .font140[Introduzione]
+  
+- .font140[Il microbioma delle piante]
+
+  - .font120[Da chi è composto]
+  
+  - .font120[Come prende forma]
+
+  - .font120[Che funzioni ha]
+
+
+???
+
+- .n[**Intro**: spiegazione dei concetti generali e dei termini]
 ---
 ```{r echo = FALSE}
 # library(magick)
@@ -98,9 +124,13 @@ knitr::include_graphics("images/microbioma.jpg")
 
 ???
 
-- batteri, funghi, protozoi, elminti e virus 
+- .n[si riferisce a una popolazione di microrganismi che colonizza un determinato luogo]
+
+- .n[batteri, funghi, protozoi, elminti, neamtodi, virus, ]
  
-- la differenza che passa tra i due termini è la stessa che esiste tra popolazione umana e genoma umano
+- .n[indica la totalità del patrimonio genetico posseduto dal microbiota, cioè i geni che quest’ultimo è in grado di esprimere]
+
+- .n[la differenza che passa tra i due termini è la stessa che esiste tra popolazione umana e genoma umano]
 ---
 
 
@@ -195,23 +225,82 @@ knitr::include_graphics("images/microNubers.jpg")
 
 ???
 
-- Il numero totale di cellule microbiche presenti in un organismo umano può superare di dieci volte il numero di cellule dell'organismo stesso
 
--  i geni di origine microbica possono superare di cento volte il numero di geni presenti nel genoma umano (composto da circa 20.000 geni). 
+- .n[**RAPPORTO** cellule microbiche e cellule umane]
+
+- .n[Il numero totale di cellule microbiche presenti in un organismo umano può superare di dieci volte il numero di cellule dell'organismo stesso]
+
+- .n[i geni di origine microbica possono superare di cento volte il numero di geni presenti nel genoma umano (composto da circa 20.000 geni).]
 
 ---
 
 <br><br><br>
 .content-box-grey[.font180[.fontW7[L'essere umano va concepito come composto da cellule umane e microbiche]]]
 
+???
+
+- .n[Visto l'alto numero di cellule microbiche e della quantità del loro materiale genetico]
+
+- .n[L'essere umano va concepito come composto da cellule umane e microbiche]
+
+- .n[MA **quali** sono i micro-organismi]
+
+
 ---
-```{r, echo=FALSE, out.height="600px", out.width="750px", include=TRUE}
+.center[Temporal human microbiota]
+```{r, echo=FALSE, out.width="780px", include=TRUE}
+knitr::include_graphics("images/humanEvo.jpg")
+```
+
+???
+
+- .n[La figura mostra i phyla chiave della composizione del microbiota umano in diversi stadi della vita]
+
+---
+
+.center[Spatial human microbiota]
+```{r, echo=FALSE, out.height="580px", out.width="750px", include=TRUE}
 # library(magick)
 # x <- image_read("docs/images/humanDiversity.pdf")
 # x <- image_convert(x, "png")
 # image_write(x, "docs/images/humanDiversity.png")
 knitr::include_graphics("images/humanDiversity.png")
 ```
+
+???
+
+- .n[Vediamo ora **dove** sono distribuiti i batteri]
+
+- .n[Partiamo dalla parte più interna della figura, dall'albero filigenetico]
+
+
+```
+---
+layout: true
+class: clear
+Focus on human **gut microbiome** `r Cite(bib, author = "Kho")`
+
+---
+```{r, echo=FALSE, out.height="530px", out.width="800px", include=TRUE}
+knitr::include_graphics("images/KhoPaperT3-1.png")
+```
+---
+<br><br>
+```{r, echo=FALSE, out.height="400px", out.width="900px", include=TRUE}
+knitr::include_graphics("images/KhoPaperT3-2.png")
+```
+---
+  
+```{r, echo=FALSE, out.height="530px", out.width="900px", include=TRUE}
+knitr::include_graphics("images/KhoPaperT3-3.png")
+```
+
+---
+layout: false
+class: inverse, middle, center
+
+.font300[.white[Il microbioma delle piante]]
+
 
 ---
 reference `r Cite(bib, author = "Bigeard")`

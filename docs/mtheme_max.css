@@ -334,6 +334,10 @@ a, a > code {
     float: right;
     width: 40%;
   }
+  .pull-right-45 {
+    float: right;
+    width: 45%;
+  }
   .pull-right-70 {
     float: right;
     width: 70%;
@@ -341,6 +345,10 @@ a, a > code {
   .pull-left-40 {
     float: left;
     width: 40%;
+  }
+    .pull-left-45 {
+    float: left;
+    width: 45%;
   }
   .pull-right-60 {
     float: right;

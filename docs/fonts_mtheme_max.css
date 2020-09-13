@@ -24,6 +24,11 @@ ul, ol {
   font-size: 32px;
 }
 
+.h25 p {
+  line-height: 25px;
+  font-size: 60%;
+}
+
 .marco {
     text-align:right;
     font-weight:100;

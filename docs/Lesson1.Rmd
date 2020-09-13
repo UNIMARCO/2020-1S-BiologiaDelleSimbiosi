@@ -66,9 +66,9 @@ Marco Chiapello
 
 
 .marco[
-[`r fontawesome::fa("globe", fill = "steelblue")`](https://orcid.org/0000-0001-7768-3047) orcID - [`r fontawesome::fa("linkedin", fill = "steelblue")`](https://www.linkedin.com/in/marco-chiapello-20b58750/) @marcochiapello
+[`r fontawesome::fa("globe", fill = "steelblue")`](https://orcid.org/0000-0001-7768-3047) orcID - [`r fontawesome::fa("linkedin", fill = "steelblue")`](https://www.linkedin.com/in/marco-chiapello-20b58750/) marcochiapello
 <br>
-.font90[[`r fontawesome::fa("twitter", fill = "steelblue")`](https://twitter.com/marpello1980) @marpello1980 - [`r fontawesome::fa("envelope", fill = "steelblue")`](mailto:chiapello.m@gmail.com) chiapello.m@gmail.com - `r fontawesome::fa("skype", fill = "steelblue")` @marpello]
+.font90[[`r fontawesome::fa("twitter", fill = "steelblue")`](https://twitter.com/marpello1980) @marpello1980 - [`r fontawesome::fa("envelope", fill = "steelblue")`](mailto:chiapello.m@gmail.com) chiapello.m@gmail.com - `r fontawesome::fa("skype", fill = "steelblue")` marpello]
 ]
 
 ---
@@ -274,7 +274,7 @@ knitr::include_graphics("images/humanDiversity.png")
 - .n[Partiamo dalla parte più interna della figura, dall'albero filigenetico]
 
 
-```
+
 ---
 layout: true
 class: clear
@@ -303,76 +303,274 @@ class: inverse, middle, center
 
 
 ---
-reference `r Cite(bib, author = "Bigeard")`
-
-- item1
-
-- .font60[.green[item2]]
-
-.content-box-purple[MARCO]
-
-.blur.content-box-title[FABIANA]
-
-.rotate-left.content-box-red[MARCO]
+layout: true 
+class: clear
 
 ---
 
-Text text text
+
+```{r echo = FALSE, out.width = "630px"}
+# library(tidyverse)
+# library(gganimate)
+# # Read data
+# mt <- read_delim("data/PlantmicrobiotaPublications.txt", delim = "\t") %>%
+#   drop_na %>%
+#   mutate(Year = as.numeric(`Publication Years`),
+#          title = "Plant microbiota") %>%
+#   filter(Year > 2004, Year < 2020) %>%
+#   select(Year, records, title)
+# mm <- read_delim("data/PlantmicrobiomaPublications.txt", delim = "\t")%>%
+#   drop_na%>%
+#   mutate(Year = as.numeric(`Publication Years`),
+#          title = "Plant microbioma") %>%
+#   filter(Year > 2004, Year < 2020) %>%
+#   select(Year, records, title)
+
+# # Combine data for printing
+# mt %>%
+#   bind_rows(mm) %>%
+#   ggplot(aes(x = Year,
+#              y = records)) +
+#   geom_line(aes(color = title), size = 1) +
+#   scale_color_manual(values = c("#ef8a62", "#999999")) +
+#   theme_classic() +
+#   theme(legend.title = element_blank(),
+#         legend.position = "bottom",
+#         legend.text = element_text(size = 20),
+#         panel.grid.major.y = element_line()) +
+#   labs(x = "", y = "",
+#        title = "Numero di pubblicazioni con parola chiave microbiota e pianta o microbioma  e pianta ",
+#        caption = "Source: ISI Web of Science",
+#        subtitle = "Ricerca effettuata a Settembre 2020\nAnno: Year: # {round(frame_along, 0)}") +
+#   transition_reveal(Year)
+# anim_save("images/PlantmicroPublications.gif")
+knitr::include_graphics("images/PlantmicroPublications.gif")
+```
+
+---
+layout: true
+
+# Composizione del microbiota
+---
+
+## Glossario
+
+
+- .font80[**Rhizosphere**: The region of soil in the vicinity of plant roots that is influenced by plant-derived nutrients and oxygen availability; it is not a region of definable size or shape, but instead consists of a gradient in chemical, biological and physical properties that change both radially and longitudinally along the root.]
+
+--
+
+- .font80[**Phyllosphere**: All the aboveground organs of plants, including the leaf, flower, stem and fruit.]
+
+--
+
+- .font80[**Endophytes**: The microorganisms residing within plant tissues (the endosphere), such as leaves, roots or stems.]
+
+--
+
+- .font80[**Bulk soil**:  is soil outside the rhizosphere. Bulk soil is not penetrated by plant roots]
+
+---
+
+layout: true
+# Composizione del microbiota
+
+.pull-left[
+```{r echo = FALSE, out.height="510px", out.width="510px"}
+knitr::include_graphics("images/PlantMicrobiomeComposition.png")
+```
+]
+
+---
+
+.pull-right[
+
+<br><br><br><br><br><br><br><br><br><br>
+.font60[`r Cite(bib, author = "Singh")`]
+]
+
+---
+
+.pull-right[
+
+Plant **endophytic communities**
+
+- .n[They are frequently **enriched** in members of the **Proteobacteria and Firmicutes**]
+
+- .n[They are **depleted** in members of the **Acidobacteria, Planctomycetes, Chloroflexi and Verrucomicrobia**]
+
+
+]
+
+---
+
+.pull-right[
+
+Plant **phyllosphere community**
+
+- .n[It Mainly comprises bacteria belonging to phylum Proteobacteria and to the Bacteroidetes, Firmicutes and Actinomycetes]
+
+- .n[Members of phylum **Proteobacteria** constitute ~50% of the community composition]
+
+
+]
+
+---
+
+.pull-right[
+
+Fungi community
+
+- .n[The vast diversity of fungi that colonize both aboveground and belowground plant tissues mainly belong to the phyla **Ascomycota and Basidiomycota**]
+
+- .n[Although **arbuscular fungi** (phylum Glomeromycota) and **ectomycorrhizal fungi** are well-studied, these groups represent only **minor diversity among fungal communities from roots**]
+]
+
+---
+
+.pull-right[
+
+- .n[Although the assemblies of root-associated bacteria and fungi differ substantially from the above-ground communities, both represent a **subset of the microbiota derived from soil communities** and enriched in different plant-associated niches]
+
+- .n[This suggests that **soil functions as a common reservoir** for both belowground and aboveground plant microbiota]
+
+]
+---
+
+
+.pull-right[
+
+**Viruses**
+
+- .n[Viruses play a **critical part in bacterial community assembly and turnover** in the soil, but their function in plant-associated environments is not completely understood]
+
+- .n[Viruses, in soil, affect both the **microbiome structure and function**]
+
+]
+
+---
+
+layout: true
+# Composizione del microbiota
+---
+
+.pull-left[
+
+```{r echo=FALSE, out.width="350px"}
+knitr::include_graphics("images/bacterialDiv.png")
+```
+
+```{r echo=FALSE, out.width="350px"}
+knitr::include_graphics("images/fungalDiv.png")
+```
+]
+
+.pull-right[
+
+- .n[There are clear differences among the microbial communities in different plant compartments, which indicates that the **plant compartment is a major selective force** that shapes the composition of plant-associated microbiota]
+
+]
+
+???
+
+- .n[**Shannon diversity index**: combina ricchezza e diversità]
+
+- .n[Misura sia il numero delle specie presenti e la differenza tra l'abbondanza delle diverse specie.]
+
+- .n[Un valore grande significa che sono presenti molte specie con un'abbondanza simile. Il range del valore varia da 1 (una specie dominante) fino al numero totale di tutte le species (nel caso che tutte le specie abbiano la stessa abbondanza)]
+
+
+---
+
+.pull-left-45[.font150[.f400[Core microbiota]]]
+
+.h25[]
+
+.pull-right-45[.font150[.f400[Hub microorganisms]]]
+
+.h25[]
+---
+
+.pull-left-45[.font150[.f400[Core microbiota]]
+
+.h25[
+- The plant core microbiota consists of members of the microbial community that are persistent and are ubiquitous in almost all the communities associated with a particular host
+
+- The core microbiota contains key microbial taxa that carry genes with functions that are essential for host fitness
+
+- Many members of the core microbiota of different plant species are common at the genus level
+
+- The identification of a co-occurring core of plant-associated microorganisms also provides a useful starting point for studies of how to build SynComs to manipulate plant–microbiome interactions for increased growth and productivity
+
+]
+]
+
+.pull-right-45[.font150[.f400[Hub microorganisms]]]
+
+.h25[]
+---
+
+.pull-left-45[.font150[.f400[Core microbiota]]
+
+.h25[
+- The plant core microbiota consists of members of the microbial community that are persistent and are ubiquitous in almost all the communities associated with a particular host
+
+- The core microbiota contains key microbial taxa that carry genes with functions that are essential for host fitness
+
+- Many members of the core microbiota of different plant species are common at the genus level
+
+- The identification of a co-occurring core of plant-associated microorganisms also provides a useful starting point for studies of how to build SynComs to manipulate plant–microbiome interactions for increased growth and productivity
+
+]
+]
+.pull-right-45[.font150[.f400[Hub microorganisms]]
+
+.h25[
+
+- Within the core microbiota, a few members, such as ‘hub microorganisms’, can influence the community structure through strong biotic interactions with the host or with other microbial species, rather than simply by their own high abundance
+
+- These hub species may represent keystone species that can exert strong direct and indirect effects on microbiome assembly and that function as mediators between the plant and its associated microbiome.
+
+- For example, Albugo laibachii and Dioszegia spp. have been identified62 as highly interactive hubs in the phyllosphere of *A. thaliana*.
+]
+]
+
+???
+
+- .n[such as barley, rice, sugarcane, grapevine, citrus, soybean and A. thaliana]
+
+- .n[(for example, Pseudomonas, Agrobacterium, Methylobacterium, Sphingomonas, Erwinia, Cladosporium, Coniothyrium, Resinicium and Fusarium)]
+---
+.content-box-grey[
+La piante non possono più essere considerate come unità a se stanti, ma è richiesta una visione **olistica**.]
+<br>
+.content-box-grey[
+Il microbiota ha un impatto sia sulla **crescita** che **sopravvivenza** della pianta, due concetti chiave della fitness della pianta]
+<br>
+.content-box-grey[
+La fitness della pianta è quindi una conseguenza delle **caratteristiche della pianta e del suo microbiota**] 
+
+
+
+
+???
+
+- .n[Le piante ospitano una grande varietà di micro organismi sia sulla loro superficie che all'interno]
 
 ---
 layout: false
-
-.left-column[
-# Sidebar text
-
-- ~~Item1~~
-
-- Item2
-]
-
-.right-column[
-# Text on the right that spreads longer then the left one
-
-## Subtitle
-
-Normal text 
-]
-
----
 class: clear
 
-.font200.center.orange.f500[TITLE]
+.center[.font200[Holobiont]]
 
-.left-column50[
-text on the left until middle of the page
-]
 
-.right-column50[
-text on the right until middle of the page
-]
 
+???
+
+A plant and the members
+of its associated microbiota considered as a single entity; this represents the ‘unit of selection’ at which plant– microbiome interactions have probably co-evolved in order to maintain host functionality and fitness over ecological and even evolutionary timescales
 ---
-
-```{r rmark2, echo=FALSE, out.width = "420px"}
-knitr::include_graphics("images/RMarkdownOutputFormats.png")
-```
-
-Image `r emo::ji("grinning face")`
-
----
-class: inverse
-
-<br><br>
-.center.font200.f400.white[
-Reproducible research Tools
-]
-
-----
-<br><br><br><br>
-.right.white[pippo]
-
----
-
+layout: false
 
 # References
 ```{r refs, echo=FALSE, results="asis"}

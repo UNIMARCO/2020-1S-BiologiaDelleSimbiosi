@@ -461,11 +461,11 @@ a, a > code {
       }
       
       .remark-slide-number {
-        font-size: 13pt;
+        /*font-size: 13pt;
         font-family: 'Roboto';
         color: #272822;
-          opacity: 1;
-          /*display: none;*/
+          opacity: 1;*/
+          display: none;
       }
       .inverse .remark-slide-number {
         diplay: none;

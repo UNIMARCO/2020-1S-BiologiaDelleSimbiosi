@@ -57,7 +57,7 @@ class: title-slide
 # .font170[MICROBIOMA E MICROBIOTA]
 
 
-<br><br><br>
+<br><br><br><br>
 .marco[
 Marco Chiapello
 <br>
@@ -66,11 +66,15 @@ Marco Chiapello
 
 
 .marco[
-[`r fontawesome::fa("globe", fill = "steelblue")`](https://orcid.org/0000-0001-7768-3047) orcID - [`r fontawesome::fa("linkedin", fill = "steelblue")`](https://www.linkedin.com/in/marco-chiapello-20b58750/) marcochiapello
-<br>
 .font90[[`r fontawesome::fa("twitter", fill = "steelblue")`](https://twitter.com/marpello1980) @marpello1980 - [`r fontawesome::fa("envelope", fill = "steelblue")`](mailto:chiapello.m@gmail.com) chiapello.m@gmail.com - `r fontawesome::fa("skype", fill = "steelblue")` marpello]
 ]
 
+???
+
+.n30[
+
+- Sarò uno dei vostri docenti per il corso "Interazioni tra piante, microrganismi e ambiente"
+]
 ---
 layout: true
 class: clear
@@ -82,13 +86,13 @@ class: clear
 
 - .font140[Introduzione]
   
-- .font140[Il microbioma delle piante]
+- .font140[Il microbiota delle piante]
 
   - .font120[Da chi è composto]
   
-  - .font120[Come prende forma]
-
   - .font120[Che funzioni ha]
+   
+  - .font120[Come prende forma]
 
 
 ???
@@ -155,21 +159,21 @@ knitr::include_graphics("images/microbioma.jpg")
 ```{r echo=FALSE, out.width = "550px"}
 # library(tidyverse)
 # library(gganimate)
-# # Read data
-# mt <- read_delim("data/microbiotaPublications.txt", delim = "\t") %>%
-#   drop_na %>%
-#   mutate(Year = as.numeric(`Publication Years`),
-#          title = "microbiota") %>%
-#   filter(Year > 2001, Year < 2020) %>%
-#   select(Year, records, title)
-# mm <- read_delim("data/microbiomaPublications.txt", delim = "\t")%>%
-#   drop_na%>%
-#   mutate(Year = as.numeric(`Publication Years`),
-#          title = "microbioma") %>%
-#   filter(Year > 2001, Year < 2020) %>%
-#   select(Year, records, title)
-# 
-# # Combine data for printing
+# Read data
+mt <- read_delim("data/microbiotaPublications.txt", delim = "\t") %>%
+  drop_na %>%
+  mutate(Year = as.numeric(`Publication Years`),
+         title = "microbiota") %>%
+  filter(Year > 2001, Year < 2020) %>%
+  select(Year, records, title)
+mm <- read_delim("data/microbiomaPublications.txt", delim = "\t")%>%
+  drop_na%>%
+  mutate(Year = as.numeric(`Publication Years`),
+         title = "microbioma") %>%
+  filter(Year > 2001, Year < 2020) %>%
+  select(Year, records, title)
+
+# Combine data for printing
 # mt %>%
 #   bind_rows(mm) %>%
 #   ggplot(aes(x = Year,
@@ -183,12 +187,12 @@ knitr::include_graphics("images/microbioma.jpg")
 #         legend.text = element_text(size = 20),
 #         panel.grid.major.y = element_line()) +
 #   labs(x = "", y = "",
-#        title = "Numero di pubblicazioni con parola chiave microbiota o micromioma",
+#        title = "Numero di pubblicazioni con parola chiave microbiota o microbioma",
 #        caption = "Source: ISI Web of Science",
 #        subtitle = "Ricerca effettuata a Settembre 2020\nAnno: Year: {round(frame_along, 0)}") +
 #   transition_reveal(Year)
-# anim_save("docs/images/microPublications.gif")
-# 
+# anim_save("images/microPublications.gif")
+
 # ggsave("docs/images/microPublications.jpg", units = "cm",
 #        width = 20, height = 10, dpi = 300)
 knitr::include_graphics("images/microPublications.gif")
@@ -299,7 +303,9 @@ knitr::include_graphics("images/KhoPaperT3-3.png")
 layout: false
 class: inverse, middle, center
 
-.font300[.white[Il microbioma delle piante]]
+# Il microbiota delle piante
+
+----
 
 
 ---
@@ -351,6 +357,13 @@ knitr::include_graphics("images/PlantmicroPublications.gif")
 layout: true
 
 # Composizione del microbiota
+
+---
+class: inverse, middle, center
+
+----
+
+
 ---
 
 ## Glossario
@@ -389,6 +402,16 @@ knitr::include_graphics("images/PlantMicrobiomeComposition.png")
 .font60[`r Cite(bib, author = "Singh")`]
 ]
 
+???
+
+.n30[
+
+- La composzione del microbiota vegetale è, come quella umana, dipendente dalla fase evolutiva della pianta e dal comparto che si sceglie di studiare.
+
+- La figura sulla sinistra dello schermo cerca di schematizzare i recenti studi fatti sul microbiota delle piante
+
+- Questa figura ci farà da riferimente mentre vi illustrero alcuni degli aspetti più significativi della composizione del microbiota
+]
 ---
 
 .pull-right[
@@ -397,46 +420,98 @@ Plant **endophytic communities**
 
 - .n[They are frequently **enriched** in members of the **Proteobacteria and Firmicutes**]
 
+
 - .n[They are **depleted** in members of the **Acidobacteria, Planctomycetes, Chloroflexi and Verrucomicrobia**]
 
 
 ]
 
+???
+
+.n30[
+
+- Le **comunità batteriche endofitiche** sono spesso arricchite in membri dei Proteobacteria e Firmicutes => Mostrare sulla figura
+
+- Anologamente sono impoverite in altri taxa come Acidobacteria => Mostrare sulla figura
+]
 ---
 
 .pull-right[
 
 Plant **phyllosphere community**
 
-- .n[It Mainly comprises bacteria belonging to phylum Proteobacteria and to the Bacteroidetes, Firmicutes and Actinomycetes]
+- .n[It mainly comprises bacteria belonging to phylum Proteobacteria and to the Bacteroidetes, Firmicutes and Actinobacteria]
 
 - .n[Members of phylum **Proteobacteria** constitute ~50% of the community composition]
 
 
 ]
 
+???
+
+-n30[
+
+- La comunità batterica della fillosfera è costituita principalmente da 4 classi di batteri: Proteobacteria and to the Bacteroidetes, Firmicutes and Actinobacteria.
+
+- Queste 4 classi rappresentano più del 75% del microbiota della fillosfera
+
+- Di questo 50% i Protobatteri sono sicuramente il gruppo più abbondante rappresentandone il 50% 
+]
+
 ---
 
 .pull-right[
 
-Fungi community
+**Fungi** community
 
 - .n[The vast diversity of fungi that colonize both aboveground and belowground plant tissues mainly belong to the phyla **Ascomycota and Basidiomycota**]
 
 - .n[Although **arbuscular fungi** (phylum Glomeromycota) and **ectomycorrhizal fungi** are well-studied, these groups represent only **minor diversity among fungal communities from roots**]
 ]
 
+???
+
+.n30[
+- I funghi che compongono i diversi microbiota associato alla pianta appartengo a due phyla: Ascomiceti e Basidiomiceti
+
+- Classi di funghi come i funghi arbuscolari e i funghi ectomycorrizici rappresentano una miccola parte della diversità delle comunità fungine delle radici
+
+- Nella figura sono state raggruppate sotto la categoria others
+]
+
 ---
 
 .pull-right[
+
+**Microbiota reservoir**
 
 - .n[Although the assemblies of root-associated bacteria and fungi differ substantially from the above-ground communities, both represent a **subset of the microbiota derived from soil communities** and enriched in different plant-associated niches]
 
 - .n[This suggests that **soil functions as a common reservoir** for both belowground and aboveground plant microbiota]
 
 ]
+
+???
+
+.n30[
+- Un'importante considerazione da fare è che sebbene le comunità batteriche e fungine che sono associate alla piante siano molto diverse tra la parte ipogea e la parte epigea della pianta, entrambe rappresentano un sottogruppo del microbiota derivato dalle comunità del suolo
+
+- Possiamo quindi dire che il suolo funziona come riserva comune per il microbiota della pianta epigeo e ipogeo
+]
+---
+layout: true
+
+# Composizione del microbiota
+
 ---
 
+.pull-left[
+<br>
+```{r echo = FALSE, out.width="450px"}
+knitr::include_graphics("images/virusSoil.png")
+```
+.font60[Emerson, 2019]
+]
 
 .pull-right[
 
@@ -447,6 +522,86 @@ Fungi community
 - .n[Viruses, in soil, affect both the **microbiome structure and function**]
 
 ]
+
+???
+
+.n30[
+- La figura a lato riporta solo la composizione dei microbiota per funghi e batteri
+
+- Ci sono altri organismi che compongono il microbiota e sebbene la loro abbondanza non sia a livello di quella batterica e fungina non rivestono un ruolo meno importante soprattutto a livello funzionale
+
+- I virus per esempio posso giocare un ruolo fondamentale nella formazione e ricambio della comunità batterica
+
+- Influenzando di conseguenza tutta la struttura e la funzionalità del microbiota
+]
+---
+
+.pull-left[
+
+```{r echo = FALSE, out.width="450px"}
+knitr::include_graphics("images/archeaSoil.png")
+```
+
+]
+
+.pull-right[
+
+**Archea**
+
+.h35[
+- .n[Although they are **consistent members** of the plant-associated community, we have **little understanding of the contribution** of archaeal communities to host performance]
+
+- .n[Metagenomic studies have identified functional genes involved in **stress tolerance and nutrient cycling** in plant-associated archaeal communities]
+
+]
+]
+
+
+???
+
+.n30[
+- Alcuni studi hanno mostrato come gli archea possano influenzare le funzioni del microbioma in particolare sulla resistenza agli stress e ciclo dei nutrienti
+
+- Purtroppo però, sebbene gli archea siano parte integrante del microbiota delle piante poco è noto della loro influenza sulla fitness della pianta
+]
+---
+
+.pull-left[
+
+```{r echo = FALSE, out.width="350px"}
+knitr::include_graphics("images/protistSoil.png")
+```
+.font60[Gao et al., 2019]
+]
+
+.pull-right[
+
+**Protists**
+
+.h35[
+- .n[Protists may control bacterial and fungal community assembly by **modulating predator–prey relationships** at different trophic levels]
+
+- .n[Within protists, non-pathogenic **oomycetes can have positive effects** on plant growth]
+
+- .n[The phenotypic effects of oomycetes vary substantially in the **presence and absence of bacterial communities**]
+]
+]
+
+???
+
+.n30[
+- I protisti possono controllare la composizione del microbiota modulando la relazione prepadatore - preda
+
+- La relazione predatore preda consiste nell'interazione tra due specie e gli effetti che hanno una sull'altra
+
+- Alcuni oomyceti non patogeni possono avere effetti positivi sulla crescita della pianta
+
+- Ma questi effetti possono essere controllati presenza di comunità batteriche
+
+]
+- .n[The predator prey relationship consists of the interactions between two species and their consequent effects on each other ]
+
+- .n[for example, Pythium, Phytophthora, Peronospora and Albugo species]
 
 ---
 
@@ -484,11 +639,9 @@ knitr::include_graphics("images/fungalDiv.png")
 
 .pull-left-45[.font150[.f400[Core microbiota]]]
 
-.h25[]
 
 .pull-right-45[.font150[.f400[Hub microorganisms]]]
 
-.h25[]
 ---
 
 .pull-left-45[.font150[.f400[Core microbiota]]
@@ -508,6 +661,19 @@ knitr::include_graphics("images/fungalDiv.png")
 .pull-right-45[.font150[.f400[Hub microorganisms]]]
 
 .h25[]
+
+???
+
+.h25[
+- .n[Il **core microbiota** è composto da alcuni membri del microbiota che sono presenti in tutte, o quasi, le comunità associate ad una determinato ospite]
+
+- .n[E i suoi membri esprimono geni le cui funzioni sono di primaria importanza per la salute del loro ospite]
+
+- .n[Seppur diverse piante abbiamo microbiota diversi, un certo numero di membri è lo stesso]
+
+- .n[L'identificazione di microorganismi che fanno parte di diversi **core microbiota** è di grande importanza per la produzione delle comunità sintetiche, da usare in agricoltura per aumentare la crescita e la produttività delle piante]
+]
+
 ---
 
 .pull-left-45[.font150[.f400[Core microbiota]]
@@ -531,49 +697,46 @@ knitr::include_graphics("images/fungalDiv.png")
 
 - These hub species may represent keystone species that can exert strong direct and indirect effects on microbiome assembly and that function as mediators between the plant and its associated microbiome.
 
-- For example, Albugo laibachii and Dioszegia spp. have been identified62 as highly interactive hubs in the phyllosphere of *A. thaliana*.
+- For example, *Albugo laibachii* and *Dioszegia spp.* have been identified as highly interactive hubs in the phyllosphere of *A. thaliana* [Agler, et al. 2016]
+
 ]
 ]
 
 ???
 
-- .n[such as barley, rice, sugarcane, grapevine, citrus, soybean and A. thaliana]
+.h35[
 
-- .n[(for example, Pseudomonas, Agrobacterium, Methylobacterium, Sphingomonas, Erwinia, Cladosporium, Coniothyrium, Resinicium and Fusarium)]
+- .n[All'interno del core microbiota, alcuni membri possono influenzare la struttura dell'intera comunità, non per la loro abbondanza, ma per le loro interazione dirette od indirette con la pianta o gli altri microorganismi. Vengono definiti: **hub microorganism**]
+
+- .n[**hub** letteralmente significa: centro, perno, fulcro]
+
+- .n[Esempio di hubs identificati nella fillosfera di arabidopsis. Albugo è un oomicete obligato mentre Dioszegia è un basidiomicete]
+
+
+]
+
 ---
-.content-box-grey[
-La piante non possono più essere considerate come unità a se stanti, ma è richiesta una visione **olistica**.]
+class: inverse, middle, center
+
+----
+
+.white[Homework]
+
+
 <br>
-.content-box-grey[
-Il microbiota ha un impatto sia sulla **crescita** che **sopravvivenza** della pianta, due concetti chiave della fitness della pianta]
-<br>
-.content-box-grey[
-La fitness della pianta è quindi una conseguenza delle **caratteristiche della pianta e del suo microbiota**] 
-
-
-
+.white[.font70[D. S. Lundberg, S. et al. <br> **Defining the core arabidopsis thaliana root microbiome**. <br> Nature, 488(7409):86–90, aug 2012.]]
+<br><br>
+.white[[Download](https://drive.google.com/file/d/15qUUNeTxWE4zg84P52kdkj-4qNsR5viO/view?usp=sharing)]
 
 ???
 
-- .n[Le piante ospitano una grande varietà di micro organismi sia sulla loro superficie che all'interno]
+- .n[Uno dei primi studi a profilare il microbiota associato alle piante usando l'high throughput sequencing]
 
 ---
-layout: false
 class: clear
 
-.center[.font200[Holobiont]]
+...nella prossima lezione
 
+<br><br><br>
 
-
-???
-
-A plant and the members
-of its associated microbiota considered as a single entity; this represents the ‘unit of selection’ at which plant– microbiome interactions have probably co-evolved in order to maintain host functionality and fitness over ecological and even evolutionary timescales
----
-layout: false
-
-# References
-```{r refs, echo=FALSE, results="asis"}
-PrintBibliography(bib)
-```
-
+.center[.font200[.fontW4[Le funzioni del microbiota]]]

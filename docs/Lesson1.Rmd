@@ -84,7 +84,10 @@ class: clear
 .font180[.bold[Agenda]]
 
 
+.h35[
 - .font140[Introduzione]
+
+  - .font120[Il microbiota umano]
   
 - .font140[Il microbiota delle piante]
 
@@ -93,7 +96,7 @@ class: clear
   - .font120[Che funzioni ha]
    
   - .font120[Come prende forma]
-
+]
 
 ???
 
@@ -111,18 +114,22 @@ class: clear
 
 .pull-left[.center[.font180[.bold[microBIOTA]]]
 <br>
-```{r echo=FALSE, out.width = "500px"}
+```{r echo=FALSE, out.width = "400px"}
 knitr::include_graphics("images/microbiota.jpg")
 ```
+
+<br>
+> .font80[si riferisce a una popolazione di microrganismi che colonizza un determinato luogo]
 
 ]
 
 .pull-right[.center[.font180[.bold[microBIOMA]]]
 <br>
-```{r echo=FALSE, out.width = "500px"}
+```{r echo=FALSE, out.width = "400px"}
 knitr::include_graphics("images/microbioma.jpg")
 ```
 
+> .font80[indica la totalità del patrimonio genetico posseduto dal microbiota, cioè i geni che quest’ultimo è in grado di esprimere]
 
 ]
 
@@ -135,18 +142,7 @@ knitr::include_graphics("images/microbioma.jpg")
 - .n[indica la totalità del patrimonio genetico posseduto dal microbiota, cioè i geni che quest’ultimo è in grado di esprimere]
 
 - .n[la differenza che passa tra i due termini è la stessa che esiste tra popolazione umana e genoma umano]
----
 
-
-.pull-left[.center[.font180[.bold[microBIOTA]]]
-> si riferisce a una popolazione di microrganismi che colonizza un determinato luogo
-
-]
-
-.pull-right[.center[.font180[.bold[microBIOMA]]]
-> indica la totalità del patrimonio genetico posseduto dal microbiota, cioè i geni che quest’ultimo è in grado di esprimere
-
-]
 
 ---
 
@@ -157,44 +153,43 @@ knitr::include_graphics("images/microbioma.jpg")
 
 <br>
 ```{r echo=FALSE, out.width = "550px"}
-# library(tidyverse)
-# library(gganimate)
-# Read data
-mt <- read_delim("data/microbiotaPublications.txt", delim = "\t") %>%
-  drop_na %>%
-  mutate(Year = as.numeric(`Publication Years`),
-         title = "microbiota") %>%
-  filter(Year > 2001, Year < 2020) %>%
-  select(Year, records, title)
-mm <- read_delim("data/microbiomaPublications.txt", delim = "\t")%>%
-  drop_na%>%
-  mutate(Year = as.numeric(`Publication Years`),
-         title = "microbioma") %>%
-  filter(Year > 2001, Year < 2020) %>%
-  select(Year, records, title)
+#  library(tidyverse)
+#  library(gganimate)
+# # Read data
+#  mt <- read_delim("data/microbiotaPublications.txt", delim = "\t") %>%
+#    drop_na %>%
+#    mutate(Year = as.numeric(`Publication Years`),
+#           title = "microbiota") %>%
+#    filter(Year > 2003, Year < 2020) %>%
+#    select(Year, records, title)
+#  mm <- read_delim("data/microbiomaPublications.txt", delim = "\t")%>%
+#    drop_na%>%
+#    mutate(Year = as.numeric(`Publication Years`),
+#           title = "microbioma") %>%
+#    filter(Year > 2003, Year < 2020) %>%
+#    select(Year, records, title)
+# 
+# # Combine data for printing
+#  an <- mt %>%
+#    bind_rows(mm) %>%
+#    ggplot(aes(x = Year,
+#               y = records)) +
+#    geom_line(aes(color = title), size = 1) +
+#     #geom_point(size = .2) +
+#    scale_color_manual(values = c("#ef8a62", "#999999")) +
+#    theme_classic() +
+#    theme(legend.title = element_blank(),
+#          legend.position = "bottom",
+#          legend.text = element_text(size = 20),
+#          panel.grid.major.y = element_line()) +
+#    labs(x = "", y = "",
+#         title = "Numero di pubblicazioni con parola chiave microbiota o microbioma",
+#         caption = "Source: ISI Web of Science",
+#         subtitle = "Ricerca effettuata a Settembre 2020\nAnno: Year: {round(frame_along, 0)}") +
+#    transition_reveal(Year)
+#  animate(an, nframes = 1000, fps = 25, end_pause = 900)
+#  anim_save("images/microPublications.gif")
 
-# Combine data for printing
-# mt %>%
-#   bind_rows(mm) %>%
-#   ggplot(aes(x = Year,
-#              y = records)) +
-#   geom_line(aes(color = title), size = 1) +
-# #   geom_point(size = .2) +
-#   scale_color_manual(values = c("#ef8a62", "#999999")) +
-#   theme_classic() +
-#   theme(legend.title = element_blank(),
-#         legend.position = "bottom",
-#         legend.text = element_text(size = 20),
-#         panel.grid.major.y = element_line()) +
-#   labs(x = "", y = "",
-#        title = "Numero di pubblicazioni con parola chiave microbiota o microbioma",
-#        caption = "Source: ISI Web of Science",
-#        subtitle = "Ricerca effettuata a Settembre 2020\nAnno: Year: {round(frame_along, 0)}") +
-#   transition_reveal(Year)
-# anim_save("images/microPublications.gif")
-
-# ggsave("docs/images/microPublications.jpg", units = "cm",
-#        width = 20, height = 10, dpi = 300)
 knitr::include_graphics("images/microPublications.gif")
 ```
 
@@ -282,12 +277,14 @@ knitr::include_graphics("images/humanDiversity.png")
 ---
 layout: true
 class: clear
-Focus on human **gut microbiome** `r Cite(bib, author = "Kho")`
+.center[.font120[Human microbiota functions] .font80[(Kho and Lal, 2018)]]
 
 ---
-```{r, echo=FALSE, out.height="530px", out.width="800px", include=TRUE}
+```{r, echo=FALSE, out.height="520px", out.width="800px", include=TRUE}
 knitr::include_graphics("images/KhoPaperT3-1.png")
+
 ```
+
 ---
 <br><br>
 ```{r, echo=FALSE, out.height="400px", out.width="900px", include=TRUE}
@@ -316,40 +313,41 @@ class: clear
 
 
 ```{r echo = FALSE, out.width = "630px"}
-# library(tidyverse)
-# library(gganimate)
-# # Read data
-# mt <- read_delim("data/PlantmicrobiotaPublications.txt", delim = "\t") %>%
-#   drop_na %>%
-#   mutate(Year = as.numeric(`Publication Years`),
-#          title = "Plant microbiota") %>%
-#   filter(Year > 2004, Year < 2020) %>%
-#   select(Year, records, title)
-# mm <- read_delim("data/PlantmicrobiomaPublications.txt", delim = "\t")%>%
-#   drop_na%>%
-#   mutate(Year = as.numeric(`Publication Years`),
-#          title = "Plant microbioma") %>%
-#   filter(Year > 2004, Year < 2020) %>%
-#   select(Year, records, title)
-
-# # Combine data for printing
-# mt %>%
-#   bind_rows(mm) %>%
-#   ggplot(aes(x = Year,
-#              y = records)) +
-#   geom_line(aes(color = title), size = 1) +
-#   scale_color_manual(values = c("#ef8a62", "#999999")) +
-#   theme_classic() +
-#   theme(legend.title = element_blank(),
-#         legend.position = "bottom",
-#         legend.text = element_text(size = 20),
-#         panel.grid.major.y = element_line()) +
-#   labs(x = "", y = "",
-#        title = "Numero di pubblicazioni con parola chiave microbiota e pianta o microbioma  e pianta ",
-#        caption = "Source: ISI Web of Science",
-#        subtitle = "Ricerca effettuata a Settembre 2020\nAnno: Year: # {round(frame_along, 0)}") +
-#   transition_reveal(Year)
-# anim_save("images/PlantmicroPublications.gif")
+#  library(tidyverse)
+#  library(gganimate)
+# #  Read data
+#  mt <- read_delim("data/PlantmicrobiotaPublications.txt", delim = "\t") %>%
+#    drop_na %>%
+#    mutate(Year = as.numeric(`Publication Years`),
+#           title = "Plant microbiota") %>%
+#    filter(Year > 2004, Year < 2020) %>%
+#    select(Year, records, title)
+#  mm <- read_delim("data/PlantmicrobiomaPublications.txt", delim = "\t")%>%
+#    drop_na%>%
+#    mutate(Year = as.numeric(`Publication Years`),
+#           title = "Plant microbioma") %>%
+#    filter(Year > 2004, Year < 2020) %>%
+#    select(Year, records, title)
+# 
+# #  Combine data for printing
+#  an <- mt %>%
+#    bind_rows(mm) %>%
+#    ggplot(aes(x = Year,
+#               y = records)) +
+#    geom_line(aes(color = title), size = 1) +
+#    scale_color_manual(values = c("#ef8a62", "#999999")) +
+#    theme_classic() +
+#    theme(legend.title = element_blank(),
+#          legend.position = "bottom",
+#          legend.text = element_text(size = 20),
+#          panel.grid.major.y = element_line()) +
+#    labs(x = "", y = "",
+#         title = "Numero di pubblicazioni con parola chiave microbiota e pianta o microbioma  e pianta ",
+#         caption = "Source: ISI Web of Science",
+#         subtitle = "Ricerca effettuata a Settembre 2020\nAnno: Year:  {round(frame_along, 0)}") +
+#    transition_reveal(Year)
+#  animate(an, nframes = 1000, fps = 25, end_pause = 900)
+#  anim_save("images/PlantmicroPublications.gif")
 knitr::include_graphics("images/PlantmicroPublications.gif")
 ```
 
@@ -388,18 +386,34 @@ class: inverse, middle, center
 layout: true
 # Composizione del microbiota
 
-.pull-left[
-```{r echo = FALSE, out.height="510px", out.width="510px"}
+
+
+---
+
+.center[
+.h20[
+**Spatial plant microbiota**    
+.font50[`r Cite(bib,  key = "SINGH2019100177")`]
+]
+
+```{r echo = FALSE, out.height="470px", out.width="470px"}
 knitr::include_graphics("images/PlantMicrobiomeComposition.png")
 ```
+
 ]
 
 ---
 
-.pull-right[
+.center[
+.h20[
+**Temporal plant microbiota**    
+.font50[`r Cite(bib, author = "Sapkota")`]
+]
 
-<br><br><br><br><br><br><br><br><br><br>
-.font60[`r Cite(bib, author = "Singh")`]
+```{r echo = FALSE, out.height="470px", out.width="530px"}
+knitr::include_graphics("images/plantMicrobiotaTemporal.png")
+```
+
 ]
 
 ???
@@ -410,85 +424,27 @@ knitr::include_graphics("images/PlantMicrobiomeComposition.png")
 
 - La figura sulla sinistra dello schermo cerca di schematizzare i recenti studi fatti sul microbiota delle piante
 
-- Questa figura ci farà da riferimente mentre vi illustrero alcuni degli aspetti più significativi della composizione del microbiota
-]
----
-
-.pull-right[
-
-Plant **endophytic communities**
-
-- .n[They are frequently **enriched** in members of the **Proteobacteria and Firmicutes**]
-
-
-- .n[They are **depleted** in members of the **Acidobacteria, Planctomycetes, Chloroflexi and Verrucomicrobia**]
-
-
-]
-
-???
-
-.n30[
-
-- Le **comunità batteriche endofitiche** sono spesso arricchite in membri dei Proteobacteria e Firmicutes => Mostrare sulla figura
-
-- Anologamente sono impoverite in altri taxa come Acidobacteria => Mostrare sulla figura
-]
----
-
-.pull-right[
-
-Plant **phyllosphere community**
-
-- .n[It mainly comprises bacteria belonging to phylum Proteobacteria and to the Bacteroidetes, Firmicutes and Actinobacteria]
-
-- .n[Members of phylum **Proteobacteria** constitute ~50% of the community composition]
-
-
-]
-
-???
-
--n30[
-
-- La comunità batterica della fillosfera è costituita principalmente da 4 classi di batteri: Proteobacteria and to the Bacteroidetes, Firmicutes and Actinobacteria.
-
-- Queste 4 classi rappresentano più del 75% del microbiota della fillosfera
-
-- Di questo 50% i Protobatteri sono sicuramente il gruppo più abbondante rappresentandone il 50% 
 ]
 
 ---
 
-.pull-right[
 
-**Fungi** community
+**Microbiota reservoir**    
 
-- .n[The vast diversity of fungi that colonize both aboveground and belowground plant tissues mainly belong to the phyla **Ascomycota and Basidiomycota**]
-
-- .n[Although **arbuscular fungi** (phylum Glomeromycota) and **ectomycorrhizal fungi** are well-studied, these groups represent only **minor diversity among fungal communities from roots**]
-]
-
-???
-
-.n30[
-- I funghi che compongono i diversi microbiota associato alla pianta appartengo a due phyla: Ascomiceti e Basidiomiceti
-
-- Classi di funghi come i funghi arbuscolari e i funghi ectomycorrizici rappresentano una miccola parte della diversità delle comunità fungine delle radici
-
-- Nella figura sono state raggruppate sotto la categoria others
-]
-
----
-
-.pull-right[
-
-**Microbiota reservoir**
-
+.pull-left[
 - .n[Although the assemblies of root-associated bacteria and fungi differ substantially from the above-ground communities, both represent a **subset of the microbiota derived from soil communities** and enriched in different plant-associated niches]
 
 - .n[This suggests that **soil functions as a common reservoir** for both belowground and aboveground plant microbiota]
+]
 
+.pull-rigth[
+
+.h20[
+```{r echo = FALSE, out.height="450px", out.width="450px"}
+knitr::include_graphics("images/reservoir.png")
+```
+.right[.font50[`r Cite(bib, author = "Agnello")`]]
+]
 ]
 
 ???
@@ -499,97 +455,44 @@ Plant **phyllosphere community**
 - Possiamo quindi dire che il suolo funziona come riserva comune per il microbiota della pianta epigeo e ipogeo
 ]
 ---
-layout: true
 
-# Composizione del microbiota
-
----
 
 .pull-left[
+
+**Viruses**
 <br>
 ```{r echo = FALSE, out.width="450px"}
 knitr::include_graphics("images/virusSoil.png")
 ```
-.font60[Emerson, 2019]
+.font60[`r Cite(bib, author = "Emerson")`]
+
+.h24[
+.font80[Viruses play a **critical part in bacterial community assembly and turnover** in the soil, but their function in plant-associated environments is not completely understood]]
+
 ]
 
 .pull-right[
+.right[**Protists**]
+```{r echo = FALSE, out.width="240px"}
+knitr::include_graphics("images/protistSoil.png")
+```
+.right[.font60[`r Cite(bib, author = "Gao")`]]
 
-**Viruses**
 
-- .n[Viruses play a **critical part in bacterial community assembly and turnover** in the soil, but their function in plant-associated environments is not completely understood]
-
-- .n[Viruses, in soil, affect both the **microbiome structure and function**]
-
+.h24[
+.right[.font80[Protists may control bacterial and fungal community assembly by **modulating predator–prey relationships** at different trophic levels]]
+]
 ]
 
 ???
 
 .n30[
-- La figura a lato riporta solo la composizione dei microbiota per funghi e batteri
-
 - Ci sono altri organismi che compongono il microbiota e sebbene la loro abbondanza non sia a livello di quella batterica e fungina non rivestono un ruolo meno importante soprattutto a livello funzionale
 
 - I virus per esempio posso giocare un ruolo fondamentale nella formazione e ricambio della comunità batterica
 
 - Influenzando di conseguenza tutta la struttura e la funzionalità del microbiota
-]
----
 
-.pull-left[
-
-```{r echo = FALSE, out.width="450px"}
-knitr::include_graphics("images/archeaSoil.png")
-```
-
-]
-
-.pull-right[
-
-**Archea**
-
-.h35[
-- .n[Although they are **consistent members** of the plant-associated community, we have **little understanding of the contribution** of archaeal communities to host performance]
-
-- .n[Metagenomic studies have identified functional genes involved in **stress tolerance and nutrient cycling** in plant-associated archaeal communities]
-
-]
-]
-
-
-???
-
-.n30[
-- Alcuni studi hanno mostrato come gli archea possano influenzare le funzioni del microbioma in particolare sulla resistenza agli stress e ciclo dei nutrienti
-
-- Purtroppo però, sebbene gli archea siano parte integrante del microbiota delle piante poco è noto della loro influenza sulla fitness della pianta
-]
----
-
-.pull-left[
-
-```{r echo = FALSE, out.width="350px"}
-knitr::include_graphics("images/protistSoil.png")
-```
-.font60[Gao et al., 2019]
-]
-
-.pull-right[
-
-**Protists**
-
-.h35[
-- .n[Protists may control bacterial and fungal community assembly by **modulating predator–prey relationships** at different trophic levels]
-
-- .n[Within protists, non-pathogenic **oomycetes can have positive effects** on plant growth]
-
-- .n[The phenotypic effects of oomycetes vary substantially in the **presence and absence of bacterial communities**]
-]
-]
-
-???
-
-.n30[
 - I protisti possono controllare la composizione del microbiota modulando la relazione prepadatore - preda
 
 - La relazione predatore preda consiste nell'interazione tra due specie e gli effetti che hanno una sull'altra

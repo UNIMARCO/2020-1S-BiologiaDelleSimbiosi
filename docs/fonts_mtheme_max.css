@@ -38,6 +38,14 @@ ul, ol {
   line-height: 35px;
 }
 
+.h20 p {
+  line-height: 20px;
+}
+
+.h24 p {
+  line-height: 24px;
+}
+
 .marco {
     text-align:right;
     font-weight:100;

@@ -18,6 +18,8 @@ output:
 ---
 
 ```{r setup, include=FALSE, cache=FALSE}
+# TO render: rmarkdown::render('Lesson1.Rmd', 'xaringan::moon_reader')
+
 # set working directory to docs folder
 setwd(here::here("docs"))
 
@@ -454,62 +456,7 @@ knitr::include_graphics("images/reservoir.png")
 
 - Possiamo quindi dire che il suolo funziona come riserva comune per il microbiota della pianta epigeo e ipogeo
 ]
----
 
-
-.pull-left[
-
-**Viruses**
-<br>
-```{r echo = FALSE, out.width="450px"}
-knitr::include_graphics("images/virusSoil.png")
-```
-.font60[`r Cite(bib, author = "Emerson")`]
-
-.h24[
-.font80[Viruses play a **critical part in bacterial community assembly and turnover** in the soil, but their function in plant-associated environments is not completely understood]]
-
-]
-
-.pull-right[
-.right[**Protists**]
-```{r echo = FALSE, out.width="240px"}
-knitr::include_graphics("images/protistSoil.png")
-```
-.right[.font60[`r Cite(bib, author = "Gao")`]]
-
-
-.h24[
-.right[.font80[Protists may control bacterial and fungal community assembly by **modulating predator–prey relationships** at different trophic levels]]
-]
-]
-
-???
-
-.n30[
-- Ci sono altri organismi che compongono il microbiota e sebbene la loro abbondanza non sia a livello di quella batterica e fungina non rivestono un ruolo meno importante soprattutto a livello funzionale
-
-- I virus per esempio posso giocare un ruolo fondamentale nella formazione e ricambio della comunità batterica
-
-- Influenzando di conseguenza tutta la struttura e la funzionalità del microbiota
-
-- I protisti possono controllare la composizione del microbiota modulando la relazione prepadatore - preda
-
-- La relazione predatore preda consiste nell'interazione tra due specie e gli effetti che hanno una sull'altra
-
-- Alcuni oomyceti non patogeni possono avere effetti positivi sulla crescita della pianta
-
-- Ma questi effetti possono essere controllati presenza di comunità batteriche
-
-]
-- .n[The predator prey relationship consists of the interactions between two species and their consequent effects on each other ]
-
-- .n[for example, Pythium, Phytophthora, Peronospora and Albugo species]
-
----
-
-layout: true
-# Composizione del microbiota
 ---
 
 .pull-left[
@@ -539,107 +486,63 @@ knitr::include_graphics("images/fungalDiv.png")
 
 
 ---
+layout: true
 
-.pull-left-45[.font150[.f400[Core microbiota]]]
-
-
-.pull-right-45[.font150[.f400[Hub microorganisms]]]
-
----
-
-.pull-left-45[.font150[.f400[Core microbiota]]
-
-.h25[
-- The plant core microbiota consists of members of the microbial community that are persistent and are ubiquitous in almost all the communities associated with a particular host
-
-- The core microbiota contains key microbial taxa that carry genes with functions that are essential for host fitness
-
-- Many members of the core microbiota of different plant species are common at the genus level
-
-- The identification of a co-occurring core of plant-associated microorganisms also provides a useful starting point for studies of how to build SynComs to manipulate plant–microbiome interactions for increased growth and productivity
-
-]
-]
-
-.pull-right-45[.font150[.f400[Hub microorganisms]]]
-
-.h25[]
-
-???
-
-.h25[
-- .n[Il **core microbiota** è composto da alcuni membri del microbiota che sono presenti in tutte, o quasi, le comunità associate ad una determinato ospite]
-
-- .n[E i suoi membri esprimono geni le cui funzioni sono di primaria importanza per la salute del loro ospite]
-
-- .n[Seppur diverse piante abbiamo microbiota diversi, un certo numero di membri è lo stesso]
-
-- .n[L'identificazione di microorganismi che fanno parte di diversi **core microbiota** è di grande importanza per la produzione delle comunità sintetiche, da usare in agricoltura per aumentare la crescita e la produttività delle piante]
-]
-
----
-
-.pull-left-45[.font150[.f400[Core microbiota]]
-
-.h25[
-- The plant core microbiota consists of members of the microbial community that are persistent and are ubiquitous in almost all the communities associated with a particular host
-
-- The core microbiota contains key microbial taxa that carry genes with functions that are essential for host fitness
-
-- Many members of the core microbiota of different plant species are common at the genus level
-
-- The identification of a co-occurring core of plant-associated microorganisms also provides a useful starting point for studies of how to build SynComs to manipulate plant–microbiome interactions for increased growth and productivity
-
-]
-]
-.pull-right-45[.font150[.f400[Hub microorganisms]]
-
-.h25[
-
-- Within the core microbiota, a few members, such as ‘hub microorganisms’, can influence the community structure through strong biotic interactions with the host or with other microbial species, rather than simply by their own high abundance
-
-- These hub species may represent keystone species that can exert strong direct and indirect effects on microbiome assembly and that function as mediators between the plant and its associated microbiome.
-
-- For example, *Albugo laibachii* and *Dioszegia spp.* have been identified as highly interactive hubs in the phyllosphere of *A. thaliana* [Agler, et al. 2016]
-
-]
-]
-
-???
-
-.h35[
-
-- .n[All'interno del core microbiota, alcuni membri possono influenzare la struttura dell'intera comunità, non per la loro abbondanza, ma per le loro interazione dirette od indirette con la pianta o gli altri microorganismi. Vengono definiti: **hub microorganism**]
-
-- .n[**hub** letteralmente significa: centro, perno, fulcro]
-
-- .n[Esempio di hubs identificati nella fillosfera di arabidopsis. Albugo è un oomicete obligato mentre Dioszegia è un basidiomicete]
+# Come si studia la composizione del microbiota?
 
 
-]
 
 ---
 class: inverse, middle, center
 
 ----
 
-.white[Homework]
+---
 
+.center[**There are two major approaches to assess the microbiota composition**]
 
-<br>
-.white[.font70[D. S. Lundberg, S. et al. <br> **Defining the core arabidopsis thaliana root microbiome**. <br> Nature, 488(7409):86–90, aug 2012.]]
-<br><br>
-.white[[Download](https://drive.google.com/file/d/15qUUNeTxWE4zg84P52kdkj-4qNsR5viO/view?usp=sharing)]
+.h20[
+```{r echo=FALSE, out.width="520px"}
+knitr::include_graphics("images/microbiotaCompositionTecniques.png")
+```
 
-???
-
-- .n[Uno dei primi studi a profilare il microbiota associato alle piante usando l'high throughput sequencing]
+.right[.font60[`r Cite(bib, key = "Lebeis_2014")`]]
+]
 
 ---
-class: clear
 
-...nella prossima lezione
+.pull-left[
+```{r echo=FALSE, out.width="520px"}
+knitr::include_graphics("images/microbiotaCompositionTecniques.png")
+```
+]
 
-<br><br><br>
+.pull-right[
+**Culture dependent**
 
-.center[.font200[.fontW4[Le funzioni del microbiota]]]
+- `r fontawesome::fa("plus-circle", fill = "green")` This approach isolates individual microbes 
+
+- `r fontawesome::fa("times-circle", fill = "red")` The community diversity estimate is limited
+
+]
+
+---
+
+.pull-left[
+**Culture independent**
+
+- `r fontawesome::fa("plus-circle", fill = "green")`  The ability to identify and quantify community members, even down to extremely rare taxa
+
+- `r fontawesome::fa("plus-circle", fill = "green")`  Insights beyond the information provided by individual microbes
+
+- `r fontawesome::fa("times-circle", fill = "red")` This approach does not isolate individual microbes 
+
+]
+
+
+.pull-right[
+```{r echo=FALSE, out.width="520px"}
+knitr::include_graphics("images/microbiotaCompositionTecniques.png")
+```
+]
+

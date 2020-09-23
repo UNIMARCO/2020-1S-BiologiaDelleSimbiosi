@@ -916,5 +916,24 @@ class: inverse, center, middle
 
 ---
 
+Metatranscriptomics
 
+```{r echo=FALSE, out.width="620px"}
+# library(magick)
+# x <- image_read("images/quadratoRED.png")
+# img <- image_read("images/Molecular-methods-for-determining-phylogeny-and-functional-diversity-of-microbial.ppm")
+# y <- image_composite(img, image_scale(x, "135x330!"), offset = "+25+85")
+# image_write(y, "images/Meta1.png")
+# z <- image_composite(img, image_scale(x, "95x330!"), offset = "+160+85")
+# image_write(z, "images/Meta2.png")
+knitr::include_graphics("images/Meta1.png")
+```
+.right[.font50[`r Cite(bib,  key = "VANWONTERGHEM201455")`]]
 ---
+
+Metatranscriptomics
+
+```{r echo=FALSE, out.width="620px"}
+knitr::include_graphics("images/Meta2.png")
+```
+.right[.font50[`r Cite(bib,  key = "VANWONTERGHEM201455")`]]

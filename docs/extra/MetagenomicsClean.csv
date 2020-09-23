@@ -1,0 +1,17 @@
+order,Method,Read length,Accuracy (single read not consensus),Reads per run,Time per run,Cost per 1 billion bases (in US$)
+4,Single-molecule real-time sequencing (Pacific Biosciences),"On average 30,000 bp",87.00%,up to 4 milions,30 minutes to 20 hours,$7.2-$43.3
+3,Ion semiconductor (Ion Torrent sequencing),up to 600 bp,99.60%,up to 80 million,2 hours,$66.8-$950
+2,Pyrosequencing (454),700 bp,99.90%,1 million,24 hours,"$10,000"
+6,Sequencing by synthesis (Illumina),"MiniSeq: 75–300 bp;
+NextSeq: 75–300 bp;
+MiSeq: 50–600 bp;
+HiSeq 2500: 50–500 bp;
+HiSeq 3/4000: 50–300 bp;
+HiSeq X: 300 bp",99.90%,"MiniSeq: 1–25 Million;
+NextSeq: 130-00 Million;
+MiSeq: 1–25 Million;
+HiSeq 2500: 300 million – 2 billion;
+HiSeq 3/4000 2.5 billion;
+HiSeq X: 3 billion","1 to 11 days, depending upon sequencer and specified read length",$5 to $150
+5,Nanopore Sequencing (Nanopore),"up to 2,272,580 bp reported",~92–97% single read,dependent on read length selected by user,1 min to 48 hrs,$7–100
+1,Chain termination (Sanger sequencing),400 to 900 bp,99.9%,N/A,20 minutes to 3 hours,"$2,400,000"

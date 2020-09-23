@@ -1,0 +1,16 @@
+Method,Read length,Accuracy (single read not consensus),Reads per run,Time per run,Cost per 1 billion bases (in US$),Advantages,Disadvantages
+Single-molecule real-time sequencing (Pacific Biosciences),"30,000 bp (N50);
+maximum read length >100,000 bases[76][77][78]",87% raw-read accuracy[79],"4,000,000 per Sequel 2 SMRT cell, 100–200 gigabases[76][80][81]",30 minutes to 20 hours[76][82],$7.2-$43.3,"Fast. Detects 4mC, 5mC, 6mA.[83]",Moderate throughput. Equipment can be very expensive.
+Ion semiconductor (Ion Torrent sequencing),up to 600 bp[84],99.6%[85],up to 80 million,2 hours,$66.8-$950,Less expensive equipment. Fast.,Homopolymer errors.
+Pyrosequencing (454),700 bp,99.9%,1 million,24 hours,"$10,000",Long read size. Fast.,Runs are expensive. Homopolymer errors.
+Sequencing by synthesis (Illumina),"MiniSeq, NextSeq: 75–300 bp;
+MiSeq: 50–600 bp;
+HiSeq 2500: 50–500 bp;
+HiSeq 3/4000: 50–300 bp;
+HiSeq X: 300 bp",99.9% (Phred30),"MiniSeq/MiSeq: 1–25 Million;
+NextSeq: 130-00 Million;
+HiSeq 2500: 300 million – 2 billion;
+HiSeq 3/4000 2.5 billion;
+HiSeq X: 3 billion","1 to 11 days, depending upon sequencer and specified read length[86]",$5 to $150,"Potential for high sequence yield, depending upon sequencer model and desired application.",Equipment can be very expensive. Requires high concentrations of DNA.
+Nanopore Sequencing,"Dependent on library preparation, not the device, so user chooses read length (up to 2,272,580 bp reported[89]).",~92–97% single read,dependent on read length selected by user,data streamed in real time. Choose 1 min to 48 hrs,$7–100,Longest individual reads. Accessible user community. Portable (Palm sized).,"Lower throughput than other machines, Single read accuracy in 90s."
+Chain termination (Sanger sequencing),400 to 900 bp,99.9%,N/A,20 minutes to 3 hours,"$2,400,000",Useful for many applications.,More expensive and impractical for larger sequencing projects. This method also requires the time-consuming step of plasmid cloning or PCR.

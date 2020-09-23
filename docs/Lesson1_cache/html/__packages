@@ -13,3 +13,7 @@ forcats
 gganimate
 nvimcom
 rmarkdown
+xml2
+rvest
+gt
+janitor

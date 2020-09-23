@@ -26,7 +26,7 @@ class: title-slide
 .marco[
 Marco Chiapello
 &lt;br&gt;
-2020-09-22
+2020-09-23
 ]
 
 
@@ -320,7 +320,7 @@ layout: true
 ---
 layout: true
 
-# Come si studia la composizione del microbiota?
+# How do you study the microbiota composition?
 
 
 
@@ -372,6 +372,152 @@ class: inverse, middle, center
 &lt;img src="images/microbiotaCompositionTecniques.png" width="520px" style="display: block; margin: auto;" /&gt;
 ]
 
+---
+
+.center[.font150[Microbial DNA metabarcoding]]
+
+&gt; **DNA metabarcoding** is a method of **DNA barcoding** that uses universal genetic markers to identify DNA of a mixture of organisms
+
+--
+
+&lt;br&gt;
+.content-box-grey[What is it the &lt;br&gt; **DNA barcoding**?]
+
+---
+
+.center[.font150[Microbial DNA metabarcoding]]
+
+- **DNA barcoding** is a method of species identification using a short section of DNA from a specific gene 
+
+- An individual sequence can be used to uniquely identify an organism by comparison with a reference library of classified DNA sequences
+
+
+&lt;img src="images/DNAbarcoding.png" width="520px" style="display: block; margin: auto;" /&gt;
+
+---
+
+.center[.font150[Microbial DNA metabarcoding]]
+
+.pull-left[
+**Marker selection**
+
+.n30[
+- Markers used for DNA barcoding are called barcodes and their selection is crucial
+
+- Ideally, one gene sequence would be used for developing universal PCR primers for all taxonomic group
+  
+- However, no such gene region has been found yet!
+
+- Different gene regions are used to identify the different organismal groups using barcoding
+]
+]
+
+.pull-right[
+
+&lt;img src="images/DNAbarcoding2.png" width="200px" style="display: block; margin: auto;" /&gt;
+
+.right[.font50[(Mosa et al., 2019)]]
+]
+
+---
+
+.center[.font150[Microbial DNA metabarcoding]]
+
+**Marker selection**
+
+| Organism | Region |
+|----------|--------|
+| animals  | cytochrome c oxidase I|
+| fungi    |  internal transcribed spacer (ITS) rRNA |
+| plants   | RuBisCO |
+| prokaryotes | 16S rRNA |
+| microbial eukaryotes | 18S rRNA |
+
+
+.font80[When barcoding is used to identify organisms from a sample containing DNA from more than one organism, the term DNA metabarcoding is used]
+
+
+---
+
+.center[.font150[Microbial DNA metabarcoding]]
+
+.pull-left[
+**Bioinformatic analysis**
+
+.n30[
+- After sequencing, raw data must be processed (**quality and cleaning step**)
+
+- Samples are clustered in operational taxonomic unit based on identity threshold (**OTU formation**)
+
+- Using "the Basic Local Alignment Search Tool (BLAST)" regions of similarity between sequences and reference databases are identified (**annotation step**)    
+
+- Microbiota composition definition (**richness and diversity step**)
+
+]
+]
+
+.pull-right[
+
+.h20[
+.right[.font50[(Jesse et al., 2018)]]     
+&lt;img src="images/OTU.png" width="220px" style="display: block; margin: auto;" /&gt;
+
+
+]]
+
+
+
+???
+
+.n30[
+- These databases contain the DNA barcodes assigned to previously identified taxa
+
+- An operational taxonomic unit (OTU) is an operational definition used to classify groups of closely related individuals
+]
+
+---
+layout: true
+
+# What can the microbiota potentially do?
+
+---
+
+class: inverse, middle, center
+
+----
+
+---
+
+.center[.font120[Metagenomics]]
+
+&lt;img src="images/metagenomics1.png" width="720px" style="display: block; margin: auto;" /&gt;
+.right[.font50[(Ye, Siddle, Park, et al., 2019)]]
+.h25[
+- **Metagenomics** is the study of genetic material recovered directly from environmental samples
+
+- The collection of sequenced genes from the environment could be analyzed as a **single genome**
+  
+- Metagenomics **does not require the isolation** and lab cultivation of individual species
+
+- Due to its random nature, metagenomics, allows that many **under-represented organisms will be detected**
+]
+
+---
+
+.pull-left-wide[
+&lt;img src="images/compareBarcodingMetagenome.png" width="550px" style="display: block; margin: auto;" /&gt;
+]
+
+.right[.font60[(Gill, Baldock, Brown, et al., 2016)]]
+
+
+---
+
+
+
+&lt;img src="images/CompareHTS.png" width="920px" style="display: block; margin: auto;" /&gt;
+
+---
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="libs/remark-latest.min.js"></script>

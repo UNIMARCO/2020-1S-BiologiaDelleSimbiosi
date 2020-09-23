@@ -484,6 +484,93 @@ knitr::include_graphics("images/fungalDiv.png")
 
 - .n[Un valore grande significa che sono presenti molte specie con un'abbondanza simile. Il range del valore varia da 1 (una specie dominante) fino al numero totale di tutte le species (nel caso che tutte le specie abbiano la stessa abbondanza)]
 
+---
+layout: true
+
+# Plant Holobiont
+
+---
+
+class: inverse, middle, center
+
+----
+
+---
+
+.m10bp[
+```{r echo=FALSE, out.width="800px"}
+knitr::include_graphics("images/holobiont1.png")
+```
+.right[.font50[`r Cite(bib, key = "Berg_2017")`]]
+]
+
+.m0p[
+.h20[
+.font80[Plants and their associated microorganisms form a holobiont and have to be considered as co-evolved species assemblages consisting of bacterial, archaeal and diverse eukaryotic species]
+]
+]
+
+---
+
+.pull-left[
+### Holobiont functions
+.m0p[
+```{r echo=FALSE, out.width="500px"}
+knitr::include_graphics("images/holobiont2.png")
+```
+.right[.font50[`r Cite(bib, key = "Theis_2016")`]]
+]
+]
+
+.pull-right[
+.m0p[
+.h26[
+- Microbial diversity and balance is a key for healthy plants
+
+- Microbial species have the ability to contribute multiple aspects to the system    
+
+    - seed germination and growth    
+    - nutrient supply    
+    - resistance against biotic stress factors    
+    - resistance against abiotic factors    
+    - physiology and production of bioactive metabolites
+
+- The presence of microbes in plants became initially noticeable when diseases appeared. However, the vast majority of microbes in plants are not causal agents of damage in plants
+]
+]
+]
+
+---
+
+.pull-left[
+### Holobiont co-evolution
+.m0p[
+```{r echo=FALSE, out.width="600px"}
+knitr::include_graphics("images/holobiont3.png")
+```
+.right[.font50[`r Cite(bib, key = "Hassani:2018aa")`]]
+
+
+]
+]
+
+.pull-right[
+.m0p[
+.h26[
+- Holobiont also contributes to genetic variation and to the origin and evolution of species
+
+- Evolution proceeds both via cooperation and competition, working in parallel
+  
+- Acquisition of microbes and microbial genes is a powerful mechanism for driving the evolution of complexity
+  - Horizontal gene transfer (HGT) refers to the transfer of genes between organisms in a
+    manner other than the vertical transmission of genes from parent
+    to offspring
+
+]
+
+]
+]
+
 
 ---
 layout: true
@@ -829,6 +916,5 @@ class: inverse, center, middle
 
 ---
 
-ciao
 
 ---

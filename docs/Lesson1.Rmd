@@ -620,8 +620,9 @@ knitr::include_graphics("images/DNAbarcoding2.png")
 .center[.font150[Microbial DNA metabarcoding]]
 
 .pull-left[
+.m0p[
 **Bioinformatic analysis**
-
+]
 .n30[
 - After sequencing, raw data must be processed (**quality and cleaning step**)
 
@@ -637,7 +638,9 @@ knitr::include_graphics("images/DNAbarcoding2.png")
 .pull-right[
 
 .h20[
+.m0p[
 .right[.font50[(Jesse et al., 2018)]]     
+]
 ```{r echo=FALSE, out.width="220px"}
 knitr::include_graphics("images/OTU.png")
 ```
@@ -686,14 +689,28 @@ knitr::include_graphics("images/metagenomics1.png")
 
 ---
 
-.pull-left-wide[
-```{r echo=FALSE, out.width="550px"}
+.center[Metagenomics vs Barcoding]
+.pull-left[
+.m0p[
+```{r echo=FALSE, out.width="450px"}
 knitr::include_graphics("images/compareBarcodingMetagenome.png")
 ```
+.right[.font50[`r Cite(bib,  key = "gill2016")`]]
+]]
+
+
+ .pull-right[
+.h21[
+
+- Metagenomics does not need the marker selection step
+
+- Metagenomics sequences all the genes present in the sample from each organism
+
+- Metagenomics can help to reconstruct large fragments or even complete genomes from organisms in a community
+
+- Metagenomics allows the characterization of a large number of coding and non-coding sequences that can be used to decipher the microbial diversity or to understand its metabolic potential
 ]
-
-.right[.font60[`r Cite(bib,  key = "gill2016")`]]
-
+]
 
 ---
 
@@ -735,5 +752,83 @@ knitr::include_graphics("images/compareBarcodingMetagenome.png")
 ```{r echo=FALSE, out.width="920px"}
 knitr::include_graphics("images/CompareHTS.png")
 ```
+
+---
+
+.center[
+.middle[
+<iframe width="840" height="473" src="https://www.youtube.com/embed/fCd6B5HRaZ8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+]
+]
+---
+
+.center[.font120[Genomes assembly]]
+
+.m0p[
+```{r echo=FALSE, out.width="620px"}
+knitr::include_graphics("images/Align.png")
+```
+]
+---
+.font120[**Functional Metagenomics Analysis**]
+
+.pull-left[
+.m10ulp[
+Workflow:
+
+- Metagenomic assembly
+
+- Open Reading Frames (ORF) prediction
+
+- Annotation step performed by homology detection (at proteomic level)
+
+- Reconstruction of metabolic pathways is achieved from enzyme-coding genes 
+]]
+
+.pull-right[
+```{r echo=FALSE, out.width="380px"}
+knitr::include_graphics("images/metagenomicsPipeline.png")
+```
+.right[.font50[`r Cite(bib,  key = "Roumpeka_2017")`]]
+]
+
+---
+
+.font120[**Functional Metagenomics Analysis**]
+
+.pull-left[
+.m10ulp[
+Workflow:
+
+- Metagenomic assembly
+
+- Open Reading Frames (ORF) prediction
+
+- Annotation step performed by homology detection (at proteomic level)
+
+- Reconstruction of metabolic pathways is achieved from enzyme-coding genes 
+]]
+
+.pull-right[
+```{r echo=FALSE, out.width="370px"}
+knitr::include_graphics("images/functionalMetagenomics.png")
+```
+.right[.font50[`r Cite(bib,  key = "Casta_eda_2017")`]]
+]
+
+---
+layout: true
+
+# What are they doing?
+
+---
+
+class: inverse, center, middle
+
+----
+
+---
+
+ciao
 
 ---

@@ -298,6 +298,12 @@ a, a > code {
     float: left;
     width: 50%;
   }
+  .m0p p {
+      margin-top: 0;
+  }
+  .m10bp p {
+      margin-bottom: 10px;
+  }
   .pull-right {
     float: right;
     width: 50%;

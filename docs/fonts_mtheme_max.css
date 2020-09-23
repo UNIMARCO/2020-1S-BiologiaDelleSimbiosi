@@ -24,9 +24,19 @@ ul, ol {
   font-size: 32px;
 }
 
+.h21 p {
+  line-height: 23px;
+  font-size: 65%;
+}
+
 .h25 p {
   line-height: 25px;
   font-size: 60%;
+}
+
+.m10ulp ul p {
+  line-height: 30px;
+  margin: 10px 0px;
 }
 
 .n30 p {

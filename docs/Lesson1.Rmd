@@ -916,7 +916,7 @@ class: inverse, center, middle
 
 ---
 
-Metatranscriptomics
+.white[Metatranscriptomics]
 
 ```{r echo=FALSE, out.width="620px"}
 # library(magick)
@@ -926,9 +926,17 @@ Metatranscriptomics
 # image_write(y, "images/Meta1.png")
 # z <- image_composite(img, image_scale(x, "95x330!"), offset = "+160+85")
 # image_write(z, "images/Meta2.png")
+# a <- image_composite(img, image_scale(x, "95x330!"), offset = "+275+85")
+# image_write(a, "images/Meta3.png")
+# b <- image_composite(img, image_scale(x, "95x330!"), offset = "+390+85")
+# image_write(b, "images/Meta4.png")
+# d <- image_composite(img, image_scale(x, "95x330!"), offset = "+505+85")
+# image_write(d, "images/Meta5.png")
+
 knitr::include_graphics("images/Meta1.png")
 ```
 .right[.font50[`r Cite(bib,  key = "VANWONTERGHEM201455")`]]
+
 ---
 
 Metatranscriptomics
@@ -937,3 +945,103 @@ Metatranscriptomics
 knitr::include_graphics("images/Meta2.png")
 ```
 .right[.font50[`r Cite(bib,  key = "VANWONTERGHEM201455")`]]
+
+---
+
+Metatranscriptomics
+.pull-left[
+.h25[
+- Metatranscriptomics is the science that studies gene expression of microbes within natural environments
+
+- It allows to obtain whole gene expression profiling of complex microbial communities
+
+- `r fontawesome::fa("plus-circle", fill = "green")` The advantage of metatranscriptomics, over metagenomics, is that it can provide information about differences in the active functions of microbial communities 
+
+-  The overview of the gene expression in a given sample is obtained by capturing the total mRNA of the microbiome and by performing a whole metatranscriptomics shotgun sequencing.
+]
+]
+
+.pull-right[
+.m0p[
+```{r echo=FALSE, out.width="380px"}
+knitr::include_graphics("images/metatrranscriptomePL.png")
+```
+.right[.font50[`r Cite(bib,  key = "Perez-Pantoja:2015aa")`]]
+]
+]
+
+---
+
+Metaproteomics
+
+```{r echo=FALSE, out.width="620px"}
+knitr::include_graphics("images/Meta3.png")
+```
+.right[.font50[`r Cite(bib,  key = "VANWONTERGHEM201455")`]]
+
+---
+
+Metaproteomics
+
+.pull-left[
+.h25[
+- Metaproteomics is the study of all protein samples recovered directly from environmental sources
+
+- Metaproteomics have rapidly increased in recent years due to many technological advances in mass spectrometry (MS)
+
+- `r fontawesome::fa("plus-circle", fill = "green")` Metatranscriptomics assess the “expressed” metabolism and physiology of microbial community members, but also allows quantification of per-species biomass to determine community structure
+
+- `r fontawesome::fa("plus-circle", fill = "green")` Proteomics quantifies the real proteins expression level, while mRNA may be degraded or translated inefficiently, resulting in a incorrect estimation of protein expression level
+]
+]
+
+.pull.right[
+```{r echo=FALSE, out.width="480px"}
+knitr::include_graphics("images/metaproteomics.png")
+```
+.right[.font30[https://www.ecu.edu.au/schools/science/research-activity/research-support/proteomics/what-is-lc-ms-proteomics]]
+]
+
+---
+
+Metabolomics
+
+```{r echo=FALSE, out.width="600px"}
+knitr::include_graphics("images/Meta4.png")
+```
+.right[.font50[`r Cite(bib,  key = "VANWONTERGHEM201455")`]]
+
+---
+
+Metabolomics
+
+.h25[
+
+- Metabolomics is the study of the complete set of metabolites composition (the metabolome) of a cell type, tissue, or biological fluid
+
+- `r fontawesome::fa("plus-circle", fill = "green")` The metabolites (<1.5 kDa) are the intermediates or end products of multiple enzymatic reactions and therefore are the most informative proxies of the biochemical activity of an organism
+
+- `r fontawesome::fa("times-circle", fill = "red")` The metabolome consists of multiple compounds. Determine the entire set of metabolites is extremely difficult, further complicating the analyses is the dynamic nature of these metabolites.
+]
+
+.pull-left-wide[
+.m0p[
+```{r echo=FALSE, out.width="580px"}
+knitr::include_graphics("images/metabolomics.png")
+```
+]
+]
+<br><br><br><br><br><br><br>
+.right[.font50[`r Cite(bib,  key = "alonso2015")`]]
+
+
+???
+
+.n30[
+- hydrophilic
+  carbohydrates, volatile alcohols, ketones, amino and non- amino organic acids, hydrophobic lipids and complex natural compounds (secondary metabolites such as antibiotics, pigments, non-ribosomal peptides, cofactors)
+]
+
+
+---
+System biology metafora della torta e dei suoi ingredienti

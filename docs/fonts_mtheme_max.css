@@ -34,6 +34,11 @@ ul, ol {
   font-size: 60%;
 }
 
+.h25u ul {
+  line-height: 25px;
+  font-size: 60%;
+}
+
 .h26 li ul li {
   line-height: 30px;
   font-size: 80%;

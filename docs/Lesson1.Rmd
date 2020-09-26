@@ -1015,6 +1015,8 @@ knitr::include_graphics("images/Meta4.png")
 
 Metabolomics
 
+.pull-left[
+.m0p[
 .h25[
 
 - Metabolomics is the study of the complete set of metabolites composition (the metabolome) of a cell type, tissue, or biological fluid
@@ -1023,15 +1025,14 @@ Metabolomics
 
 - `r fontawesome::fa("times-circle", fill = "red")` The metabolome consists of multiple compounds. Determine the entire set of metabolites is extremely difficult, further complicating the analyses is the dynamic nature of these metabolites.
 ]
+]]
 
-.pull-left-wide[
-.m0p[
-```{r echo=FALSE, out.width="580px"}
+.pull-rigth[
+<br><br>
+```{r echo=FALSE, out.width="480px"}
 knitr::include_graphics("images/metabolomics.png")
 ```
 ]
-]
-<br><br><br><br><br><br><br>
 .right[.font50[`r Cite(bib,  key = "alonso2015")`]]
 
 
@@ -1042,6 +1043,93 @@ knitr::include_graphics("images/metabolomics.png")
   carbohydrates, volatile alcohols, ketones, amino and non- amino organic acids, hydrophobic lipids and complex natural compounds (secondary metabolites such as antibiotics, pigments, non-ribosomal peptides, cofactors)
 ]
 
+---
+
+Stable/radioactive isotopes
+
+```{r echo=FALSE, out.width="600px"}
+knitr::include_graphics("images/Meta5.png")
+```
+.right[.font50[`r Cite(bib,  key = "VANWONTERGHEM201455")`]]
 
 ---
-System biology metafora della torta e dei suoi ingredienti
+
+Stable/radioactive isotopes
+
+.pull-left[
+.m0p[
+.h25[
+
+- Stable-isotope probing (SIP) is a technique in microbial ecology for tracing fluxes of nutrients in biogeochemical cycling by microorganisms using heavy stable isotopes
+
+- `r fontawesome::fa("plus-circle", fill = "green")` SIP is an approach that can identify microbial populations with a defined function
+
+- `r fontawesome::fa("plus-circle", fill = "green")` The use of either DNA-SIP, RNA-SIP or protein-SIP can enable both the phylogenetic identification and the key metabolic genes/proteins
+
+- `r fontawesome::fa("times-circle", fill = "red")` A major challenge associated with SIP is a very limited availability and high cost of labeled substrates. SIP is also very labor-intensive and low-throughput using current techniques
+]
+]]
+
+.pull-rigth[
+```{r echo=FALSE, out.width="280px"}
+knitr::include_graphics("images/sip1.png")
+```
+]
+.right[.font50[`r Cite(bib,  key = "UHLIK2013154")`]]
+
+---
+
+Stable/radioactive isotopes
+
+.m0p[
+```{r echo=FALSE, out.width="570px"}
+knitr::include_graphics("images/sip2.png")
+```
+.right[.font50[(el Zahar Haichar, Heulin, Guyonnet, et al., 2016)]]
+]
+
+---
+layout: false
+class: clear, middle, center
+
+.m0p[
+```{r echo=FALSE, out.width="850px"}
+knitr::include_graphics("images/sb1.png")
+```
+]
+
+???
+metafora della torta e dei suoi ingredienti
+
+---
+class: clear
+
+
+.center[.font150[System biology]]
+
+.pull-left[
+.m0p[
+.h25u[
+- .font80[Systems biology studies biological systems by systematically perturbing them]    
+
+- .font80[Monitoring the gene, protein, metabolite, and informational pathway responses]    
+
+- .font80[Integrating these data]    
+
+- .font80[Formulating mathematical models that describe the structure of the system]    
+
+- .font80[Predict its response to individual perturbations]
+  ]]]
+
+.pull-right[
+.m0p[
+```{r echo=FALSE, out.width="670px"}
+knitr::include_graphics("images/sb2.png")
+```
+
+]
+]
+
+
+
+

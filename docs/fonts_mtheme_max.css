@@ -34,9 +34,14 @@ ul, ol {
   font-size: 60%;
 }
 
-.h25u ul {
+.h25u ul li {
   line-height: 25px;
   font-size: 60%;
+}
+
+.h25o ol li p {
+  line-height: 25px;
+  font-size: 80%;
 }
 
 .h26 li ul li {
@@ -261,6 +266,10 @@ ul, ol {
 
 .opacity10{
     opacity: 0.1;
+}
+
+.opacity50{
+    opacity: 0.5;
 }
 
 .f400{

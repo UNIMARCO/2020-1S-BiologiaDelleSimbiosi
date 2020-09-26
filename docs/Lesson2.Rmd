@@ -1,0 +1,273 @@
+---
+title: "Microbiota"
+subtitle: "Lesson 1"
+author: "Marco Chiapello"
+date: "???"
+output:
+  xaringan::moon_reader:
+    css: ["scrollable.css", "mtheme_max.css", "fonts_mtheme_max.css"]
+    self_contained: false
+    lib_dir: libs
+    chakra: libs/remark-latest.min.js
+    nature:
+      ratio: '16:9'
+      highlightStyle: github
+      highlightLines: true
+    countIncrementalSlides: false
+    seal: false  
+---
+
+```{r setup, include=FALSE, cache=FALSE}
+# TO render: rmarkdown::render('Lesson1.Rmd', 'xaringan::moon_reader')
+
+# set working directory to docs folder
+setwd(here::here("docs"))
+
+# Set global R options
+options(htmltools.dir.version = FALSE, servr.daemon = TRUE)
+
+# Set global knitr chunk options
+knitr::opts_chunk$set(
+  fig.align = "center", 
+  cache = TRUE,
+  error = FALSE,
+  message = FALSE, 
+  warning = FALSE, 
+  collapse = TRUE 
+)
+
+# This is good for getting the ggplot background consistent with
+# the html background color
+library(ggplot2)
+thm <- theme_bw()
+theme_set(thm)
+
+library(RefManageR)
+BibOptions(check.entries = FALSE,
+           bib.style = "authoryear",
+           cite.style = "authoryear",
+           style = "markdown",
+           hyperlink = FALSE,
+           dashed = FALSE)
+bib <- ReadBib("biblio/bib.bib", check = FALSE)
+```
+
+class: title-slide
+
+
+
+# .font170[MICROBIOMA E MICROBIOTA]
+
+
+<br><br><br><br>
+.marco[
+Marco Chiapello
+<br>
+`r Sys.Date()`
+]
+
+
+.marco[
+.font90[[`r fontawesome::fa("twitter", fill = "steelblue")`](https://twitter.com/marpello1980) @marpello1980 - [`r fontawesome::fa("envelope", fill = "steelblue")`](mailto:chiapello.m@gmail.com) chiapello.m@gmail.com - `r fontawesome::fa("skype", fill = "steelblue")` marpello]
+]
+
+???
+
+.n30[
+
+- Sarò uno dei vostri docenti per il corso "Interazioni tra piante, microrganismi e ambiente"
+]
+---
+layout: true
+
+# Last lesson recap
+
+---
+
+.pull-left[
+.m0p[
+.h25o[
+1. Plant microbiota change spatially and temporally
+
+1. Plant compartment is a major selective force that shapes the composition of plant-associated microbiota
+
+1. Plants and their associated microorganisms form a holobiont
+
+1. Several techniques can be employed to decipher the microbiota composition and functions
+
+1. System biology is the discipline that integrates the -omics techniques to formulate models that describe the structure of the system
+]
+]
+]
+
+---
+.pull-left[
+.m0p[
+.h25o[
+1. Plant microbiota change spatially and temporally
+
+1. .opacity10[ Plant compartment is a major selective force that shapes the composition of plant-associated microbiota]
+
+1. .opacity10[ Plants and their associated microorganisms form a holobiont]
+
+1. .opacity10[ Several techniques can be employed to decipher the microbiota composition and functions]
+
+1. .opacity10[ System biology is the discipline that integrates the -omics techniques to formulate models that describe the structure of the system]
+]
+]
+]
+
+.pull-right[
+
+.m0p[
+```{r echo = FALSE, out.height="230px", out.width="230px"}
+knitr::include_graphics("images/PlantMicrobiomeComposition.png")
+```
+
+```{r echo = FALSE, out.height="270px", out.width="300px"}
+knitr::include_graphics("images/plantMicrobiotaTemporal.png")
+```
+]
+]
+
+---
+
+.pull-left[
+.m0p[
+.h25o[
+1. .opacity10[ Plant microbiota change spatially and temporally]
+
+1. Plant compartment is a major selective force that shapes the composition of plant-associated microbiota
+
+1. .opacity10[ Plants and their associated microorganisms form a holobiont]
+
+1. .opacity10[ Several techniques can be employed to decipher the microbiota composition and functions]
+
+1. .opacity10[ System biology is the discipline that integrates the -omics techniques to formulate models that describe the structure of the system]
+]
+]
+]
+
+.pull-right[
+
+```{r echo=FALSE, out.width="350px"}
+knitr::include_graphics("images/bacterialDiv.png")
+```
+
+```{r echo=FALSE, out.width="350px"}
+knitr::include_graphics("images/fungalDiv.png")
+```
+]
+
+---
+
+.pull-left[
+.m0p[
+.h25o[
+1. .opacity10[ Plant microbiota change spatially and temporally]
+
+1. .opacity10[ Plant compartment is a major selective force that shapes the composition of plant-associated microbiota]
+
+1. Plants and their associated microorganisms form a holobiont
+
+1. .opacity10[ Several techniques can be employed to decipher the microbiota composition and functions]
+
+1. .opacity10[ System biology is the discipline that integrates the -omics techniques to formulate models that describe the structure of the system]
+]
+]
+]
+
+.pull-right[
+<br>
+```{r echo=FALSE, out.width="800px"}
+knitr::include_graphics("images/holobiont2.png")
+```
+
+]
+
+---
+
+.pull-left[
+.m0p[
+.h25o[
+1. .opacity10[ Plant microbiota change spatially and temporally]
+
+1. .opacity10[ Plant compartment is a major selective force that shapes the composition of plant-associated microbiota]
+
+1. .opacity10[ Plants and their associated microorganisms form a holobiont]
+
+1. Several techniques can be employed to decipher the microbiota composition and functions
+
+1. .opacity10[ System biology is the discipline that integrates the -omics techniques to formulate models that describe the structure of the system]
+]
+]
+]
+
+.pull-right[
+<br><br>
+```{r echo=FALSE, out.width="500px"}
+knitr::include_graphics("images/recap1.png")
+```
+
+]
+
+
+---
+
+.pull-left[
+.m0p[
+.h25o[
+1. .opacity10[ Plant microbiota change spatially and temporally]
+
+1. .opacity10[ Plant compartment is a major selective force that shapes the composition of plant-associated microbiota]
+
+1. .opacity10[ Plants and their associated microorganisms form a holobiont]
+
+1. .opacity10[ Several techniques can be employed to decipher the microbiota composition and functions]
+
+1. System biology is the discipline that integrates the -omics techniques to formulate models that describe the structure of the system
+]
+]
+]
+
+.pull-right[
+<br><br>
+```{r echo=FALSE, out.width="300px"}
+knitr::include_graphics("images/recap2.png")
+```
+
+]
+
+
+---
+layout: false
+class: clear 
+
+.pull-left-wide[
+.font180[.bold[Agenda]]
+
+
+- .font140[Functions of plant-associated microbiomes]
+
+- .font140[Can the plant modify the composition of the associated microbiota?]
+
+- .font140[Can we exploit the microbiota?]
+]
+
+
+
+---
+layout: false
+class: clear 
+
+.pull-left-wide[
+.font180[.bold[Agenda]]
+
+
+- .font140[Functions of plant-associated microbiomes]
+
+- .opacity10[.font140[Can the plant modify the composition of the associated microbiota?]]
+
+- .opacity10[.font140[Can we exploit the microbiota?]]
+  ]
+

@@ -310,9 +310,9 @@ knitr::include_graphics("images/nutrientUptake.png")
 
 **Plant microbiota has essential functions in improving plant nutrition**
 
-- The molecular mechanisms driving nutrient acquisition have been thoroughly studied for plant symbioses with arbuscular mycorrhizal fungi (AMF) and Rhizobium bacteria
+- .font90[The molecular mechanisms driving nutrient acquisition have been thoroughly studied for plant symbioses with arbuscular mycorrhizal fungi (AMF) and Rhizobium bacteria]
   
-- Non-symbiotic plant-growth-promoting bacteria can either enhance the bioavailability of insoluble minerals or improve the root system architecture of host plants, thus increasing the exploratory capacity of the root for water and minerals
+- .font90[Non-symbiotic plant-growth-promoting bacteria can either enhance the bioavailability of insoluble minerals or improve the root system architecture of host plants, thus increasing the exploratory capacity of the root for water and minerals]
 
 ]
 ]
@@ -323,4 +323,120 @@ knitr::include_graphics("images/nutrientUptake.png")
 ```{r echo=FALSE, out.width="830px"}
 knitr::include_graphics("images/nutrientPaper.png")
 ```
+
+---
+
+## Introduction
+
+.pull-left[
+.h25up[
+.m0p[
+
+- .font70[Nitrogen (N) is a limiting nutrient in many natural and managed ecosystems]
+
+- `r fontawesome::fa("seedling", fill = "green")` .font70[Arbuscular mycorrhizal (AM) fungi can substantially enhance plant N acquisition from soil, thereby potentially alleviating plant N limitation and playing an important role in plant productivity and soil nutrient cycling] 
+
+- `r fontawesome::fa("seedling", fill = "green")` .font70[Other soil biota with decomposer capabilities are key players in AM fungal N acquisition and transfer to plants]
+
+- `r fontawesome::fa("bullseye", fill = "grey")` .font70[Authors show that multipartite synergies between AM fungi and soil microbial communities substantially enhance plant and fungal N acquisition from organic matter and microbial acquisition of plant photosynthates]
+]
+]
+]
+
+.pull-right[
+.m0p[
+```{r echo=FALSE, out.width="400px"}
+knitr::include_graphics("images/nutr1.png")
+```
+.right[.font50[`r Cite(bib, key = "Jacott_2017")`]]
+
+]]
+
+???
+
+- Azoto
+
+---
+
+## Experimental design
+
+.pull-left[
+.h25up[
+.m0tbp[
+
+- `r fontawesome::fa("flask", fill = "greey")` .font70[The experimental design allowed to assess the individual and combined contributions of AM fungi and the rest of the soil microbial community to plant N acquisition from organic matter]
+
+- .font70[The 6 mesocosm treatments included]
+
+
+.tt[
+|Plot|Fungi|soil inocula| soil inocula fertilization |
+|---|:---:|:---:|:---:|
+|control|`r fontawesome::fa("minus-circle", fill = "red")` | `r fontawesome::fa("minus-circle", fill = "red")`| none |
+|microbes (N0)| `r fontawesome::fa("minus-circle", fill = "red")`| `r fontawesome::fa("plus-circle", fill = "green")`| 0 kg N ha−1 per year|
+|AM fungi| `r fontawesome::fa("plus-circle", fill = "green")`| `r fontawesome::fa("minus-circle", fill = "red")`| none |
+|AM fungi + microbes (N196)| `r fontawesome::fa("plus-circle", fill = "green")`| `r fontawesome::fa("plus-circle", fill = "green")`| 196 kg N ha−1 per year|
+|AM fungi + microbes (N28)| `r fontawesome::fa("plus-circle", fill = "green")`| `r fontawesome::fa("plus-circle", fill = "green")`| 28 kg N ha−1 per year|
+|AM fungi + microbes (N0)| `r fontawesome::fa("plus-circle", fill = "green")`| `r fontawesome::fa("plus-circle", fill = "green")`| 0 kg N ha_1 per year|
+
+
+]
+]
+]
+]
+
+
+.pull-right[
+.m0p[
+
+.center[.font80[Mesocosm design]]
+
+```{r echo=FALSE, out.width="200px"}
+knitr::include_graphics("images/nutr2.png")
+```
+
+.h20[
+.m0tbp[
+- Terrestrial ecosystems experience substantial N enrichment due to atmospheric deposition and fertilizer applications
+
+- Long-term N enrichment of grassland soils results in substantial changes in microbial community structure and functional gene representation
+
+- The particular mechanisms through which long-term N enrichment influences plant-biotic interactions and plant productivity are not fully understood
+]
+
+]]]
+
+
+???
+Un mesocosmo ( meso o 'media' e -cosm 'mondo' ) è un qualsiasi sistema sperimentale all'aperto che esamina l'ambiente naturale in condizioni controllate. In questo modo gli studi mesocosmo forniscono un legame tra indagini sul campo e gli esperimenti di laboratorio altamente controllate.
+
+---
+
+## Plant N acquisition from organic matter
+
+.pull-left[
+.h25up[
+.m0tbp[
+
+- `r fontawesome::fa("sync", fill = "grey")` .font70[Synergies emerging from these interactions far exceeded an additive effect on plant N acquisition]
+
+- .font70[Plants grown with either soil microbes or AM fungi acquired twofold and threefold more N from the organic matter than control plants, respectively]
+
+- .font70[Plants grown with both soil microbes and AM fungi acquired ten to twelvefold more N from the organic matter than control plants]
+
+- `r fontawesome::fa("exclamation-circle", fill = "green")` .font70[This ten to twelvefold increase in plant N acquisition is more than double the expected increase in plant N acquisition based on the sum of N taken up by plants grown with free-living soil microbes or AM fungi alone]
+]
+]
+]
+
+
+
+.pull-right[
+.m0p[
+<br>
+```{r echo=FALSE, out.width="450px"}
+knitr::include_graphics("images/nutr3.png")
+```
+
+]]
 

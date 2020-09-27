@@ -304,6 +304,9 @@ a, a > code {
   .m10bp p {
       margin-bottom: 10px;
   }
+  .m0tbp p {
+      margin: 0px;
+  }
   .pull-right {
     float: right;
     width: 50%;

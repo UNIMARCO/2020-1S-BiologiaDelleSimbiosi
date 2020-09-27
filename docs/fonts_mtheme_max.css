@@ -24,6 +24,10 @@ ul, ol {
   font-size: 32px;
 }
 
+.tt table td{
+    font-size: 14px;
+}
+
 .h21 p {
   line-height: 23px;
   font-size: 65%;
@@ -37,6 +41,16 @@ ul, ol {
 .h25u ul li {
   line-height: 25px;
   font-size: 60%;
+}
+
+.h20 ul li {
+  line-height: 5px;
+  font-size: 15px;
+}
+
+.h20 ul li p {
+  line-height: 25px;
+  font-size: 15px;
 }
 
 .h25o ol li p {

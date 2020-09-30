@@ -301,7 +301,11 @@ a, a > code {
   .m0p p {
       margin-top: 0;
   }
+  .m0ul ul {
+      margin: 0;
+  }
   .m10bp p {
+      margin-top: 0px;
       margin-bottom: 10px;
   }
   .m0tbp p {

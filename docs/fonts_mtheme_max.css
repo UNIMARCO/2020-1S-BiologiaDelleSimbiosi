@@ -43,14 +43,35 @@ ul, ol {
   font-size: 60%;
 }
 
+.h27 ul li {
+  line-height: 28px;
+  font-size: 27px;
+}
+
 .h20 ul li {
-  line-height: 5px;
+  line-height: 25px;
   font-size: 15px;
 }
 
 .h20 ul li p {
   line-height: 25px;
   font-size: 15px;
+}
+
+.h202 ul li {
+  line-height: 25px;
+  font-size: 20px;
+}
+
+.h202 ul li p {
+  line-height: 25px;
+  font-size: 20px;
+}
+
+
+.h203 ul li p {
+  line-height: 20px;
+  font-size: 18px;
 }
 
 .h25o ol li p {
@@ -66,6 +87,10 @@ ul, ol {
 .h26 li ul li {
   line-height: 30px;
   font-size: 80%;
+}
+.h26v2 li ul li p {
+  line-height: 10px;
+  margin: 2px;
 }
 .h26 p {
   line-height: 30px;
@@ -205,6 +230,10 @@ ul, ol {
 
 .font50 {
   font-size: 50%;
+}
+
+.font20px p {
+  font-size: 20px;
 }
 
 .font60 {

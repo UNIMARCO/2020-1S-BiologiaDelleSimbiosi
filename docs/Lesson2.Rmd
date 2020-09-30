@@ -291,6 +291,13 @@ The plant-associated microbiome can provide benefits to the plant through variou
 ]
 
 ---
+class: clear, middle, center
+
+# .black[Nutrient acquisition]
+
+----
+
+---
 layout: true
 
 # Nutrient acquisition
@@ -364,7 +371,7 @@ knitr::include_graphics("images/nutr1.png")
 .h25up[
 .m0tbp[
 
-- `r fontawesome::fa("flask", fill = "greey")` .font70[The experimental design allowed to assess the individual and combined contributions of AM fungi and the rest of the soil microbial community to plant N acquisition from organic matter]
+- `r fontawesome::fa("flask", fill = "grey")` .font70[The experimental design allowed to assess the individual and combined contributions of AM fungi and the rest of the soil microbial community to plant N acquisition from organic matter]
 
 - .font70[The 6 mesocosm treatments included]
 
@@ -440,3 +447,493 @@ knitr::include_graphics("images/nutr3.png")
 
 ]]
 
+---
+
+<br>
+```{r echo=FALSE, out.width="1030px"}
+knitr::include_graphics("images/nutr4.png")
+```
+---
+
+## Introduction
+
+.pull-left[
+.h25up[
+.m0tbp[
+
+- .font70[Climate change has altered plant phenology]
+
+- .font70[Recent studies also suggest that root microbiota can contribute to phenotypic plasticity, which has important implications for our understanding of plant phenology in a changing climate]
+
+- .font70[Flowering can be triggered by low nitrate levels]
+  
+- .font70[Auxins can be synthesized by rhizosphere microorganisms, raising the intriguing possibility that root microbiota may regulate plant growth and development through phytohormone production]
+
+- `r fontawesome::fa("bullseye", fill = "grey")` .font70[Authors identified a novel network of molecular interactions linking the nitrogen cycle, the phytohormone IAA produced from Tryptophan (Trp), and the timing of flowering]
+]
+]
+]
+
+
+.pull-right[
+.m0p[
+```{r echo=FALSE, out.width="400px"}
+knitr::include_graphics("images/nutr5.png")
+```
+
+]]
+
+
+
+???
+
+.n30[
+
+- This has crucial biological, physical, and chemical effects on the biosphere and the earth system
+]
+
+---
+
+## Experimenta design
+
+```{r echo=FALSE, out.width="800px"}
+knitr::include_graphics("images/nutr6.png")
+```
+
+.pull-left[
+.h20[
+.m0ul[
+
+- Plants growing in soil for three generations (G1, G2, or G3) inoculated with different soil microbiomes
+
+- The *pgr5* mutant is deficient in antimycin A-sensitive cyclic flow from ferredoxin to plastoquinone, which is one of the most crucial physiological processes for efficient photosynthesis
+
+]
+]
+]
+
+.pull-right[
+.h20[
+
+- The pgr5 mutant produces different exudates from the Wt *Arabidopsis*
+
+]]
+
+---
+
+## The richness and diversity of the rhizosphere 
+
+.pull-left[
+.h26[
+.m0ul[
+
+- .font80[Species richness and diversity significantly decreased after the two and three generations ]
+
+- .font80[The relative abundances of Proteobacteria and Acidobacteria, the dominant bacterial phyla in the rhizosphere, decreased by generations 2 and 3 relative to generation 1]
+
+- .font80[In contrast, Bacteroidetes and cyanobacterial abundances increased by generation 3]
+
+]
+]
+]
+
+
+.pull-right[
+.m0p[
+```{r echo=FALSE, out.width="400px"}
+knitr::include_graphics("images/nutr7.png")
+```
+```{r echo=FALSE, out.width="400px"}
+knitr::include_graphics("images/nutr8.png")
+```
+
+]]
+
+
+???
+
+.n30[
+
+- abundance-based coverage (ACE)
+]
+
+---
+
+## Flowering time is directly associated with the rhizosphere microbiota
+
+.pull-left[
+.h20[
+.h26v2[
+.m10bp[
+- .font120[`r fontawesome::fa("seedling", fill = "green")` Microbiota from the third-generation pgr5 (PM) or Wt cultures (WM) was used to inoculate cultures of three *Arabidopsis* lines ]
+  
+  - Wt  
+
+  - *pgr5*
+
+  - *pns84*: deficient in cyclic electron flow from NADPH to plastoquinone
+
+
+- .font120[`r fontawesome::fa("atom", fill = "pink")` The addition of Wt microbiota delayed flowering by 3.3, 5.5, and 5.7 days in Wt, the pnsB4 mutant, and the pgr5 mutant, respectively  ]
+
+- .font120[The shoot fresh weight of the plants treated with Wt microbiota also increased significantly in the three lines compared to the treatments with the addition of pgr5 microbiota]
+
+- .font120[`r fontawesome::fa("exclamation-circle", fill = "green")` These results clearly indicate that flowering time and shoot fresh weight are affected by the rhizosphere microbiota]
+
+- .font120[`r fontawesome::fa("fire-alt", fill = "red")` This effect disappeared when the soil slurry was sterilized before inoculation, indicating that heat-stable exudates alone were not modulating *Arabidopsis* flowering time]
+
+]]
+]
+]
+
+.pull-right[
+.m0p[
+<br>
+```{r echo=FALSE, out.width="600px"}
+knitr::include_graphics("images/nutr9.png")
+```
+
+]]
+
+---
+
+## Linking N availability to flowering time
+
+.pull-left[
+.h202[
+.m10bp[
+
+- The enriched microbes in the WM treatment mostly have key roles in rhizosphere N regeneration
+
+- Flowering can be triggered by low nitrate levels
+
+- The authors tested whether WM treatment affects the abundance of genes involved in N cycling in soil
+
+- The *nif* genes are genes encoding enzymes involved in the fixation of atmospheric nitrogen into a form of nitrogen available to living organisms
+
+- The *amo*A gene is a gene involved in nitrification
+
+- *nir*K and *nos*Z genes are involved in denitrification (spep2 and step4 of the nitrate reduction pathway)
+
+]
+]
+]
+
+
+.pull-right[
+.m0p[
+```{r echo=FALSE, out.width="550px"}
+knitr::include_graphics("images/nutr10.png")
+```
+
+]]
+
+???
+
+.n30[
+- La fissazione dell'azoto atmosferico o azotofissazione consiste nella riduzione, tramite la nitrogenasi, dell'azoto molecolare (N2) in azoto ammonico (NH3)
+
+- La nitrificazione e' la trasformazione dell'ammoniaca (NH3) e ioni ammonio (NH4+) in ioni nitrito (NO2-) e successivamente ioni nitrato (NO3-).
+
+- La denitrificazione e'  un processo nell'ambito del ciclo dell'azoto nel terreno, che comporta la riduzione dell'azoto nitrico con formazione di gas che si liberano nell'atmosfera
+]
+
+---
+class: clear, middle, center
+
+# .black[Stress control]
+
+----
+
+---
+layout: true
+
+# Stress control
+
+---
+
+.pull-left[
+
+**Plant-associated microorganisms could modify plant evolutionary responses to environmental stress** in at least three non-mutually-exclusive pathways
+
+.h202[
+.m0ul[
+
+- by altering the fitness of individual plant genotypes
+
+- by altering the expression of plant traits related to fitness 
+  
+- by altering the strength or direction of natural selection occurring within populations that experience environmental stress
+
+]
+]
+]
+
+.pull-right[
+.m0p[
+<br>
+```{r echo=FALSE, out.width="500px"}
+knitr::include_graphics("images/stress1.png")
+```
+.right[.font50[`r Cite(bib, key = "balestrini2017")`]]
+
+]]
+
+---
+
+.pull-left[
+
+**Responses to drought**
+
+.h203[
+.m0tbp[
+
+- `r fontawesome::fa("flask", fill = "grey")` Experiment examines plant adaptation to drought stress in a multigeneration experiment that manipulated aboveground-belowground feedbacks between plants and soil microbial communitie
+
+- Plant fitness in both drought and nondrought environments was linked strongly to the rapid responses of soil microbial community structure to moisture manipulations
+
+- `r fontawesome::fa("arrow-circle-right", fill = "green")` Plants were most fit when their contemporary environmental conditions (wet vs. dry soil) matched the historical environmental conditions (wet vs. dry soil) of their associated microbial community
+
+- Plants may not be limited to "adapt or migrate" strategies
+  
+- `r fontawesome::fa("exclamation-circle", fill = "green")` Plants may benefit from association with interacting species, especially diverse soil microbial communities, that respond rapidly to environmental change
+]
+]
+]
+
+
+.pull-right[
+.m0p[
+```{r echo=FALSE, out.width="400px"}
+knitr::include_graphics("images/stress2.png")
+```
+.right[.font50[`r Cite(bib, key = "Lau_2012")`]]
+
+]]
+
+---
+
+.pull-left[
+
+**Responses to drought**
+
+.h203[
+.m0tbp[
+
+- **How belowground microbial communities do affect plant fitness responses to drought stress?**
+
+- `r fontawesome::fa("exclamation-circle", fill = "green")` Shifts in microbial community composition and bacterial diversity could be linked to changes in biogeochemical processes that influence the availability of resources, such as nitrogen (N), that commonly limit plant growth and fitness.
+
+- `r fontawesome::fa("exclamation-circle", fill = "green")` Given that drought stress altered the composition of both bacterial and fungal communities, drought stress may have changed the relative abundances of mutualists and pathogens and also may have affected the fitness benefits of associating with mutualists and susceptibility to pathogens
+]
+]
+]
+
+
+.pull-right[
+.m0p[
+```{r echo=FALSE, out.width="400px"}
+knitr::include_graphics("images/stress2.png")
+```
+.right[.font50[`r Cite(bib, key = "Lau_2012")`]]
+
+]]
+
+
+
+---
+
+
+.pull-left[
+
+**Responses to salinity**
+
+.h203[
+.m0tbp[
+
+- `r fontawesome::fa("bullseye", fill = "red")` Experiments aim to assess whether soil salinity changes the microbial community in the rhizosphere of *Hibiscus hamabo*, and whether these changes in the microbiome feedback on the growth of the plant
+
+- `r fontawesome::fa("flask", fill = "grey")` *H. hamabo* was grown in pots with a sand-soil mixture at different salt concentrations (0, 15, 40 and 90 mM NaCl). **Authors tested the effects of the salinity on the plants**
+  
+- `r fontawesome::fa("exclamation-circle", fill = "green")` The salinity treatment  significantly affected the total biomass of *H. hamabo*. While root weight ratio was slightly affected
+
+  
+]
+]
+]
+
+
+.pull-right[
+.m0p[
+```{r echo=FALSE, out.width="330px"}
+knitr::include_graphics("images/stress3.png")
+```
+.right[.font20px[`r Cite(bib, key = "Yuan2019aa")`]]
+]
+]
+
+---
+
+
+.pull-left[
+
+**Responses to salinity**
+
+.h203[
+.m0tbp[
+
+- `r fontawesome::fa("bullseye", fill = "red")` Experiments aim to assess whether soil salinity changes the microbial community in the rhizosphere of *Hibiscus hamabo*, and whether these changes in the microbiome feedback on the growth of the plant
+
+- `r fontawesome::fa("flask", fill = "grey")` *H. hamabo* was grown in pots with a sand-soil mixture at different salt concentrations (0, 15, 40 and 90 mM NaCl).  **Authors tested the effects of the salinity on the microbiotas**
+  
+- `r fontawesome::fa("exclamation-circle", fill = "green")` There was a slight trend that **bacterial** (a-b) OTU richness and the Shannon indice decreased with increasing salinity (these effects were not significant) 
+
+- `r fontawesome::fa("exclamation-circle", fill = "green")` The overall effects of the salinity treatments on **fungal** (d-e) OTU richness and the Shannon indice were not significant, but Least Significant Difference revealed significant differences between the 0 mM and 90 mM NaCl treatments
+
+]
+]
+]
+
+
+.pull-right[
+```{r echo=FALSE, out.width="530px"}
+knitr::include_graphics("images/stress4.png")
+```
+.right[.font20px[`r Cite(bib, key = "Yuan2019aa")`]]
+]
+
+---
+
+.pull-left[
+
+**Responses to salinity**
+
+.h203[
+.m0tbp[
+
+- `r fontawesome::fa("bullseye", fill = "red")` Experiments aim to assess whether soil salinity changes the microbial community in the rhizosphere of *Hibiscus hamabo*, and whether these changes in the microbiome feedback on the growth of the plant
+
+- `r fontawesome::fa("flask", fill = "grey")` *H. hamabo* was grown in pots with root-inoculum addition from previously treated soils (i.e. control with sterilized root inoculum vs the treatments with root inoculum)
+  
+- `r fontawesome::fa("exclamation-circle", fill = "green")` The addition of a live inoculum significantly increased **germination rate**
+
+- `r fontawesome::fa("exclamation-circle", fill = "green")` The addition of a live inoculum significantly **increased biomass**, effect was stronger at salinities of 0 and 40 mM than at a salinity of 90 mM
+]
+]
+]
+
+
+.pull-right[
+```{r echo=FALSE, out.width="330px"}
+knitr::include_graphics("images/stress5.png")
+```
+.right[.font20px[`r Cite(bib, key = "Yuan2019aa")`]]
+]
+
+---
+class: clear, middle, center
+
+# .black[Disease resistance]
+
+----
+
+---
+layout: true
+
+# Disease resistance
+
+---
+
+.pull-left[
+.h27[
+<br>
+- `r fontawesome::fa("project-diagram", fill = "#99C6E8")` **Sistemic Acquired Resistance** (SAR) corresponds to a plant "vaccination" against a broad range of pathogens. Induced by local contact with MAMPs, PAMPs or effectors. SAR is mainly mediated and dependent on Salicylic Acid
+
+
+- `r fontawesome::fa("undo-alt", fill = "#F2AD85")` **Induced Systemic Resistance** (ISR) is initiated in roots by plant-growth- promoting microbes (PGPM) and leads to resistance priming in distant parts of the plant ISR is mainly mediated and dependent by Jasmonic Acid (JA) and Ethylene (ET).
+
+]
+]
+
+.pull-right[
+<br>
+```{r echo=FALSE, out.width="400px"}
+knitr::include_graphics("images/disease1.png")
+```
+.right[.font50[`r Cite(bib, key = "BURKETOVA2015994")`]]
+
+]
+
+???
+
+.n30[
+
+- Microbe-Associated Molecular Patterns (MAMPs)
+
+- Pathogen-Associated Molecular Patterns (PAMPs)
+  
+- Their presence is detected by members of a large family of pattern recognition receptors (PRRs)
+
+- Damage-Associated Molecular Patterns (DAMPs)
+
+- Plant Growth-Promoting Rhizobacteria (PGPR) and Fungi (PGPF)
+
+]
+
+---
+
+
+
+.pull-left[
+
+**Disease resistence**
+
+.h202[
+.m0tp[
+
+- `r fontawesome::fa("bullseye", fill = "red")` Disease-suppressive soils are exceptional ecosystems in which crop plants suffer less from specific soil-borne pathogens than expected owing to the activities of other soil microorganisms
+
+- `r fontawesome::fa("flask", fill = "grey")`  
+
+- `r fontawesome::fa("exclamation-circle", fill = "green")` 
+
+  
+]
+]
+]
+
+
+.pull-right[
+.m0p[
+```{r echo=FALSE, out.width="530px"}
+knitr::include_graphics("images/disease2.png")
+```
+.right[.font20px[`r Cite(bib, key = "Mendes_2011")`]]
+
+.h20[
+.m0tbp[
+- suppressive soil (S)
+  
+- conducive soil (C)
+  
+- conducive soil amended with 10% (w/w) of suppressive soil (CS)
+
+- suppressive soil heat-treated at 50C (S50)
+
+- suppressive soil heat-treated at 80C (S80)
+]
+]
+]
+]
+
+
+---
+
+## Collegamento tra funzione e selezione
+
+ Box 3 | Trait-based framework to understand plant–microbiome interactions
+ it is intuitive and generally accepted that the functional traits conferred by microbiomes are more informative than taxonomic information, as we are more interested in
+ ‘what they are doing (or can do)’ than in ‘who is there’. However, to date, most plant microbiome studies in the field have focused on community structure rather than function. there are strong indications that plants select for traits rather than taxonomy, as many functions provided by the microbiome are a part of the ‘accessory genome’
+ and are discontinuously distributed across taxonomies.
+
+ ---

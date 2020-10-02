@@ -850,45 +850,20 @@ layout: true
 
 ---
 
-.pull-left[
-.h27[
-<br>
-- `r fontawesome::fa("project-diagram", fill = "#99C6E8")` **Sistemic Acquired Resistance** (SAR) corresponds to a plant "vaccination" against a broad range of pathogens. Induced by local contact with MAMPs, PAMPs or effectors. SAR is mainly mediated and dependent on Salicylic Acid
 
+- **Disease-suppressive soils** are exceptional ecosystems in which crop plants suffer less from specific soil-borne pathogens than expected owing to the activities of other soil microorganisms
 
-- `r fontawesome::fa("undo-alt", fill = "#F2AD85")` **Induced Systemic Resistance** (ISR) is initiated in roots by plant-growth- promoting microbes (PGPM) and leads to resistance priming in distant parts of the plant ISR is mainly mediated and dependent by Jasmonic Acid (JA) and Ethylene (ET).
-
-]
-]
-
-.pull-right[
-<br>
-```{r echo=FALSE, out.width="400px"}
-knitr::include_graphics("images/disease1.png")
-```
-.right[.font50[`r Cite(bib, key = "BURKETOVA2015994")`]]
-
-]
-
-???
-
-.n30[
-
-- Microbe-Associated Molecular Patterns (MAMPs)
-
-- Pathogen-Associated Molecular Patterns (PAMPs)
   
-- Their presence is detected by members of a large family of pattern recognition receptors (PRRs)
 
-- Damage-Associated Molecular Patterns (DAMPs)
 
-- Plant Growth-Promoting Rhizobacteria (PGPR) and Fungi (PGPF)
+```{r echo=FALSE, out.width="650px"}
+knitr::include_graphics("images/disease4.png")
+```
+.right[.font20px[`r Cite(bib, key = "BERENDSEN2012478")`]]
 
-]
+
 
 ---
-
-
 
 .pull-left[
 
@@ -970,6 +945,145 @@ knitr::include_graphics("images/disease3.png")
 .n30[
 
 - Paragone con ricetta di cucina in cui si ha la lista degli ingredienti MA soprattutto e' importante la quantita'
+]
+
+---
+
+<br><br><br>
+.center[.font150[How soil-born microbes control the plant disease?]]
+
+----
+
+---
+
+.pull-left[
+.h25[
+.m0ul[
+<br>
+- (a) **Antibiosis**: The bacterium colonizes the growing root system and delivers antibiotic molecules around the root, thereby harming pathogens that approach the root
+
+- (b) **Induced systemic resistance** (ISR): many bacterial products induce systemic signaling, which can result in protection of the whole plant against diseases caused by different organisms
+  
+- (c) **Competition for nutrients and niches**: Biocontrol bacteria acting through this mechanism excel in fast chemotactic movement along the growing root in their efficient hunt for root exudate components, thereby outcompeting the pathogen in scavenging nutrients and in occupying niches on the root
+
+]
+]
+]
+
+.pull-right[
+<br>
+```{r echo=FALSE, out.width="400px"}
+knitr::include_graphics("images/disease5.png")
+```
+.right[.font50[`r Cite(bib, key = "Lugtenberg_2009")`]]
+
+]
+
+---
+
+.pull-left[
+
+**Antibiosis**
+
+.h202[
+.m0ul[
+
+- *Dematophora necatrix* is the cause of avocado Dematophora root rot (also called white root rot)
+
+- `r fontawesome::fa("flask", fill = "grey")` A set of eight bacterial strains was selected on the basis of growth inhibitory activity against *D. necatrix*. Upon testing the biocontrol ability of these strains in a newly developed avocado test system and in a tomato test system, it became apparent that PCL1606 exhibited the highest biocontrol ability
+
+- This compound was purified and subsequently identified as 2-hexyl 5-propyl resorcinol (HPR).
+
+]
+]
+]
+
+.pull-right[
+```{r echo=FALSE, out.width="300px"}
+knitr::include_graphics("images/disease6.png")
+```
+```{r echo=FALSE, out.width="300px"}
+knitr::include_graphics("images/disease7.png")
+```
+.right[.font50[`r Cite(bib, key = "Cazorla_2006")`]]
+
+]
+
+---
+
+.pull-left[
+
+**Antibiosis**
+
+.h202[
+.m0ul[
+
+- *Dematophora necatrix* is the cause of avocado Dematophora root rot (also called white root rot)
+
+- `r fontawesome::fa("flask", fill = "grey")` A set of eight bacterial strains was selected on the basis of growth inhibitory activity against *D. necatrix*. Upon testing the biocontrol ability of these strains in a newly developed avocado test system and in a tomato test system, it became apparent that PCL1606 exhibited the highest biocontrol ability
+
+- This compound was purified and subsequently identified as 2-hexyl 5-propyl resorcinol (HPR).
+
+- `r fontawesome::fa("flask", fill = "grey")` To study the role of HPR in biocontrol activity, two mutants of PCL1606 impaired in antagonistic activity were selected
+
+- `r fontawesome::fa("plus-circle", fill = "green")` These mutants were shown to impair HRP production and showed a decrease in biocontrol activity
+
+]
+]
+]
+
+.pull-right[
+```{r echo=FALSE, out.width="350px"}
+knitr::include_graphics("images/disease8.png")
+```
+.right[.font50[`r Cite(bib, key = "Cazorla_2006")`]]
+
+]
+
+???
+
+.n30[
+
+- Biocontrol strains Pseudomonas fluorescens WCS365 and P. chlororaphis PCL1391 were tested as controls
+
+]
+
+---
+
+.pull-left[
+.h27[
+<br>
+- `r fontawesome::fa("project-diagram", fill = "#99C6E8")` **Sistemic Acquired Resistance** (SAR) corresponds to a plant "vaccination" against a broad range of pathogens. Induced by local contact with MAMPs, PAMPs or effectors. SAR is mainly mediated and dependent on Salicylic Acid
+
+
+- `r fontawesome::fa("undo-alt", fill = "#F2AD85")` **Induced Systemic Resistance** (ISR) is initiated in roots by plant-growth- promoting microbes (PGPM) and leads to resistance priming in distant parts of the plant ISR is mainly mediated and dependent by Jasmonic Acid (JA) and Ethylene (ET).
+
+]
+]
+
+.pull-right[
+<br>
+```{r echo=FALSE, out.width="400px"}
+knitr::include_graphics("images/disease1.png")
+```
+.right[.font50[`r Cite(bib, key = "BURKETOVA2015994")`]]
+
+]
+
+???
+
+.n30[
+
+- Microbe-Associated Molecular Patterns (MAMPs)
+
+- Pathogen-Associated Molecular Patterns (PAMPs)
+  
+- Their presence is detected by members of a large family of pattern recognition receptors (PRRs)
+
+- Damage-Associated Molecular Patterns (DAMPs)
+
+- Plant Growth-Promoting Rhizobacteria (PGPR) and Fungi (PGPF)
+
 ]
 
 ---

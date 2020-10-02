@@ -52,6 +52,12 @@ BibOptions(check.entries = FALSE,
 bib <- ReadBib("biblio/bib.bib", check = FALSE)
 ```
 
+```{r xaringanExtra, echo=FALSE}
+xaringanExtra::use_xaringan_extra(c("tile_view", "tachyons"))
+xaringanExtra::use_share_again()
+xaringanExtra::use_animate_css()
+```
+
 class: title-slide
 
 
@@ -61,7 +67,7 @@ class: title-slide
 
 <br><br><br><br>
 .marco[
-Marco Chiapello
+.tada[Marco Chiapello]
 <br>
 `r Sys.Date()`
 ]
@@ -891,11 +897,11 @@ knitr::include_graphics("images/disease1.png")
 .h202[
 .m0tp[
 
-- `r fontawesome::fa("bullseye", fill = "red")` Disease-suppressive soils are exceptional ecosystems in which crop plants suffer less from specific soil-borne pathogens than expected owing to the activities of other soil microorganisms
+- Disease-suppressive soils are exceptional ecosystems in which crop plants suffer less from specific soil-borne pathogens than expected owing to the activities of other soil microorganisms. For most disease-suppressive soils, the microbes and mechanisms involved in pathogen control are unknown
 
-- `r fontawesome::fa("flask", fill = "grey")`  
+- `r fontawesome::fa("bullseye", fill = "red")` The aim of the study was to decipher the rhizosphere microbiome to identify such disease-suppressive microbes and to unravel the mechanisms by which they protect plants against root diseases.
 
-- `r fontawesome::fa("exclamation-circle", fill = "green")` 
+- `r fontawesome::fa("flask", fill = "grey")` The investigated soil is suppressive to *Rhizoctonia solani*, an economically important fungal pathogen of many crops 
 
   
 ]
@@ -926,6 +932,45 @@ knitr::include_graphics("images/disease2.png")
 ]
 ]
 
+
+---
+
+.pull-left[
+
+**Disease resistence**
+
+.h202[
+.m0tp[
+
+- A total of 33,346 bacterial and archaeal OTUs were detected in the rhizosphere microbiome 
+
+- `r fontawesome::fa("minus-circle", fill = "red")` When comparing the six soil treatments with different levels of disease suppressiveness, no significant differences were found in the number of detected bacterial taxa
+
+- `r fontawesome::fa("plus-circle", fill = "green")` When the abundance of the detected taxa was taken into account, six clusters of samples that corresponded to the six soil treatments were found
+
+.content-box-grey[
+.m0tbp[.font20px[These results suggest that <br>**the relative abundance of several bacterial taxa**<br> is a **more important** indicator of disease suppression<br> than the exclusive **presence of specific bacterial taxa**
+]]]
+  
+]
+]
+]
+
+
+.pull-right[
+```{r echo=FALSE, out.width="340px"}
+knitr::include_graphics("images/disease3.png")
+```
+.right[.font20px[`r Cite(bib, key = "Mendes_2011")`]]
+
+]
+
+???
+
+.n30[
+
+- Paragone con ricetta di cucina in cui si ha la lista degli ingredienti MA soprattutto e' importante la quantita'
+]
 
 ---
 

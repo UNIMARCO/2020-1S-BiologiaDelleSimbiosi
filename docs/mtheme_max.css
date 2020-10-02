@@ -311,6 +311,9 @@ a, a > code {
   .m0tbp p {
       margin: 0px;
   }
+  .m2tbp p {
+      margin: 2px;
+  }
   .pull-right {
     float: right;
     width: 50%;

@@ -18,7 +18,7 @@ output:
 ---
 
 ```{r setup, include=FALSE, cache=FALSE}
-# TO render: rmarkdown::render('Lesson1.Rmd', 'xaringan::moon_reader')
+# TO render: rmarkdown::render('Lesson2.Rmd', 'xaringan::moon_reader')
 
 # set working directory to docs folder
 setwd(here::here("docs"))
@@ -872,27 +872,15 @@ knitr::include_graphics("images/disease4.png")
 .h202[
 .m0tp[
 
-- Disease-suppressive soils are exceptional ecosystems in which crop plants suffer less from specific soil-borne pathogens than expected owing to the activities of other soil microorganisms. For most disease-suppressive soils, the microbes and mechanisms involved in pathogen control are unknown
-
 - `r fontawesome::fa("bullseye", fill = "red")` The aim of the study was to decipher the rhizosphere microbiome to identify such disease-suppressive microbes and to unravel the mechanisms by which they protect plants against root diseases.
 
 - `r fontawesome::fa("flask", fill = "grey")` The investigated soil is suppressive to *Rhizoctonia solani*, an economically important fungal pathogen of many crops 
-
-  
 ]
 ]
-]
-
-
-.pull-right[
-.m0p[
-```{r echo=FALSE, out.width="530px"}
-knitr::include_graphics("images/disease2.png")
-```
-.right[.font20px[`r Cite(bib, key = "Mendes_2011")`]]
 
 .h20[
 .m0tbp[
+
 - suppressive soil (S)
   
 - conducive soil (C)
@@ -902,8 +890,20 @@ knitr::include_graphics("images/disease2.png")
 - suppressive soil heat-treated at 50C (S50)
 
 - suppressive soil heat-treated at 80C (S80)
+  
 ]
 ]
+]
+
+
+.pull-right[
+<br>
+.m0p[
+```{r echo=FALSE, out.width="530px"}
+knitr::include_graphics("images/disease2.png")
+```
+.right[.font20px[`r Cite(bib, key = "Mendes_2011")`]]
+
 ]
 ]
 
@@ -999,11 +999,9 @@ knitr::include_graphics("images/disease5.png")
 ]
 
 .pull-right[
-```{r echo=FALSE, out.width="300px"}
+<br>
+```{r echo=FALSE, out.width="500px"}
 knitr::include_graphics("images/disease6.png")
-```
-```{r echo=FALSE, out.width="300px"}
-knitr::include_graphics("images/disease7.png")
 ```
 .right[.font50[`r Cite(bib, key = "Cazorla_2006")`]]
 
@@ -1051,8 +1049,10 @@ knitr::include_graphics("images/disease8.png")
 ---
 
 .pull-left[
+
+**Induced systemic resistance**
+
 .h27[
-<br>
 - `r fontawesome::fa("project-diagram", fill = "#99C6E8")` **Sistemic Acquired Resistance** (SAR) corresponds to a plant "vaccination" against a broad range of pathogens. Induced by local contact with MAMPs, PAMPs or effectors. SAR is mainly mediated and dependent on Salicylic Acid
 
 
@@ -1084,7 +1084,138 @@ knitr::include_graphics("images/disease1.png")
 
 - Plant Growth-Promoting Rhizobacteria (PGPR) and Fungi (PGPF)
 
+- Many individual bacterial components induce ISR, such as LPS, flagella, salicylic acid, and siderophores
+G
 ]
+
+---
+
+.pull-left[
+
+**Induced systemic resistance**
+
+.h202[
+- `r fontawesome::fa("bullseye", fill = "red")` Determine whether root colonisation by *Trichoderma asperellum* isolate T34 (T34) can enhance resistance in *Arabidopsis* against foliar pathogens
+
+
+- `r fontawesome::fa("flask", fill = "grey")` The severity of bacterial speck disease inflicted by *Pseudomonas syringae*  was quantified for control, T34-treated plants and *Pseudomonas fluorescens* WCS417r bacteria (non-pathogenic)
+
+]
+]
+
+.pull-right[
+<br>
+```{r echo=FALSE, out.width="350px"}
+knitr::include_graphics("images/disease9.png")
+```
+.right[.font20px[`r Cite(bib, key = "Segarra_2009")`]]
+
+]
+
+
+---
+
+.pull-left[
+
+**Induced systemic resistance**
+
+.h202[
+- WCS417r is known to be effective against a broad range of pathogens, including obligate biotrophs and necrotrophic fungi 
+
+- `r fontawesome::fa("bullseye", fill = "red")` To investigate whether T34-ISR is similarly effective against these types of pathogens 
+
+- `r fontawesome::fa("flask", fill = "grey")` The level of T34-induced protection against the biotrophic oomycete *Hyaloperonospora parasitica* and the necrotrophic fungus *Plectosphaerella cucumerina* was assessed.
+
+.content-box-grey[
+.font20px[These results demonstrate that colonisation 
+<br>of *Arabidopsis* roots by T34
+<br>**triggers a systemic resistance response**
+<br>that is effective against different types of foliar pathogens]
+]
+]
+]
+
+.pull-right[
+<br>
+```{r echo=FALSE, out.width="350px"}
+knitr::include_graphics("images/disease10.png")
+```
+.pull-left[
+.h12[
+.m0tbp[
+.m0tbul[
+- *Class I*: no sporulation
+
+- *Class II*: trailing necrosis
+
+- *Class III*: <50% of the leaf area covered with sporangia
+
+- *Class IV*: >50% of the leaf area covered with sporangia, with additional chlorosis and leaf collapse
+]
+]
+]
+]
+
+.pull-right[
+.h12[
+.m0tbp[
+.m0tbul[
+- *Class I*: no symptom
+
+- *Class II*: lesion diameter <2 mm
+
+- *Class III*: lesion diameter >2 mm
+
+]
+]
+]
+]
+.whole[
+.right[.font20px[`r Cite(bib, key = "Segarra_2009")`]]
+
+]
+]
+
+
+---
+
+.pull-left[
+
+**Induced systemic resistance**
+
+.h202[
+
+- `r fontawesome::fa("bullseye", fill = "red")` How T34 activates ISR response in *Arabidopsis*?
+
+- `r fontawesome::fa("flask", fill = "grey")` Assessed T34-induced resistance in:
+  - *sid2-1*: salicylic acid impaired mutant (**SAR**)    
+  - *npr1-1*: disrupted both **SAR** and **ISR** response
+  - *myb72-1*: specifically affected in early steps of **ISR** signalling, but not in component required for general ET or JA signalling    
+
+.m0tbp[
+- `r fontawesome::fa("plus-circle", fill = "green")` *sid2-1* developed a similar level of resistance as wildtype indicating that T34-ISR functions independently of SA
+
+- `r fontawesome::fa("plus-circle", fill = "green")` *npr1-1* is blocked in its ability to mount ISR, indicating that the regulatory protein NPR1 is required for expression of this type of Trichoderma-induced resistance
+
+- `r fontawesome::fa("plus-circle", fill = "green")` the root-specific transcription factor MYB72 plays an important role in early signalling steps of ISR and is required for T34-ISR
+]
+]
+]
+
+.pull-right[
+<br>
+```{r echo=FALSE, out.width="400px"}
+knitr::include_graphics("images/disease11.png")
+```
+
+.right[.font20px[`r Cite(bib, key = "Segarra_2009")`]]
+
+]
+
+
+---
+
+.font300[PRIMING]
 
 ---
 

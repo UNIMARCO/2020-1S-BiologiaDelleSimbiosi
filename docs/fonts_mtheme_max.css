@@ -48,6 +48,16 @@ ul, ol {
   font-size: 27px;
 }
 
+.h12 ul li {
+  line-height: 20px;
+  font-size: 12px;
+}
+
+.h12 ul li p {
+  line-height: 20px;
+  font-size: 12px;
+}
+
 .h20 ul li {
   line-height: 25px;
   font-size: 15px;

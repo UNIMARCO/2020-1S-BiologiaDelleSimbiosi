@@ -485,6 +485,82 @@ knitr::include_graphics("images/fungalDiv.png")
 - .n[Un valore grande significa che sono presenti molte specie con un'abbondanza simile. Il range del valore varia da 1 (una specie dominante) fino al numero totale di tutte le species (nel caso che tutte le specie abbiano la stessa abbondanza)]
 
 ---
+
+.pull-left[
+
+**CORE MICROBIOTA**
+
+.h202[
+.m0ul[
+
+- The plant core microbiota consists of members of the microbial community that are **persistent and are ubiquitous in almost all the communities** associated with a particular host
+
+- The core microbiota contains key microbial taxa that carry **genes with functions that are essential** for host fitness
+
+- Many members of the core microbiota of different plant species are **common at the genus level**
+
+- The identification of a co-occurring core of plant-associated microorganisms also provides a useful starting point for studies of how to build **SynComs** to manipulate plant–microbiome interactions for increased **growth and productivity**
+
+]
+]
+]
+
+.pull-right[
+<br>
+```{r echo=FALSE, out.width="400px"}
+knitr::include_graphics("images/core1.png")
+```
+]
+
+???
+    
+.h25[
+    - .n[Il **core microbiota** è composto da alcuni membri del microbiota che sono presenti in tutte, o quasi, le comunità associate ad una determinato ospite]
+    
+    - .n[E i suoi membri esprimono geni le cui funzioni sono di primaria importanza per la salute del loro ospite]
+    
+    - .n[Seppur diverse piante abbiamo microbiota diversi, un certo numero di membri è lo stesso]
+    
+    - .n[L'identificazione di microorganismi che fanno parte di diversi **core microbiota** è di grande importanza per la produzione delle comunità sintetiche, da usare in agricoltura per aumentare la crescita e la produttività delle piante]
+]
+---
+
+.pull-left[
+<br>
+```{r echo=FALSE, out.width="400px"}
+knitr::include_graphics("images/core2.png")
+```
+
+]
+
+
+
+.pull-right[
+**HUB MICROBIOTA**
+.h202[
+- Within the core microbiota, a few members, such as ‘hub microorganisms’, can **influence the community structure** through strong biotic interactions with the host or with other microbial species, rather than simply by their own high abundance
+
+- These hub species may represent **keystone species** that can exert strong direct and indirect effects on microbiome assembly and that **function as mediators** between the plant and its associated microbiome.
+
+- For example, *Albugo laibachii* and *Dioszegia spp.* have been identified as highly interactive hubs in the phyllosphere of *A. thaliana* [Agler, et al. 2016]
+
+]]
+
+???
+
+.h35[
+
+- .n[All'interno del core microbiota, alcuni membri possono influenzare la struttura dell'intera comunità, non per la loro abbondanza, ma per le loro interazione dirette od indirette con la pianta o gli altri microorganismi. Vengono definiti: **hub microorganism**]
+
+- .n[**hub** letteralmente significa: centro, perno, fulcro]
+
+- .n[Esempio di hubs identificati nella fillosfera di arabidopsis. Albugo è un oomicete obligato mentre Dioszegia è un basidiomicete]
+
+
+]
+
+
+---
 layout: true
 
 # Plant Holobiont

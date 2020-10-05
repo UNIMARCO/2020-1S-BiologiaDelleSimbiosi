@@ -28,6 +28,10 @@ ul, ol {
     font-size: 14px;
 }
 
+.lh18 {
+  line-height: 18px;
+}
+
 .h21 p {
   line-height: 23px;
   font-size: 65%;
@@ -66,6 +70,16 @@ ul, ol {
 .h20 ul li p {
   line-height: 25px;
   font-size: 15px;
+}
+
+.h202o ol li {
+  line-height: 22px;
+  font-size: 18px;
+}
+
+.h202o ol li p {
+  line-height: 22px;
+  font-size: 18px;
 }
 
 .h202 ul li {
@@ -328,6 +342,9 @@ ul, ol {
 
 .opacity50{
     opacity: 0.5;
+}
+
+.opacity100p p{    opacity: 1;
 }
 
 .f400{

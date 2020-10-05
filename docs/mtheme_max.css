@@ -53,6 +53,7 @@ a, a > code {
 .content-box-blue,
 .content-box-blue-dark,
 .content-box-gray,
+.content-box-grey2,
 .content-box-grey,
 .content-box-grey-dark,
 .content-box-army,
@@ -88,6 +89,10 @@ a, a > code {
 
 .content-box-grey {
 	background-color: #F5F5F5;
+}
+
+.content-box-grey2 {
+	background-color: #f5f5f596;
 }
 
 .content-box-grey-dark {

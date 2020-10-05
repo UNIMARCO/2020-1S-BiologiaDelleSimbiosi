@@ -53,9 +53,10 @@ bib <- ReadBib("biblio/bib.bib", check = FALSE)
 ```
 
 ```{r xaringanExtra, echo=FALSE}
-xaringanExtra::use_xaringan_extra(c("tile_view", "tachyons"))
-xaringanExtra::use_share_again()
-xaringanExtra::use_animate_css()
+library(xaringanExtra)
+use_tile_view() 
+use_share_again()
+use_animate_css()
 ```
 
 class: title-slide
@@ -1215,15 +1216,118 @@ knitr::include_graphics("images/disease11.png")
 
 ---
 
-.font300[PRIMING]
+
+.lh18[
+**Priming:** .font60[`r fontawesome::fa("search", fill = "grey")` sensitization of the whole plant for enhanced defense; characterized by a faster and stronger activation of cellular defenses upon invasion]
+]
+
+.m0tbp[
+```{r echo=FALSE, out.width="420px"}
+knitr::include_graphics("images/disease12.png")
+```
+]
+.right[.font80[`r Cite(bib, key = "Pieterse_2014")`]]
 
 ---
 
-## Collegamento tra funzione e selezione
+.pull-left[
 
- Box 3 | Trait-based framework to understand plant–microbiome interactions
- it is intuitive and generally accepted that the functional traits conferred by microbiomes are more informative than taxonomic information, as we are more interested in
- ‘what they are doing (or can do)’ than in ‘who is there’. However, to date, most plant microbiome studies in the field have focused on community structure rather than function. there are strong indications that plants select for traits rather than taxonomy, as many functions provided by the microbiome are a part of the ‘accessory genome’
- and are discontinuously distributed across taxonomies.
+**Competition for nutrients and niches**
 
- ---
+.h20[
+.m0ul[
+
+- `r fontawesome::fa("bullseye", fill = "red")` To study tomato foot and root rot, a plant disease caused by the fungus *Fusarium oxysporum f.sp. radicis-lycopersici*, and the disease control through the mechanism "competition for nutrients and niches"
+
+- `r fontawesome::fa("flask", fill = "grey")` Microbes were isolated from the rhizospheres of tomato plants. Grown briefly in liquid and used to inoculate sterile germinated seedlings. After those microbes had reached the 1-cm-long root tip were shaken off the root tip, plated on KB agar, judged for colony diversity, and the cells from the combined colonies were used for another enrichment cycle. After a total of three cycles the bacteria were selected for competitive root colonization experiments.
+  
+-  `r fontawesome::fa("plus-circle", fill = "green")` The observation that bacteria selected by the enrichment method grow much better on exudate than random rhizobacteria shows that these strains utilize exudates components more efficiently for growth. It suggests that competition for nutrients plays a major role in the biocontrol activity of the enhanced colonizers
+]
+]
+]
+
+.pull-right[
+<br><br>
+```{r echo=FALSE, out.width="500px"}
+knitr::include_graphics("images/disease13.png")
+```
+.right[.font50[`r Cite(bib, key = "Kamilova_2005")`]]
+
+]
+
+???
+
+.n30[
+- TSA: tryptic soy agar
+]
+
+
+---
+layout: true
+# Can the plant modify the composition of the associated microbiota?
+
+---
+
+class: inverse, middle, center 
+
+----
+
+---
+layout: true
+# Plants modify the composition of microbiota
+
+---
+
+```{r echo=FALSE, out.width="900px"}
+knitr::include_graphics("images/shape1.png")
+```
+.right[.font50[`r Cite(bib, key = "Lakshmanan_2014")`]]
+
+---
+
+.pull-left[
+
+**Plant sensing and the initiation of colonization**
+
+.h202o[
+.m0ul[
+
+1. Plants reliese exudates
+
+  - **Plant exudates**: complex mixtures of soluble organic substances that are secreted by living plants
+
+1. Plant-associated microorganisms use **chemotaxis** to sense and respond to plant-derived signals
+
+1. Once a signal is perceived, **microorganisms move towards the plant** with the use of flagella
+
+1. Microorganisms attach to the root surface and form a **biofilm**
+
+1. Genes that encode proteins involved in bacterial chemotaxis, flagella assembly, bacterial motility and biofilm formation are **highly abundant in the rhizosphere compared with the bulk soil**
+
+]
+]
+]
+
+.pull-right[
+<br>
+```{r echo=FALSE, out.width="700px"}
+knitr::include_graphics("images/shape2.png")
+```
+.right[.font50[`r Cite(bib, key = "Trivedi:2020aa")`]]
+
+]
+---
+
+Un esempio di microbiota modificato dalla pianta => malic acid
+
+---
+
+Poi aggiungere che non solo la pianta modifica il microbiota
+
+the plant-associated microbiome is shaped by complex interactions among the host, microorganisms and the environment
+
+---
+
+RODRIGUEZ2019804 => figura phiylogenesi pathogens/growth promoting
+
+---

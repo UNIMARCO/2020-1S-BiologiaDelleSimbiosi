@@ -1206,6 +1206,20 @@ knitr::include_graphics("images/sb2.png")
 ]
 ]
 
+---
+
+layout: true
+
+# Questions about the lesson
 
 
+---
 
+
+.m0tbp[
+.center[.font50px[`r fontawesome::fa("question-circle", fill = "black")`]]
+]
+
+.center[.font90[[`r fontawesome::fa("twitter", fill = "steelblue")`](https://twitter.com/marpello1980) @marpello1980 - [`r fontawesome::fa("envelope", fill = "steelblue")`](mailto:chiapello.m@gmail.com) chiapello.m@gmail.com - `r fontawesome::fa("skype", fill = "steelblue")` marpello]]
+
+---

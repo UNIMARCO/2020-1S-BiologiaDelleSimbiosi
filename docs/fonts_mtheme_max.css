@@ -332,6 +332,18 @@ ul, ol {
   font-size: 600%;
 }
 
+.font100px {
+  font-size: 100px;
+}
+
+.font400px {
+  font-size: 400px;
+}
+
+.font50px {
+  font-size: 300px;
+}
+
 .alignV {
   vertical-align: center;
 }

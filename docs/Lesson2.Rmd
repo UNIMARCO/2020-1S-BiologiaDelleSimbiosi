@@ -75,7 +75,7 @@ class: title-slide
 
 
 .marco[
-.font90[[`r fontawesome::fa("twitter", fill = "steelblue")`](https://twitter.com/marpello1980) @marpello1980 - [`r fontawesome::fa("envelope", fill = "steelblue")`](mailto:chiapello.m@gmail.com) chiapello.m@gmail.com - `r fontawesome::fa("skype", fill = "steelblue")` marpello]
+.font90[[[`r fontawesome::fa("envelope", fill = "steelblue")`](mailto:chiapello.m@gmail.com) chiapello.m@gmail.com - `r fontawesome::fa("skype", fill = "steelblue")` marpello - `r fontawesome::fa("twitter", fill = "steelblue")`](https://twitter.com/marpello1980) @marpello1980 ]
 ]
 
 ???
@@ -94,7 +94,7 @@ layout: true
 .pull-left[
 .m0p[
 .h25o[
-1. Plant microbiota change spatially and temporally
+1. Plant microbiota changes spatially and temporally
 
 1. Plant compartment is a major selective force that shapes the composition of plant-associated microbiota
 
@@ -148,8 +148,8 @@ knitr::include_graphics("images/plantMicrobiotaTemporal.png")
 
 1. .opacity10[ Plants and their associated microorganisms form a holobiont]
 
-1. .opacity10[ Several techniques can be employed to decipher the microbiota composition and functions]
-
+1. opacity10[ Several techniques can be employed to decipher the microbiota composition and functions]
+]s]s
 1. .opacity10[ System biology is the discipline that integrates the -omics techniques to formulate models that describe the structure of the system]
 ]
 ]
@@ -1318,9 +1318,163 @@ knitr::include_graphics("images/shape2.png")
 ]
 ---
 
-Un esempio di microbiota modificato dalla pianta => malic acid
+.pull-left[
+**How plant can recruit beneficial microbes** 
+.m0tp[
+.h202[
+
+- `r fontawesome::fa("lightbulb", fill = "#FAAD18")` The plant-associated **microbiota is shaped** by complex interactions among the plant, microorganisms and the environment
+
+- `r fontawesome::fa("exclamation-circle", fill = "green")` Metabolic diversification of root exudates within the plant kingdom may provide a basis for communication and recognition that directs the **assembly and maintenance** of a distinct microbiota tailored to the needs of the host
+
+- Plant in response to local environments can **recruit distinct plant-associated microbial communities**
+
+]
+]
+]
+
+.pull-right[
+<br>
+```{r echo=FALSE, out.width="500px"}
+knitr::include_graphics("images/shape3.png")
+```
+.right[.font50[`r Cite(bib, key = "Berendsen")`]]
+]
 
 ---
+
+.pull-left[
+**How plant can recruit beneficial microbes** 
+.m0tp[
+.h202[
+
+
+- `r fontawesome::fa("bullseye", fill = "red")` Demonstration that roots selectively secrete Malic acid and effectively signal beneficial rhizobacteria establishes a regulatory role of root metabolites in recruitment of beneficial microbes
+
+- `r fontawesome::fa("flask", fill = "grey")` Aerial infection with *Pseudomonas syringae* strains Pst DC3000 **correlate with changes in root symbiont colonization** (*Bacillus subtilis* strain FB17) implicated root exudate involvement in the beneficial microbe recruitment
+]
+]
+]
+
+.pull-right[
+<br>
+```{r echo=FALSE, out.width="500px"}
+knitr::include_graphics("images/shape4.png")
+```
+.right[.font50[`r Cite(bib, key = "Rudrappa_2008")`]]
+]
+
+???
+
+.n30[
+- (NPS3121) nonpathogenic *Pseudomonas syringae* 
+]
+
+---
+
+.pull-left[
+**How plant can recruit beneficial microbes** 
+.m0tp[
+.h202[
+
+
+- `r fontawesome::fa("question-circle", fill = "red")` Can leaf infection trigger changes in the composition of root metabolites?
+
+]
+]
+]
+
+.pull-right[
+<br>
+```{r echo=FALSE, out.width="500px"}
+knitr::include_graphics("images/shape5.png")
+```
+
+.font70[[Spurious correlation](https://www.tylervigen.com/spurious-correlations)]
+]
+
+---
+
+.pull-left[
+**How plant can recruit beneficial microbes** 
+.m0tp[
+.h202[
+
+
+- `r fontawesome::fa("question-circle", fill = "red")` Can leaf infection trigger changes in the composition of root metabolites?
+
+- `r fontawesome::fa("flask", fill = "grey")` Root secretions from plants subjected to different aerial bacterial infection treatments were collected and chemically analyzed by HPLC
+
+- `r fontawesome::fa("flask", fill = "grey")` The peak was characterized by liquid chromatography-mass spectrometry and determined to be **malic acid**
+
+<br><br>
+.right[.font50[`r Cite(bib, key = "Rudrappa_2008")`]]
+]
+]
+]
+
+.pull-right[
+```{r echo=FALSE, out.width="280px"}
+knitr::include_graphics("images/shape6.png")
+```
+]
+
+---
+
+.pull-left[
+**How plant can recruit beneficial microbes** 
+.m0tp[
+.h202[
+
+
+- `r fontawesome::fa("question-circle", fill = "red")` Is the malic acid able to selectively recruit the symbiont colonization (*Bacillus subtilis* strain FB17)?
+
+- *B. subtilis*  exhibits positive chemotaxis towards Malic Acid
+
+- L-MA specifically chemoattracts FB17
+
+- None of the tested bacteria shows any significant motility toward L-MA compared to *B. subtilis* 
+
+<br><br>
+.right[.font50[`r Cite(bib, key = "Rudrappa_2008")`]]
+]
+]
+]
+
+.pull-right[
+```{r echo=FALSE, out.width="300px"}
+knitr::include_graphics("images/shape7.png")
+```
+]
+
+---
+
+.pull-left[
+**How plant can recruit beneficial microbes** 
+.m0tp[
+.h202[
+
+
+- `r fontawesome::fa("question-circle", fill = "red")` Does MA transporter mutant fails to recruit *B. subtilis* onto the root surface?
+
+- `r fontawesome::fa("flask", fill = "grey")` Arabidopsis knockout mutant *Atalmt1*  **deficient in root MA secretion** was assayed to confirm the role of MA secretions in recruiting FB17
+
+- `r fontawesome::fa("flask", fill = "grey")` *Atalmt1* x *Ler*-0 line **restored wild-type Col-0 phenotype** under Pst DC3000 infection
+
+<br><br>
+.right[.font50[`r Cite(bib, key = "Rudrappa_2008")`]]
+]
+]
+]
+
+.pull-right[
+```{r echo=FALSE, out.width="600px"}
+knitr::include_graphics("images/shape8.png")
+```
+]
+
+---
+
 
 Poi aggiungere che non solo la pianta modifica il microbiota
 
@@ -1331,3 +1485,4 @@ the plant-associated microbiome is shaped by complex interactions among the host
 RODRIGUEZ2019804 => figura phiylogenesi pathogens/growth promoting
 
 ---
+

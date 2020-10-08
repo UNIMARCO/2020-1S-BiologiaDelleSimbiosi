@@ -48,6 +48,7 @@ BibOptions(check.entries = FALSE,
            cite.style = "authoryear",
            style = "markdown",
            hyperlink = FALSE,
+           max.names = 2,
            dashed = FALSE)
 bib <- ReadBib("biblio/bib.bib", check = FALSE)
 ```
@@ -55,8 +56,6 @@ bib <- ReadBib("biblio/bib.bib", check = FALSE)
 ```{r xaringanExtra, echo=FALSE}
 library(xaringanExtra)
 use_tile_view() 
-use_share_again()
-use_animate_css()
 ```
 
 class: title-slide
@@ -148,8 +147,8 @@ knitr::include_graphics("images/plantMicrobiotaTemporal.png")
 
 1. .opacity10[ Plants and their associated microorganisms form a holobiont]
 
-1. opacity10[ Several techniques can be employed to decipher the microbiota composition and functions]
-]s]s
+1. .opacity10[ Several techniques can be employed to decipher the microbiota composition and functions]
+   
 1. .opacity10[ System biology is the discipline that integrates the -omics techniques to formulate models that describe the structure of the system]
 ]
 ]
@@ -1475,14 +1474,533 @@ knitr::include_graphics("images/shape8.png")
 
 ---
 
+.pull-left[
+**Microbial interactions** 
+.m0tp[
+.h202[
 
-Poi aggiungere che non solo la pianta modifica il microbiota
 
-the plant-associated microbiome is shaped by complex interactions among the host, microorganisms and the environment
+- `r fontawesome::fa("bullseye", fill = "red")` Plants are able to influence the composition and activation of their rhizosphere microbiota but the **microorganisms have a role** in cooperative or competitive interactions with other members of the microbiome
+
+- The genomes of many bacteria encode interspecific and intraspecific bacteria-killing mechanisms (antibiotics), so they can modulate the abundance, distribution and diversity of other microbes
+
+- **Quorum sensing** is a well-established mechanism of bacterial cell-to-cell communication that involves the production and sensing of signalling molecules
+
+]
+]
+]
+
+.pull-right[
+<br>
+```{r echo=FALSE, out.width="580px"}
+knitr::include_graphics("images/shape9.png")
+```
+.right[.font50[`r Cite(bib, key = "BERENDSEN2012478")`]]
+]
+
 
 ---
 
-RODRIGUEZ2019804 => figura phiylogenesi pathogens/growth promoting
+.pull-left[
+**Eco-evolutionary processes** 
+.m0tp[
+.h202[
+
+- `r fontawesome::fa("bullseye", fill = "red")` ecological and evolutionary processes are linked and can occur on the same time-scale.    
+  - ecological change can lead to rapid evolutionary change
+  - microevolutionary change can leave an ecological signature
+
+- `r fontawesome::fa("exclamation-circle", fill = "green")` Eco-evolutionary processes can influence the assembly of plant-associated microbiomes:
+  1. *dispersal*: movement of microorganisms between different niches
+  1. *selection*: biotic and abiotic effects causing fitness differences
+  1. *ecological drift* stochastic changes in population size that influence the abundance of a particular member
+  1. *diversification*: processes that generate genetic variation
+
+]
+]
+]
+
+.pull-right[
+<br>
+```{r echo=FALSE, out.width="280px"}
+knitr::include_graphics("images/ecoevo1.png")
+```
+]
 
 ---
+
+.pull-left[
+**Dynamics of the plant-associated microbiome** 
+.m0tp[
+.h202[
+
+- `r fontawesome::fa("bullseye", fill = "red")` The assembly of a plant-associated microbiome is a **successional, multistep process** that is determined by dispersal, species interactions, the environment and the host
+
+- **Early colonizers** could be **transmitted vertically** `r fontawesome::fa("arrows-alt-v", fill = "#2F4659")` , via the parents, through seed transmission pathways
+
+- Once **seeds germinate**, microbiome assembly is likely to be driven by **horizontal transfer** `r fontawesome::fa("arrows-alt-h", fill = "#2F4659")`:
+  - seed-borne microorganisms preferentially become associated with aboveground plant tissues
+  - soil-derived microorganisms are mainly associated with the rhizosphere and roots
+
+]
+]
+]
+
+.pull-right[
+<br>
+```{r echo=FALSE, out.width="480px"}
+knitr::include_graphics("images/ecoevo2.png")
+```
+]
+
+---
+
+.pull-left[
+**Dynamics of the plant-associated microbiome** 
+.m0tp[
+.h202[
+
+- Microbiomes is **highly dynamic** in the early vegetative phase `r fontawesome::fa("seedling", fill = "#25403B")`, begins to **converge** throughout vegetative growth `r fontawesome::fa("pagelines", fill = "#25403B")` and **stabilizes** during the reproductive phase `r fontawesome::fa("fan", fill = "#F23D4C")` 
+
+- A small fraction of microbial taxa belonging to the **core microbiota** are consistently maintained throughout plant development
+
+- Specific traits (drought tolerance, disease resistance) that are conferred by associations with a particular microbial group can be **passed from mother plants to offspring** `r fontawesome::fa("arrows-alt-v", fill = "#2F4659")`
+]
+]
+]
+
+.pull-right[
+<br>
+```{r echo=FALSE, out.width="480px"}
+knitr::include_graphics("images/ecoevo2.png")
+```
+]
+
+---
+
+.center[**Evolutionary Relationship of PGPB and Pathogenic Bacteria**]
+```{r echo=FALSE, out.width="480px"}
+knitr::include_graphics("images/ecoevo3.png")
+```
+.right[.font50[`r Cite(bib, key = "BERENDSEN2012478")`]]
+
+---
+
+layout: true
+# Can we exploit the microbiota?
+
+---
+
+class: inverse, middle, center 
+
+----
+
+---
+
+.center[**Inoculation of microbial consortium**]
+
+.pull-left[
+.m0tbp[
+.h24[
+
+- Microorganisms have long been applied as inoculants for biocontrol or biostimulation
+
+.center[BUT]
+
+- their field efficacy varies with the climate, soil type and other environmental factors
+]
+]
+]
+
+.pull-right[
+<br>
+```{r echo=FALSE, out.width="600px"}
+knitr::include_graphics("images/exploit1.png")
+```
+.right[.font50[`r Cite(bib, key = "Quiza_2015")`]]
+]   
+
+---
+
+.center[**Outcomes of inoculation with a microbial consortium**]
+
+.pull-left[
+.m0tbp[
+.h20[
+
+- **Outcomes of inoculating** with a five-member consortium in the presence of a diverse environmental microbial pool 
+
+- Three cultivars are depicted growing in **three different regimes**: a normal year, a drought year, and low-input management
+
+- **Genotype effects**:
+  - In a normal year, Cultivar A is colonized by all five members of the inoculant consortium
+  - Cultivar B is colonized only by yellow spheres
+  - Cultivar C is colonized only by teal stars
+
+- **Environment/ management effects**:
+  - The drought year shows higher colonization by blue ovals 
+  - Under low-input management all cultivars show increased colonization by the green spiky ovals
+
+- **Temporal dynamics** of two communities after a disturbance event:
+  - The more resilient community recovers to its initial state after perturbation
+  - The less resilient community does not recovers to its initial state after perturbation
+]
+]
+]
+
+.pull-right[
+```{r echo=FALSE, out.width="490px"}
+knitr::include_graphics("images/exploit3.png")
+```
+.right[.font50[`r Cite(bib, key = "Posy2017", .opts = list(max.names=2))`]]
+]
+---
+
+.center[**Microbiome engineering using synthetic microbial communities**]
+
+.pull-left[
+.m0tp[
+.h204[
+
+- `r fontawesome::fa("exclamation-triangle", fill = "red")` There is NOT  a "one size fits all" microorganism community"
+
+- `r fontawesome::fa("lightbulb", fill = "#F2B544")` Synthetic microbial communities (synComs) of varied complexity have been constructed using bottom-up combinations 
+
+- To build a synCom selection of core functions are more important than taxonomical selection 
+
+- synComs with different complexities can be designed through predictive modelling that evaluates trait redundancy, dominance, modularity, interactions and assembly
+]
+]
+]
+
+.pull-rigth[
+<br>
+```{r echo=FALSE, out.width="500px"}
+knitr::include_graphics("images/exploit2.png")
+```
+.right[.font50[`r Cite(bib, key = "C4CS00114A")`]]
+]
+
+---
+class: clear, middle, center
+
+# .black[Companies Examples]
+
+----
+
+---
+
+.center[
+```{r echo=FALSE, out.width="500px"}
+knitr::include_graphics("images/bioc1.png")
+```
+<br>
+BioConsortia Inc. is devoted to developing solutions through **enhanced crop productivity** and
+is aware that **microbial products have a major role** to play in future mainstream agricultural crops
+
+<br>
+.marco[.tada[https://bioconsortia.com/]]
+]
+
+---
+
+
+background-image: url(images/bioc2.png)
+background-size: cover
+
+.content-box-grey2[
+.p20[
+**Founded in New Zeland in 1994**
+
+The company specializes in the discovery and development of natural microbial products
+]
+]
+<br>
+.content-box-grey2[
+.p20[
+**Breakthrough in Advanced Microbial Selection (AMS) process in 2009**
+
+Focused on perfecting the innovative R&D platform for AMS
+]
+]
+<br>
+.content-box-grey2[
+.p20[**In 2014, the decision was made to globalize**
+
+BioConsortia raised $15 million from Khosla Ventures and Otter Capital, and establishing the headquarters and labs in Davis, CA
+]
+]
+<br>
+.content-box-grey2[
+.p20[**Strong R&D Experise**
+
+30 highly experienced experts from industry and academia, including 12 PhDs
+]
+]
+<br>
+.content-box-grey2[
+.p20[**Highest level of competency in ultra-high-throughput biological screening**
+
+They now hold one of the world’s largest collections of pre-screened and characterized microorganisms, comprising over 45,000 microbes, including 9,000 endophytes
+]]
+
+---
+
+```{r echo=FALSE, out.width="850px"}
+knitr::include_graphics("images/bioc3.png")
+```
+
+---
+
+```{r echo=FALSE, out.width="850px"}
+knitr::include_graphics("images/bioc4.png")
+```
+
+???
+
+.n30[
+- Genetics x Envirinment x Microbiome = Phenotype
+]
+
+---
+
+```{r echo=FALSE, out.width="850px"}
+knitr::include_graphics("images/bioc5.png")
+```
+
+---
+
+```{r echo=FALSE, out.width="850px"}
+knitr::include_graphics("images/bioc6.png")
+```
+
+---
+
+```{r echo=FALSE, out.width="850px"}
+knitr::include_graphics("images/bioc8.png")
+```
+---
+
+```{r echo=FALSE, out.width="850px"}
+knitr::include_graphics("images/bioc7.png")
+```
+
+---
+
+.center[
+```{r echo=FALSE, out.width="400px"}
+knitr::include_graphics("images/ma1.png")
+```
+
+<br>
+At Mycorrhizal Applications, we harness the power and wisdom of natural systems to promote living soils and increase quality, productivity, and health in all industries involving soils, plants, and people
+
+
+.marco[.tada[https://mycorrhizae.com/]]
+]
+
+---
+
+background-image: url(images/ma2.png)
+background-size: cover
+
+.content-box-grey3[
+.p201[
+**Founded in  USA**<br>
+Mycorrhizal Applications was established in the Dr. Amaranthuses’ garage,
+with a focus on producing ectomycorrhizal slurries for use in forest restoration
+]
+]
+<br>
+.content-box-grey3[
+.p201[
+**Large-scale production in 2002**<br>
+The company moved to its first large-scale production and office building 
+]
+]
+<br>
+.content-box-grey3[
+.p201[
+**Entered into the agriculture industry in 2004**<br>
+Its MycoApply® Micronized Endo product being utilized as a seed coat, kick starting the next growth phase for the company
+]
+]
+<br>
+.content-box-grey3[
+.p201[
+**Products for international markets in 2016**<br>
+New highly-concentrated MycoApply® products for the Agriculture markets and non-Agriculture sectors like Horticulture, Nurseries and Turf Management
+]
+]
+<br>
+.content-box-grey3[
+.p201[
+**Development and launch of new formulations in 2020**<br>
+New advanced carrier technology for agriculture and for horticulture and turf
+]
+]
+<br>
+
+---
+
+.pull-left[
+```{r echo=FALSE, out.width="450px"}
+knitr::include_graphics("images/ma3.png")
+```
+]
+
+.pull-right[
+```{r echo=FALSE, out.width="450px"}
+knitr::include_graphics("images/ma4.png")
+```
+]
+
+---
+
+.center[
+```{r echo=FALSE, out.width="900px"}
+knitr::include_graphics("images/bm1.png")
+```
+<br>
+.marco[.tada[https://biomemakers.com]]
+]
+
+???
+
+.h202[
+- Our technological platform helps farmers and agronomists to discover the whole microbial community impacting your crop. From there, we can help to determine how to improve production and maintain soil sustainability for many future harvests to come.
+]
+
+---
+
+background-image: url(images/bm2.jpg)
+background-size: cover
+
+<br>
+.content-box-grey2[
+.p20[
+**2015**<br>
+Biome Markers is born in San Francisco, taking action to recover soil health through technology
+]
+]
+<br>
+.content-box-grey2[
+.p20[
+**2016**<br>
+Tails and market validation for advance soil analysis in vineyard
+]
+]
+<br>
+.content-box-grey2[
+.p20[
+**2017**<br>
+Lauched the operational portal with all the features to be an easy and friendly platform
+]
+]
+<br>
+.content-box-grey2[
+.p20[
+**Community recognition**<br>
+Many awards for providing the best technology for any crop and soil analysis
+]
+]
+<br>
+.content-box-grey2[
+.p20[
+**2018**<br>
+Launch BeCrop and Gheom platforms (even on mobile) 
+]
+]
+<br>
+
+
+
+---
+
+```{r echo=FALSE, out.width="800px"}
+knitr::include_graphics("images/bm14.png")
+```
+
+---
+
+```{r echo=FALSE, out.width="1200px"}
+knitr::include_graphics("images/bm4.png")
+```
+
+---
+
+```{r echo=FALSE, out.width="1200px"}
+knitr::include_graphics("images/bm5.png")
+```
+
+---
+
+```{r echo=FALSE, out.width="1200px"}
+knitr::include_graphics("images/bm6.png")
+```
+
+---
+
+```{r echo=FALSE, out.width="800px"}
+knitr::include_graphics("images/bm7.png")
+```
+
+---
+
+<br>
+```{r echo=FALSE, out.width="800px"}
+knitr::include_graphics("images/bm15.png")
+```
+
+---
+
+```{r echo=FALSE, out.width="1200px"}
+knitr::include_graphics("images/bm8.png")
+```
+
+---
+
+```{r echo=FALSE, out.width="1200px"}
+knitr::include_graphics("images/bm9.png")
+```
+
+---
+
+```{r echo=FALSE, out.width="1200px"}
+knitr::include_graphics("images/bm10.png")
+```
+
+???
+
+.h202[
+- The Agricultural Input Model (AgInput) was developed to predict a crop’s irrigation
+water and nutrients needs and to estimate the corresponding pesticide application to the
+crop under average local meteorological and soil conditions
+]
+---
+
+```{r echo=FALSE, out.width="1200px"}
+knitr::include_graphics("images/bm11.png")
+```
+
+
+---
+
+layout: true
+
+# Questions about the lesson
+
+
+---
+
+
+.m0tbp[
+.center[.font50px[`r fontawesome::fa("question-circle", fill = "black")`]]
+]
+
+.center[.font90[[[`r fontawesome::fa("envelope", fill = "steelblue")`](mailto:chiapello.m@gmail.com) chiapello.m@gmail.com - `r fontawesome::fa("skype", fill = "steelblue")` marpello - `r fontawesome::fa("twitter", fill = "steelblue")`](https://twitter.com/marpello1980) @marpello1980 ]]
+
+
+
+
 

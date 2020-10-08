@@ -54,6 +54,7 @@ a, a > code {
 .content-box-blue-dark,
 .content-box-gray,
 .content-box-grey2,
+.content-box-grey3,
 .content-box-grey,
 .content-box-grey-dark,
 .content-box-army,
@@ -92,7 +93,13 @@ a, a > code {
 }
 
 .content-box-grey2 {
-	background-color: #f5f5f596;
+    padding: 1px;
+	background-color: #f5f5f561;
+}
+
+.content-box-grey3 {
+    padding: 1px;
+	background-color: #f5f5f5e6;
 }
 
 .content-box-grey-dark {

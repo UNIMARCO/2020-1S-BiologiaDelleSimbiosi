@@ -692,7 +692,7 @@ knitr::include_graphics("images/stress1.png")
 **Responses to drought**
 
 .h203[
-.m0tbp[
+.m0tp[
 
 - `r fontawesome::fa("flask", fill = "grey")` Experiment examines plant adaptation to drought stress in a multigeneration experiment that manipulated aboveground-belowground feedbacks between plants and soil microbial communitie
 
@@ -724,7 +724,7 @@ knitr::include_graphics("images/stress2.png")
 **Responses to drought**
 
 .h203[
-.m0tbp[
+.m0tp[
 
 - **How belowground microbial communities do affect plant fitness responses to drought stress?**
 
@@ -755,7 +755,7 @@ knitr::include_graphics("images/stress2.png")
 **Responses to salinity**
 
 .h203[
-.m0tbp[
+.m0tp[
 
 - `r fontawesome::fa("bullseye", fill = "red")` Experiments aim to assess whether soil salinity changes the microbial community in the rhizosphere of *Hibiscus hamabo*, and whether these changes in the microbiome feedback on the growth of the plant
 
@@ -786,7 +786,7 @@ knitr::include_graphics("images/stress3.png")
 **Responses to salinity**
 
 .h203[
-.m0tbp[
+.m0tp[
 
 - `r fontawesome::fa("bullseye", fill = "red")` Experiments aim to assess whether soil salinity changes the microbial community in the rhizosphere of *Hibiscus hamabo*, and whether these changes in the microbiome feedback on the growth of the plant
 
@@ -815,7 +815,7 @@ knitr::include_graphics("images/stress4.png")
 **Responses to salinity**
 
 .h203[
-.m0tbp[
+.m0tp[
 
 - `r fontawesome::fa("bullseye", fill = "red")` Experiments aim to assess whether soil salinity changes the microbial community in the rhizosphere of *Hibiscus hamabo*, and whether these changes in the microbiome feedback on the growth of the plant
 

@@ -1,0 +1,141 @@
+/**********
+ # FONT
+**********
+@import url(https://fonts.googleapis.com/css?family=Roboto:100;300;400;700);
+*/
+
+.f30 {
+    font-size: 30px;
+}
+
+.f50 {
+    font-size: 50px;
+}
+
+.f504 {
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.s200 span img {
+    height: 200px !important;
+    width: auto !important;
+}
+
+.s150 span img {
+    height: 150px !important;
+    width: auto !important;
+}
+
+/**********
+ # LISTS
+***********/
+
+.summaryL3 p,.summaryL3 ul li,.summaryL3 ol li {
+  margin: 10px;
+  font-size: 22px;
+  line-height: 25px;
+}
+.agenda1 p,.agenda1 ul,.agenda1 ul li,.agenda1 ol li {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 32px;
+  line-height: 45px;
+}
+
+.agenda1 ul li ul li,.agenda1 ol li ol ol{
+  margin: 5px;
+  font-size: 23px;
+  line-height: 28px;
+  opacity: 0.7;
+}
+
+/**************
+ # PARAGRAPHS 
+***************/
+.magenda p {
+    margin: 0px;
+}
+
+.par23 p, .par23 ul li, .par23 ol li {
+    line-height: 27px;
+    font-size: 23px;
+}
+
+.par25 p, .par25 ul li, .par25 ol li {
+    line-height: 30px;
+    font-size: 25px;
+}
+
+.par30 p, .par30 ul li, .par30 ol li {
+    line-height: 35px;
+    font-size: 30px;
+}
+
+.h20 ul li {
+  line-height: 25px;
+  font-size: 15px;
+}
+
+.h20 ul li p {
+  line-height: 25px;
+  font-size: 15px;
+}
+
+.h201 ul li {
+  line-height: 22px;
+  font-size: 15px;
+}
+
+.h201 ul li p {
+  line-height: 22px;
+  font-size: 15px;
+}
+.h202o ol li {
+  line-height: 22px;
+  font-size: 18px;
+}
+
+.h202o ol li p {
+  line-height: 22px;
+  font-size: 18px;
+}
+
+.h202 ul li {
+  line-height: 25px;
+  font-size: 20px;
+}
+
+.h202 ul li p {
+  line-height: 25px;
+  font-size: 20px;
+}
+
+
+.h203 ul li p {
+  line-height: 20px;
+  font-size: 18px;
+}
+
+/**************
+ # CONTENT 
+***************/
+
+.content-box-red2 p {
+    border-radius: 15px;
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    padding: 2px;
+	background-color: #BF1E0F;
+    margin: 15px;
+}
+
+/**************
+ # IMAGE 
+***************/
+
+.limg p img {
+    float: left;
+    margin: 0px 20px !important;
+}

@@ -1,6 +1,6 @@
 ---
 title: "Microbiota"
-subtitle: "Lesson 1"
+subtitle: "Lesson 2"
 author: "Marco Chiapello"
 date: "???"
 output:

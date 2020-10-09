@@ -155,6 +155,12 @@ ul, ol {
   line-height: 35px;
 }
 
+.pul20 p,.pul20 ul li,.pul20 ol li {
+  margin: 5px;
+  font-size: 22px;
+  line-height: 25px;
+}
+
 .p20 p {
   margin: 2px;
   font-size: 29px;

@@ -4,7 +4,7 @@ a, a > code {
 }
 
 
-**************
+/**************
  *
  * Font size and colours
  *
@@ -63,6 +63,7 @@ a, a > code {
 .content-box-purple,
 .content-box-purple-dark,
 .content-box-red,
+.content-box-red2,
 .content-box-red-dark,
 .content-box-yellow,
 .content-box-title {

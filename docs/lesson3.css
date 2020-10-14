@@ -57,6 +57,16 @@
     margin: 0px;
 }
 
+.par20 p, .par20 ul li, .par20 ol li {
+    line-height: 24px;
+    font-size: 20px;
+}
+
+.par23b p, .par23b ul li, .par23b ol li {
+    line-height: 25px;
+    font-size: 23px;
+}
+
 .par23 p, .par23 ul li, .par23 ol li {
     line-height: 27px;
     font-size: 23px;
@@ -129,6 +139,16 @@
     padding: 2px;
 	background-color: #BF1E0F;
     margin: 15px;
+}
+
+.content-box-grey4 p {
+    border-radius: 15px;
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    padding: 1px;
+	background-color: #888888eb;
+    margin: 5px;
 }
 
 /**************

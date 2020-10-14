@@ -18,7 +18,7 @@ output:
 ---
 
 ```{r setup, include=FALSE, cache=FALSE}
-# TO render: rmarkdown::render('Lesson2.Rmd', 'xaringan::moon_reader')
+# TO render: rmarkdown::render('Lesson3.Rmd', 'xaringan::moon_reader')
 
 # set working directory to docs folder
 setwd(here::here("docs"))
@@ -38,9 +38,9 @@ knitr::opts_chunk$set(
 
 # This is good for getting the ggplot background consistent with
 # the html background color
-library(ggplot2)
-thm <- theme_bw()
-theme_set(thm)
+# library(ggplot2)
+# thm <- theme_bw()
+# theme_set(thm)
 
 library(RefManageR)
 BibOptions(check.entries = FALSE,
@@ -321,37 +321,30 @@ knitr::include_graphics("images/bioc3.png")
 ]
 
 ---
+
 layout: false
-class: clear 
 
-.pull-left-wide[
-.magenda[
-.font180[.bold[Agenda]]
-]
+# Virus short surveys
 
-.agenda1[
-- Ecological Significance of Viruses `r anicon::cia("images/virus-3128.png", animate="pulse", speed="slow", anitype="hover")` 
-  - Ecological Importance of Viruses in the Oceans
-  - Endogenous Virus Elements and Beneficial Infection in Vertebrates
-  - Mycovirus involved in mutualistic symbiosis
-  - Viruses invoved in Arm’s race (killer yeast)
-  - Insect viruses involved in mutualistic symbiosis
+```{r echo=FALSE, out.width="500px"}
+knitr::include_graphics("images/qr-code.png")
+```
+
+.center[https://bit.ly/3iIidhV]
+---
+
+class: clear, middle, center
 
 
-- Mycovirus for the control of plant diseases `r anicon::cia("images/plant-pot.png", animate="pulse", speed="slow", anitype="hover")`     
-  - The VIROPLANT H2020 project
-  - Definitions and general biological features
-  - Mycovirus biodiversity
-  - Natural biocontrol through mycovirus: the forest pathogen Cryphonectria parasitica and Cryphonectria hypovirus 1
-  - A new approach: mycocidal virus
-  - Recent technological progress: a super-donor, Zn chloride, transgenic approach
-  - VIGS and the regulatory bottleneck
-
-]
+.m0tbp[
+```{r echo=FALSE, out.width="950px"}
+# source("extra/virusPoll_auth.R")
+source("extra/virusPoll_plot.R")
+knitr::include_graphics("images/virusPoll.png")
+```
 ]
 
 ---
-
 
 layout: true
 
@@ -532,8 +525,8 @@ knitr::include_graphics("images/vir10.png")
 
 ---
 
-```{r echo=FALSE, out.width="px"}
-knitr::include_graphics("images/.png")
+```{r echo=FALSE, out.width="1001px"}
+knitr::include_graphics("images/vir11.png")
 ```
 
 ???
@@ -558,21 +551,23 @@ knitr::include_graphics("images/.png")
 ---
 
 .pull-left[
-.f400[**What is a VIRUS?**] `r anicon::cia("images/virus-3128.png", animate="pulse", speed="slow")`
+.f400[**What is a VIRUS?**] 
 .m0tp[
-.par30[
+.par25[
 
-- A virus is a submicroscopic infectious agent that replicates only inside the living cells of an organism (obligate intracellular parasites)
+- A virus is a submicroscopic **infectious** agent that replicates its **genetic material** (DNA or **RNA**) only inside the living cells of an organism (**obligate intracellular parasites**)
 
-- Viruses use the host's cells to replicate by forcing it to rapidly produce thousands of identical copies of the original virus
+- Viruses are often surrounded by a protein coat, somethime a membrane
 
-- When not inside the host, viruses exist in the form of independent particles (virions)
+- Viruses **use the host's cells to replicate** by forcing it to rapidly produce thousands of identical copies of the original virus
+
+- When not inside the host, viruses **exist in the form of independent particles** (virions)
 
 
 ]
 ]]
 
-.pull-left[
+.pull-right[
 ```{r echo=FALSE, out.width="500px"}
 knitr::include_graphics("images/vir1.png")
 ```
@@ -583,35 +578,86 @@ knitr::include_graphics("images/vir1.png")
 .n30[
 - non hanno metabolismo energetico proprio ne ribosomi per traduzione proteine
 
+- Se non hanno un ospite non possono replicarsi
+
 - i virus non si riproducono per fissazione, ma per assemblaggio di parti
 ]
 ---
 
 .pull-left[
+.f400[**Are virus a life form?**]
+
 .m0tp[
 .par23[
 
-.content-box-red2[
-.font120[**Are virus a life form?**]
-]
-- Viruses can't capture or store any energy, so they rely on the cells of other organisms to survive and reproduce
+- Viruses **can't capture or store any energy**, so they **rely on the cells of other organisms** to survive and reproduce
 
-- They can not function outside a host organism! Owing on that they are often regarded as non-living 
-
-- On the other hand they carry genetic material, reproduce, and evolve through natural selection
+- They can not function outside a host organism! Owing on that they are often **regarded as non-living** 
+<br>
+- On the other hand they **carry genetic material**, **reproduce**, and **evolve** through natural selection
 
 - Viruses are considered by some biologists to be a life form
 
-- Because they possess some but not all such qualities, viruses have been described as "organisms at the edge of life"
+- Vviruses have been described as "**organisms at the edge of life**"
 
 ]
 ]
+]
+
+.pull-right[
+.m0tbp[
+```{r echo=FALSE, out.width="250px"}
+knitr::include_graphics("images/vir12.png")
+```
+```{r echo=FALSE, out.width="250px"}
+knitr::include_graphics("images/vir13.png")
+```
+]]
+
+---
+layout: false
+
+background-image: url(images/vir14.png)
+background-size: contain
+class: clear
+
+.content-box-grey4[
+Viruses do NOT think<br>
+They do not achieve their goal in a human-centered manner<br>
+**Viruses are passive agents**
 ]
 
 
 ---
 
+layout: false
+class: clear 
 
+.pull-left-wide[
+.magenda[
+.font180[.bold[Agenda]]
+]
+
+.agenda1[
+- Ecological Significance of Viruses `r anicon::cia("images/virus-3128.png", animate="pulse", speed="slow", anitype="hover")` 
+  - Ecological Importance of Viruses in the Oceans
+  - Endogenous Virus Elements and Beneficial Infection in Vertebrates
+  - Mycovirus involved in mutualistic symbiosis
+  - Viruses invoved in Arm’s race (killer yeast)
+  - Insect viruses involved in mutualistic symbiosis
+
+
+- Mycovirus for the control of plant diseases `r anicon::cia("images/plant-pot.png", animate="pulse", speed="slow", anitype="hover")`     
+  - The VIROPLANT H2020 project
+  - Definitions and general biological features
+  - Mycovirus biodiversity
+  - Natural biocontrol through mycovirus: the forest pathogen Cryphonectria parasitica and Cryphonectria hypovirus 1
+  - A new approach: mycocidal virus
+  - Recent technological progress: a super-donor, Zn chloride, transgenic approach
+  - VIGS and the regulatory bottleneck
+
+]
+]
 
 ---
 
@@ -642,4 +688,55 @@ layout: true
 
 ---
 
+.pull-left[
+.m0tp[
+.par25[
 
+- The oceans cover **more than 70%** of the Earth’s surface
+
+- They control the **climate**, provide a significant amount of the **protein** that is consumed globally and produce approximately **half of the Earth’s oxygen**
+
+- Microorganisms are a major force behind the **nutrient and energy cycles** in the world’s oceans
+
+- It is estimated that **viruses kill approximately 20% of this biomass per day**
+
+- As well as being agents of mortality, viruses are one of the **largest reservoirs of unexplored genetic diversity** on the Earth.
+]
+]
+]
+
+.pull-right[
+.m0tp[
+```{r echo=FALSE, out.width="400px"}
+knitr::include_graphics("images/vir18.png")
+```
+]
+]
+
+---
+
+.pull-left[
+.m0tp[
+.par23b[
+
+- **Virosphere** is the portion of the Earth in which viruses occur or which is affected by viruses
+
+- The virosphere is probably inclusive of **every environment on the Earth**, from the atmosphere to the deep biosphere
+
+- Nowhere is the importance of viruses more evident than in the world’s oceans
+
+- Viruses are substantial **agents of mortality** in heterotrophic and autotrophic plankton
+
+- Viruses are major players in the mortality of marine microorganisms and, consequently, **affect nutrient and energy cycles** as well as the structure of microbial communities
+
+- Need to incorporate viruses and virus-mediated processes into our understanding of **ocean biology** and biogeochemistry
+]
+]
+]
+
+.pull-right[
+<br>
+```{r echo=FALSE, out.width="500px"}
+knitr::include_graphics("images/vir19.png")
+```
+]

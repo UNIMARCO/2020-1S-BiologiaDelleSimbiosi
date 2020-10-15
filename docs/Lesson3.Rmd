@@ -721,7 +721,7 @@ knitr::include_graphics("images/vir18.png")
 
 - **Virosphere** is the portion of the Earth in which viruses occur or which is affected by viruses
 
-- The virosphere is probably inclusive of **every environment on the Earth**, from the atmosphere to the deep biosphere
+- The virosphere is inclusive of **every environment on the Earth**, from the atmosphere to the deep biosphere
 
 - Nowhere is the importance of viruses more evident than in the world’s oceans
 
@@ -740,3 +740,73 @@ knitr::include_graphics("images/vir18.png")
 knitr::include_graphics("images/vir19.png")
 ```
 ]
+
+---
+
+.pull-left[
+**The abundance of marine viruses**
+.m0tp[
+.par25[
+
+- The abundance of viruses in oceans exceeds that of bacteria and archaea by approximately 15-fold and comprising approximately **94% of the nucleic-acid-containing particles**
+
+- However, because of their extremely small size, viruses represent only approximately **5% of the biomass**
+
+- In the oceans, viral abundance decreases further offshore and deeper in the water column because it generally **varies along with the prokaryotic abundance**
+]
+]
+]
+
+.pull-right[
+<br><br>
+```{r echo=FALSE, out.width="540px"}
+knitr::include_graphics("images/vir15.png")
+```
+]
+
+---
+
+.pull-left[
+**The abundance of marine viruses**
+.par20m[
+
+- Five methods are used to estimate the abundance of viruses in aquatic samples
+  - plaque assays (PAs) and most-probable-number assays (MPNs): are used to quantify the abundance of infectious units that cause the lysis of a particular host.
+  - ransmission electron microscopy (TEM): TEM is the only method that provides data on both the abundance and morphology of virus-like particles (fig a)
+  - **epifluorescence microscopy** (EfM): the viruses are concentrated on a membrane filter, their nucleic acids are stained with a brightly fluorescent dye and the abundance of viruses is estimated (fig b)
+  - flow cytometry (FC): accurate high-throughput method also allows the quantification of subpopulations of viruses
+  - **Next generation sequencing**
+]
+]
+
+.pull-right[
+```{r echo=FALSE, out.width="300px"}
+knitr::include_graphics("images/vir20.png")
+```
+]
+
+---
+
+.pull-left[
+**Viruses, mortality and elemental cycling**
+.m0tp[
+.par23[
+
+- As agents of mortality, viruses have a range of effects on the world’s oceans, from altering geochemical cycles to structuring populations and communities.
+
+- 20-40% of prokaryotes in surface water are removed by viruses every day (similar to the amount killed by grazing)
+  
+- Increase in the rate of viral reproduction in response to an increase in the growth rate of host cells is a strong feedback mechanism that would probably prevent dominance by the fastest growing taxa
+
+.rigth[.right[.font50[`r Cite(bib, key = "Middelboe_2017")`]]]
+]
+]
+]
+
+.pull-right[
+```{r echo=FALSE, out.width="370px"}
+knitr::include_graphics("images/vir21.png")
+```
+
+]
+

@@ -73,6 +73,12 @@
     font-size: 23px;
 }
 
+.par23m p, .par23m ul li, .par23m ol li {
+    line-height: 27px;
+    font-size: 23px;
+    margin-top: 10px;
+}
+
 .par23 p, .par23 ul li, .par23 ol li {
     line-height: 27px;
     font-size: 23px;

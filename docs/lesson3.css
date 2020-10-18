@@ -57,6 +57,12 @@
     margin: 0px;
 }
 
+.parR {
+    line-height: 15px;
+    font-size: 10px;
+    margin: 2px;
+}
+
 .par20m p, .par20m ul li, .par20m ol li {
     line-height: 24px;
     font-size: 20px;

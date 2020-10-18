@@ -771,9 +771,9 @@ knitr::include_graphics("images/vir15.png")
 **The abundance of marine viruses**
 .par20m[
 
-- Five methods are used to estimate the abundance of viruses in aquatic samples
+- Six methods are used to estimate the abundance of viruses in aquatic samples
   - plaque assays (PAs) and most-probable-number assays (MPNs): are used to quantify the abundance of infectious units that cause the lysis of a particular host.
-  - ransmission electron microscopy (TEM): TEM is the only method that provides data on both the abundance and morphology of virus-like particles (fig a)
+  - transmission electron microscopy (TEM): TEM is the only method that provides data on both the abundance and morphology of virus-like particles (fig a)
   - **epifluorescence microscopy** (EfM): the viruses are concentrated on a membrane filter, their nucleic acids are stained with a brightly fluorescent dye and the abundance of viruses is estimated (fig b)
   - flow cytometry (FC): accurate high-throughput method also allows the quantification of subpopulations of viruses
   - **Next generation sequencing**
@@ -861,3 +861,169 @@ knitr::include_graphics("images/vir23.png")
 ```
 .right[.font50[`r Cite(bib, key = "Breitbart:2018aa")`]]
 ]
+
+---
+
+.pull-left[
+**Viral shunt in recycling PoM**
+.m0tp[
+.par20m[
+
+- The biological pump (BP) is a combination of processes that leads to the sequestration of carbon in the deep ocean as the result of the sinking of **PoM** from surface waters
+
+- The amount of carbon that is exported by the BP has direct implications for the concentration of carbon dioxide in the atmosphere
+
+- Carbon from cell lysis will sink more slowly and be retained to a greater extent in surface waters, where much of it will be converted to dissolved inorganic carbon by respiration or solar radiation
+
+]
+]
+]
+
+.pull-rigth[
+<br>
+```{r echo=FALSE, out.width="550px"}
+knitr::include_graphics("images/vir23.png")
+```
+.right[.font50[`r Cite(bib, key = "Breitbart:2018aa")`]]
+]
+
+---
+
+**Viruses manipulate the marine environment**
+.pull-left[
+.m0tp[
+.par25[
+
+- Until now we focused on two areas:
+  - **viruses as pathogens** of aquatic organisms
+  - **virus-driven dynamics** of the marine microbial food web
+
+- Marine viruses can affect their hosts and environments in startling ways:
+  - **Global transfer** of niche adaptation genes
+  - Modifications of the **ontogeny and ecology** of marine organisms
+
+
+**It has become clear that the marine virome is a master of manipulation**
+]
+]
+]
+
+.pull-rigth[
+```{r echo=FALSE, out.width="500px"}
+knitr::include_graphics("images/vir24.png")
+```
+.right[.font50[`r Cite(bib, key = "Rohwer_2009")`]]
+]
+
+---
+
+**Virally encoded host genes**
+.pull-left[
+.m0tp[
+.par25[
+
+- Phage are known to carry and **transfer a variety of host genes**
+
+- Most studies of this phenomenon have focused on the negative effects, but **viral infections can augment the metabolism, immunity, distribution and evolution of their hosts** in many unexpected and potentially positive ways
+
+]
+]
+]
+
+.pull-rigth[
+```{r echo=FALSE, out.width="500px"}
+knitr::include_graphics("images/vir24.png")
+```
+.right[.font50[`r Cite(bib, key = "Rohwer_2009")`]]
+]
+
+---
+
+**Virally encoded host genes**
+.pull-left[
+*Accessory gene expression*
+.m0tp[
+.par20[
+
+- Consider the **cyanobacteria**l which together account for about 25% of global photosynthesis
+
+- Sequencing of the marine viral **cyanophage**s that infect these primary producers showed that **genes involved in photosynthesis** are commonly carried in phage genome
+
+- During the lytic cycle, most of the host’s transcription and translation is **shut down by phage**
+
+- By expressing genes involved in photosynthesis, **phage generate the energy necessary for viral production**
+
+]
+]
+]
+
+.pull-rigth[
+```{r echo=FALSE, out.width="500px"}
+knitr::include_graphics("images/vir24.png")
+```
+.right[.font50[`r Cite(bib, key = "Rohwer_2009")`]]
+]
+
+---
+
+**Virally encoded host genes**
+.pull-left[
+*Horizontal gene transfer*
+.m0tp[
+.par20[
+
+- One consequence of cyanophage carrying genes involved in the photosynthesis is the **horizontal gene transfer of photosynthetic genetic elements** between hosts
+
+- Specific ecotypes that live in different parts of the water column and are **tuned to the different light and nutrient regimes**
+
+- Given the prevalence of phage-encoded photosynthesis proteins and the occurrence of recombination between phage and host genes, phage populations are expected to **serve as gene reservoirs**
+
+]
+]
+]
+
+.pull-rigth[
+```{r echo=FALSE, out.width="500px"}
+knitr::include_graphics("images/vir24.png")
+```
+.right[.font50[`r Cite(bib, key = "Rohwer_2009")`]]
+]
+
+---
+
+layout: true
+
+# Endogenous Virus Elements
+
+---
+
+class: inverse, middle, center
+
+----
+
+---
+
+.pull-left[
+**What is endogenization?**
+.m0tp[
+.par25[
+
+- An endogenous viral element (**EVE**) is a viral DNA sequence, present within the germline of a non-viral organism
+
+- EVE may be entire viral genome or a fragment of viral genome
+
+- EVEs are **usually eliminated** from the host gene pool within a small number of generations, but they can sometimes **reach fixation**
+
+- EVEs that occur as **proviruses** can potentially remain capable of **producing infectious virus** 
+]
+]
+] 
+
+.pull-right[
+```{r echo=FALSE, out.width="px"}
+knitr::include_graphics("images/vir25.png")
+```
+.right[
+.parR[
+.font50[By Adrian.maglaqui - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=48727769]]
+]]

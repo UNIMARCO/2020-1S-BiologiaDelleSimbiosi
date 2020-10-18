@@ -52,13 +52,6 @@ BibOptions(check.entries = FALSE,
 bib <- ReadBib("biblio/bib.bib", check = FALSE)
 ```
 
-```{r xaringanExtra, echo=FALSE}
-library(xaringanExtra)
-use_tile_view() 
-use_share_again()
-use_animate_css()
-```
-
 class: title-slide
 
 
@@ -87,6 +80,18 @@ Marco Chiapello
 ---
 layout: true
 class: clear
+
+---
+
+class: center, middle
+
+.font180[.bold[Course overview]]
+
+.font120[Lecture: Plant Microbiota `r fontawesome::fa("tree", fill = "green")`] 
+<br>
+.font120[Lecture: Ecological Significance of Viruses `r anicon::cia("images/virus-3128.png", anitype = "hover")`]
+
+.font120[Practical: How to define a oomycete virome `r fontawesome::fa("laptop-code", fill = "grey")` ]
 
 ---
 

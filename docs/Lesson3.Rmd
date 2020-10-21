@@ -1027,3 +1027,31 @@ knitr::include_graphics("images/vir25.png")
 .parR[
 .font50[By Adrian.maglaqui - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=48727769]]
 ]]
+
+---
+
+.pull-left[
+**Retroviral invasion of the koala genome**
+.m0tp[
+.par20[
+
+- Endogenous retroviruses are a **common ancestral feature of mammalian genomes** with most having been inactivated over time through mutation and deletion
+
+- Koala retrovirus (**KoRV**) is associated with koala neoplasia
+
+- KoRV also shows features of a recently inserted endogenous retrovirus that is vertically transmitted
+
+- **Isolated koala populations** have not yet incorporated KoRV into their genomes suggesting that KoRV is a **virus in transition** between an exogenous and endogenous element
+
+- Opportunity to study the process and consequences of retroviral endogenization in action
+]
+]
+]
+
+.pull-right[
+<br>
+```{r echo=FALSE, out.width="450px"}
+knitr::include_graphics("images/vir26.png")
+```
+.right[.font50[`r Cite(bib, key = "Tarlinton:2006aa")`]]
+]

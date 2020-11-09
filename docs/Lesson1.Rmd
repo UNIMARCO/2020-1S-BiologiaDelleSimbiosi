@@ -52,6 +52,11 @@ BibOptions(check.entries = FALSE,
 bib <- ReadBib("biblio/bib.bib", check = FALSE)
 ```
 
+```{r xaringanExtra, echo=FALSE}
+library(xaringanExtra)
+use_tile_view() 
+```
+
 class: title-slide
 
 
@@ -63,12 +68,13 @@ class: title-slide
 .marco[
 Marco Chiapello
 <br>
-`r Sys.Date()`
+2020-11-10
 ]
 
 
 .marco[
-.center[.font90[[[`r fontawesome::fa("envelope", fill = "steelblue")`](mailto:chiapello.m@gmail.com) chiapello.m@gmail.com - `r fontawesome::fa("skype", fill = "steelblue")` marpello - `r fontawesome::fa("twitter", fill = "steelblue")`](https://twitter.com/marpello1980) @marpello1980 ]]
+.center[.font90[[[`r fontawesome::fa("slack", fill = "steelblue")`](https://join.slack.com/t/ipma-2020/shared_invite/zt-j9o8ig7k-LN1~U3d6QJztquYbC6iW7w) Slack (https://bit.ly/3eRDBRL) - `r fontawesome::fa("envelope", fill = "steelblue")`](mailto:marco.chiapello@unito.it) marco.chiapello@unito.it]
+]
 ]
 
 ???
@@ -80,6 +86,31 @@ Marco Chiapello
 ---
 layout: true
 class: clear
+
+---
+
+.font180[.bold[General Introduction `r fontawesome::fa("compass", fill = "black")`]]
+
+- .font120[Learning] 
+
+- .font120[Motivate]
+
+- .font120[Feedbacks]
+
+- .font120[Silly questions]
+
+
+???
+
+.n30[
+- Learning: L'apprendimento non e' qualcosa che si fa agli studenti, l'apprendimento e' un processo e non un prodotto
+
+- Motivate: La motivazione degli studenti determina, orienta e sostiene cio' che essi fanno per imparare. Sta **anche** me riuscire a motivarvi e a creare l'effetto whoa
+
+- Feedback: E' studiato e risaputo che l'atmosfera sociale, emotova ed intellettuale della classe influenzi l'apprendimento. Quindi interagiamo => sono disponibile a rispondere e chiarire ogni dubbio sia in classe che fuori
+
+- Silly questions: esistono, ma non e' stupido chi le fa! Mi permettono di capire se devo approfondire qualche concetto
+]
 
 ---
 
@@ -598,6 +629,16 @@ knitr::include_graphics("images/holobiont1.png")
 ]
 ]
 
+???
+
+.n30[
+- olobionte definisce l'organismo vivente alla luce della convivenza con il proprio microbiota
+
+- Se l'organismo e' un olobionte, il suo genoma sara' un ologenoma, ovvero l'insieme del genoma dell'organismo ospite e del genoma dei microrganismi che lo abitano
+
+- Se davvero questi genomi si comportano come una cosa sola, l'ologenoma deve essere considerato un'unità di selezione, ovvero un unico bersaglio della selezione naturale, e in quanto tale evolve come un unico individuo
+]
+
 ---
 
 .pull-left[
@@ -628,6 +669,15 @@ knitr::include_graphics("images/holobiont2.png")
 ]
 ]
 
+???
+
+.n30[
+- La presenza dei microorganismi sulle piante e' di certo legata alla presenza di malattie. MA, la maggior parte dei microorganismi non causano alcuna malattia alla pianta.
+
+- Anzi, questi microorganismi possono contribuire a diversi aspetti: 
+
+]
+
 ---
 
 .pull-left[
@@ -655,7 +705,6 @@ knitr::include_graphics("images/holobiont3.png")
     to offspring
 
 ]
-
 ]
 ]
 

@@ -5,6 +5,8 @@
     <meta charset="utf-8" />
     <meta name="author" content="Marco Chiapello" />
     <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="libs/tile-view/tile-view.js"></script>
     <link href="libs/font-awesome-animation/font-awesome-animation-emi.css" rel="stylesheet" />
     <script src="libs/fontawesome/js/fontawesome-all.min.js"></script>
     <link rel="stylesheet" href="scrollable.css" type="text/css" />
@@ -13,6 +15,8 @@
   </head>
   <body>
     <textarea id="source">
+
+
 
 
 
@@ -28,12 +32,13 @@ class: title-slide
 .marco[
 Marco Chiapello
 &lt;br&gt;
-2020-10-16
+2020-11-10
 ]
 
 
 .marco[
-.center[.font90[[[&lt;svg style="height:0.8em;top:.04em;position:relative;fill:steelblue;" viewBox="0 0 512 512"&gt;&lt;path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"/&gt;&lt;/svg&gt;](mailto:chiapello.m@gmail.com) chiapello.m@gmail.com - &lt;svg style="height:0.8em;top:.04em;position:relative;fill:steelblue;" viewBox="0 0 448 512"&gt;&lt;path d="M424.7 299.8c2.9-14 4.7-28.9 4.7-43.8 0-113.5-91.9-205.3-205.3-205.3-14.9 0-29.7 1.7-43.8 4.7C161.3 40.7 137.7 32 112 32 50.2 32 0 82.2 0 144c0 25.7 8.7 49.3 23.3 68.2-2.9 14-4.7 28.9-4.7 43.8 0 113.5 91.9 205.3 205.3 205.3 14.9 0 29.7-1.7 43.8-4.7 19 14.6 42.6 23.3 68.2 23.3 61.8 0 112-50.2 112-112 .1-25.6-8.6-49.2-23.2-68.1zm-194.6 91.5c-65.6 0-120.5-29.2-120.5-65 0-16 9-30.6 29.5-30.6 31.2 0 34.1 44.9 88.1 44.9 25.7 0 42.3-11.4 42.3-26.3 0-18.7-16-21.6-42-28-62.5-15.4-117.8-22-117.8-87.2 0-59.2 58.6-81.1 109.1-81.1 55.1 0 110.8 21.9 110.8 55.4 0 16.9-11.4 31.8-30.3 31.8-28.3 0-29.2-33.5-75-33.5-25.7 0-42 7-42 22.5 0 19.8 20.8 21.8 69.1 33 41.4 9.3 90.7 26.8 90.7 77.6 0 59.1-57.1 86.5-112 86.5z"/&gt;&lt;/svg&gt; marpello - &lt;svg style="height:0.8em;top:.04em;position:relative;fill:steelblue;" viewBox="0 0 512 512"&gt;&lt;path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/&gt;&lt;/svg&gt;](https://twitter.com/marpello1980) @marpello1980 ]]
+.center[.font90[[[&lt;svg style="height:0.8em;top:.04em;position:relative;fill:steelblue;" viewBox="0 0 448 512"&gt;&lt;path d="M94.12 315.1c0 25.9-21.16 47.06-47.06 47.06S0 341 0 315.1c0-25.9 21.16-47.06 47.06-47.06h47.06v47.06zm23.72 0c0-25.9 21.16-47.06 47.06-47.06s47.06 21.16 47.06 47.06v117.84c0 25.9-21.16 47.06-47.06 47.06s-47.06-21.16-47.06-47.06V315.1zm47.06-188.98c-25.9 0-47.06-21.16-47.06-47.06S139 32 164.9 32s47.06 21.16 47.06 47.06v47.06H164.9zm0 23.72c25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06H47.06C21.16 243.96 0 222.8 0 196.9s21.16-47.06 47.06-47.06H164.9zm188.98 47.06c0-25.9 21.16-47.06 47.06-47.06 25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06h-47.06V196.9zm-23.72 0c0 25.9-21.16 47.06-47.06 47.06-25.9 0-47.06-21.16-47.06-47.06V79.06c0-25.9 21.16-47.06 47.06-47.06 25.9 0 47.06 21.16 47.06 47.06V196.9zM283.1 385.88c25.9 0 47.06 21.16 47.06 47.06 0 25.9-21.16 47.06-47.06 47.06-25.9 0-47.06-21.16-47.06-47.06v-47.06h47.06zm0-23.72c-25.9 0-47.06-21.16-47.06-47.06 0-25.9 21.16-47.06 47.06-47.06h117.84c25.9 0 47.06 21.16 47.06 47.06 0 25.9-21.16 47.06-47.06 47.06H283.1z"/&gt;&lt;/svg&gt;](https://join.slack.com/t/ipma-2020/shared_invite/zt-j9o8ig7k-LN1~U3d6QJztquYbC6iW7w) Slack (https://bit.ly/3eRDBRL) - &lt;svg style="height:0.8em;top:.04em;position:relative;fill:steelblue;" viewBox="0 0 512 512"&gt;&lt;path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"/&gt;&lt;/svg&gt;](mailto:marco.chiapello@unito.it) marco.chiapello@unito.it]
+]
 ]
 
 ???
@@ -45,6 +50,31 @@ Marco Chiapello
 ---
 layout: true
 class: clear
+
+---
+
+.font180[.bold[General Introduction &lt;svg style="height:0.8em;top:.04em;position:relative;fill:black;" viewBox="0 0 496 512"&gt;&lt;path d="M225.38 233.37c-12.5 12.5-12.5 32.76 0 45.25 12.49 12.5 32.76 12.5 45.25 0 12.5-12.5 12.5-32.76 0-45.25-12.5-12.49-32.76-12.49-45.25 0zM248 8C111.03 8 0 119.03 0 256s111.03 248 248 248 248-111.03 248-248S384.97 8 248 8zm126.14 148.05L308.17 300.4a31.938 31.938 0 0 1-15.77 15.77l-144.34 65.97c-16.65 7.61-33.81-9.55-26.2-26.2l65.98-144.35a31.938 31.938 0 0 1 15.77-15.77l144.34-65.97c16.65-7.6 33.8 9.55 26.19 26.2z"/&gt;&lt;/svg&gt;]]
+
+- .font120[Learning] 
+
+- .font120[Motivate]
+
+- .font120[Feedbacks]
+
+- .font120[Silly questions]
+
+
+???
+
+.n30[
+- Learning: L'apprendimento non e' qualcosa che si fa agli studenti, l'apprendimento e' un processo e non un prodotto
+
+- Motivate: La motivazione degli studenti determina, orienta e sostiene cio' che essi fanno per imparare. Sta **anche** me riuscire a motivarvi e a creare l'effetto whoa
+
+- Feedback: E' studiato e risaputo che l'atmosfera sociale, emotova ed intellettuale della classe influenzi l'apprendimento. Quindi interagiamo =&gt; sono disponibile a rispondere e chiarire ogni dubbio sia in classe che fuori
+
+- Silly questions: esistono, ma non e' stupido chi le fa! Mi permettono di capire se devo approfondire qualche concetto
+]
 
 ---
 
@@ -251,7 +281,7 @@ layout: true
 .center[
 .h20[
 **Spatial plant microbiota**    
-.font50[(Singh, Raina, Kumar, et al., 2019)]
+.font50[(Singh, Raina, Kumar, Singh, and Prasad, 2019)]
 ]
 
 &lt;img src="images/PlantMicrobiomeComposition.png" width="470px" height="470px" style="display: block; margin: auto;" /&gt;
@@ -417,7 +447,7 @@ class: inverse, middle, center
 
 .m10bp[
 &lt;img src="images/holobiont1.png" width="800px" style="display: block; margin: auto;" /&gt;
-.right[.font50[(Berg, Köberl, Rybakova, et al., 2017)]]
+.right[.font50[(Berg, Köberl, Rybakova, Müller, Grosch, and Smalla, 2017)]]
 ]
 
 .m0p[
@@ -426,13 +456,23 @@ class: inverse, middle, center
 ]
 ]
 
+???
+
+.n30[
+- olobionte definisce l'organismo vivente alla luce della convivenza con il proprio microbiota
+
+- Se l'organismo e' un olobionte, il suo genoma sara' un ologenoma, ovvero l'insieme del genoma dell'organismo ospite e del genoma dei microrganismi che lo abitano
+
+- Se davvero questi genomi si comportano come una cosa sola, l'ologenoma deve essere considerato un'unità di selezione, ovvero un unico bersaglio della selezione naturale, e in quanto tale evolve come un unico individuo
+]
+
 ---
 
 .pull-left[
 ### Holobiont functions
 .m0p[
 &lt;img src="images/holobiont2.png" width="500px" style="display: block; margin: auto;" /&gt;
-.right[.font50[(Theis, Dheilly, Klassen, et al., 2016)]]
+.right[.font50[(Theis, Dheilly, Klassen, Brucker, Baines, Bosch, Cryan, Gilbert, Goodnight, Lloyd, Sapp, Vandenkoornhuyse, Zilber-Rosenberg, Rosenberg, and Bordenstein, 2016)]]
 ]
 ]
 
@@ -452,6 +492,15 @@ class: inverse, middle, center
 - The presence of microbes in plants became initially noticeable when diseases appeared. However, the vast majority of microbes in plants are not causal agents of damage in plants
 ]
 ]
+]
+
+???
+
+.n30[
+- La presenza dei micororganismi sulle piante e' di certo legata alla presenza di malattie. MA, la maggior parte dei microorganismi non causano alcuna malattia alla pianta.
+
+- Anzi, questi microorganismi possono contribuire a diversi aspetti: 
+
 ]
 
 ---
@@ -661,7 +710,7 @@ class: inverse, middle, center
 .center[.font120[Metagenomics]]
 
 &lt;img src="images/metagenomics1.png" width="720px" style="display: block; margin: auto;" /&gt;
-.right[.font50[(Ye, Siddle, Park, et al., 2019)]]
+.right[.font50[(Ye, Siddle, Park, and Sabeti, 2019)]]
 .h25[
 - **Metagenomics** is the study of genetic material recovered directly from environmental samples
 
@@ -678,7 +727,7 @@ class: inverse, middle, center
 .pull-left[
 .m0p[
 &lt;img src="images/compareBarcodingMetagenome.png" width="450px" style="display: block; margin: auto;" /&gt;
-.right[.font50[(Gill, Baldock, Brown, et al., 2016)]]
+.right[.font50[(Gill, Baldock, Brown, Cresswell, Dicks, Fountain, Garratt, Gough, Heard, Holland, Ollerton, Stone, Tang, Vanbergen, Vogler, Woodward, Arce, Boatman, Brand-Hardy, and Potts, 2016)]]
 ]]
 
 
@@ -733,7 +782,7 @@ Workflow:
 
 .pull-right[
 &lt;img src="images/metagenomicsPipeline.png" width="380px" style="display: block; margin: auto;" /&gt;
-.right[.font50[(Roumpeka, Wallace, Escalettes, et al., 2017)]]
+.right[.font50[(Roumpeka, Wallace, Escalettes, Fotheringham, and Watson, 2017)]]
 ]
 
 ---
@@ -774,7 +823,7 @@ class: inverse, center, middle
 .white[Metatranscriptomics]
 
 &lt;img src="images/Meta1.png" width="620px" style="display: block; margin: auto;" /&gt;
-.right[.font50[(Vanwonterghem, Jensen, Ho, et al., 2014)]]
+.right[.font50[(Vanwonterghem, Jensen, Ho, Batstone, and Tyson, 2014)]]
 
 ---
 
@@ -898,7 +947,7 @@ Stable/radioactive isotopes
 .pull-rigth[
 &lt;img src="images/sip1.png" width="280px" style="display: block; margin: auto;" /&gt;
 ]
-.right[.font50[(Uhlik, Leewis, Strejcek, et al., 2013)]]
+.right[.font50[(Uhlik, Leewis, Strejcek, Musilova, Mackova, Leigh, and Macek, 2013)]]
 
 ---
 

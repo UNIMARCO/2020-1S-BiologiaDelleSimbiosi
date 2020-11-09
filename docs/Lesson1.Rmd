@@ -679,37 +679,6 @@ knitr::include_graphics("images/holobiont2.png")
 ]
 
 ---
-
-.pull-left[
-### Holobiont co-evolution
-.m0p[
-```{r echo=FALSE, out.width="600px"}
-knitr::include_graphics("images/holobiont3.png")
-```
-.right[.font50[`r Cite(bib, key = "Hassani:2018aa")`]]
-
-
-]
-]
-
-.pull-right[
-.m0p[
-.h26[
-- Holobiont also contributes to genetic variation and to the origin and evolution of species
-
-- Evolution proceeds both via cooperation and competition, working in parallel
-  
-- Acquisition of microbes and microbial genes is a powerful mechanism for driving the evolution of complexity
-  - Horizontal gene transfer (HGT) refers to the transfer of genes between organisms in a
-    manner other than the vertical transmission of genes from parent
-    to offspring
-
-]
-]
-]
-
-
----
 layout: true
 
 # How do you study the microbiota composition?

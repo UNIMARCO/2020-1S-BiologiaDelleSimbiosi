@@ -1,7 +1,10 @@
-all : L1 L2 L3
+all : L1 L1b L2 L3
 
 L1 : Lesson1.Rmd
 	Rscript -e "library(rmarkdown); render('Lesson1.Rmd', 'xaringan::moon_reader')"
+
+L1b : Lesson1-bis.Rmd
+	Rscript -e "library(rmarkdown); render('Lesson1-bis.Rmd', 'xaringan::moon_reader')"
 
 L2 : Lesson2.Rmd
 	Rscript -e "library(rmarkdown); render('Lesson2.Rmd', 'xaringan::moon_reader')"

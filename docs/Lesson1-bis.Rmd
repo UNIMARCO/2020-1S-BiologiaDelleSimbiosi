@@ -1,11 +1,11 @@
 ---
 title: "Microbiota"
-subtitle: "Lesson 1"
+subtitle: "Lesson 1 bis"
 author: "Marco Chiapello"
 date: "???"
 output:
   xaringan::moon_reader:
-    css: ["scrollable.css", "mtheme_max.css", "fonts_mtheme_max.css"]
+    css: ["scrollable.css", "mtheme_max.css", "fonts_mtheme_max.css", "lesson3.css"]
     self_contained: false
     lib_dir: libs
     chakra: libs/remark-latest.min.js
@@ -77,13 +77,32 @@ Marco Chiapello
 ]
 ]
 
-???
+---
+layout: true
 
-.n30[
+# Last lesson check
 
-- Sarò uno dei vostri docenti per il corso "Interazioni tra piante, microrganismi e ambiente"
+---
+
+```{r echo=FALSE, out.width="500px"}
+knitr::include_graphics("images/qr-code_lesson1.png")
+```
+
+.center[https://bit.ly/3np9ILA]
+
+---
+
+class: clear, middle, center
+
+
+.m0tbp[
+```{r echo=FALSE, out.width="950px"}
+# source("extra/Lesson1_test.R")
+# knitr::include_graphics("images/Lesson1_test.png")
+```
 ]
 
+---
 ---
 layout: true
 

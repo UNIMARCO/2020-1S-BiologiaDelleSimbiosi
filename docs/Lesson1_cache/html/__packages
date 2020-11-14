@@ -3,3 +3,11 @@ rmarkdown
 ggplot2
 RefManageR
 xaringanExtra
+tidyverse
+tibble
+tidyr
+readr
+purrr
+dplyr
+stringr
+forcats

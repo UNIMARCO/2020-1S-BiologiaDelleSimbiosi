@@ -199,7 +199,7 @@ knitr::include_graphics("images/microbioma.jpg")
 <br>
 ```{r echo=FALSE, out.width = "550px"}
 #  library(tidyverse)
-#  library(gganimate)
+# #  library(gganimate)
 # # Read data
 #  mt <- read_delim("data/microbiotaPublications.txt", delim = "\t") %>%
 #    drop_na %>%
@@ -230,12 +230,15 @@ knitr::include_graphics("images/microbioma.jpg")
 #    labs(x = "", y = "",
 #         title = "Numero di pubblicazioni con parola chiave microbiota o microbioma",
 #         caption = "Source: ISI Web of Science",
-#         subtitle = "Ricerca effettuata a Settembre 2020\nAnno: Year: {round(frame_along, 0)}") +
-#    transition_reveal(Year)
-#  animate(an, nframes = 1000, fps = 25, end_pause = 900)
-#  anim_save("images/microPublications.gif")
+#         subtitle = "Ricerca effettuata a Settembre 2020")
+# 
+# ggsave(an, file="images/microPublications.png", units = "cm", width = 20)
+# #         subtitle = "Ricerca effettuata a Settembre 2020\nAnno: Year: {round(frame_along, 0)}") +
+# #    transition_reveal(Year)
+# #  animate(an, nframes = 1000, fps = 25, end_pause = 900)
+# #  anim_save("images/microPublications.gif")
 
-knitr::include_graphics("images/microPublications.gif")
+knitr::include_graphics("images/microPublications.png")
 ```
 
 ---
@@ -292,7 +295,7 @@ knitr::include_graphics("images/microNubers.jpg")
 
 ---
 .center[Temporal human microbiota]
-```{r, echo=FALSE, out.width="780px", include=TRUE}
+```{r, echo=FALSE, out.width="750px", include=TRUE}
 knitr::include_graphics("images/humanEvo.jpg")
 ```
 
@@ -358,42 +361,43 @@ class: clear
 
 
 ```{r echo = FALSE, out.width = "630px"}
-#  library(tidyverse)
+ library(tidyverse)
 #  library(gganimate)
-# #  Read data
-#  mt <- read_delim("data/PlantmicrobiotaPublications.txt", delim = "\t") %>%
-#    drop_na %>%
-#    mutate(Year = as.numeric(`Publication Years`),
-#           title = "Plant microbiota") %>%
-#    filter(Year > 2004, Year < 2020) %>%
-#    select(Year, records, title)
-#  mm <- read_delim("data/PlantmicrobiomaPublications.txt", delim = "\t")%>%
-#    drop_na%>%
-#    mutate(Year = as.numeric(`Publication Years`),
-#           title = "Plant microbioma") %>%
-#    filter(Year > 2004, Year < 2020) %>%
-#    select(Year, records, title)
-# 
-# #  Combine data for printing
-#  an <- mt %>%
-#    bind_rows(mm) %>%
-#    ggplot(aes(x = Year,
-#               y = records)) +
-#    geom_line(aes(color = title), size = 1) +
-#    scale_color_manual(values = c("#ef8a62", "#999999")) +
-#    theme_classic() +
-#    theme(legend.title = element_blank(),
-#          legend.position = "bottom",
-#          legend.text = element_text(size = 20),
-#          panel.grid.major.y = element_line()) +
-#    labs(x = "", y = "",
-#         title = "Numero di pubblicazioni con parola chiave microbiota e pianta o microbioma  e pianta ",
-#         caption = "Source: ISI Web of Science",
-#         subtitle = "Ricerca effettuata a Settembre 2020\nAnno: Year:  {round(frame_along, 0)}") +
+#  Read data
+ mt <- read_delim("data/PlantmicrobiotaPublications.txt", delim = "\t") %>%
+   drop_na %>%
+   mutate(Year = as.numeric(`Publication Years`),
+          title = "Plant microbiota") %>%
+   filter(Year > 2004, Year < 2020) %>%
+   select(Year, records, title)
+ mm <- read_delim("data/PlantmicrobiomaPublications.txt", delim = "\t")%>%
+   drop_na%>%
+   mutate(Year = as.numeric(`Publication Years`),
+          title = "Plant microbioma") %>%
+   filter(Year > 2004, Year < 2020) %>%
+   select(Year, records, title)
+
+#  Combine data for printing
+ an <- mt %>%
+   bind_rows(mm) %>%
+   ggplot(aes(x = Year,
+              y = records)) +
+   geom_line(aes(color = title), size = 1) +
+   scale_color_manual(values = c("#ef8a62", "#999999")) +
+   theme_classic() +
+   theme(legend.title = element_blank(),
+         legend.position = "bottom",
+         legend.text = element_text(size = 20),
+         panel.grid.major.y = element_line()) +
+   labs(x = "", y = "",
+        title = "Numero di pubblicazioni con parola chiave microbiota e pianta o microbioma  e pianta ",
+        caption = "Source: ISI Web of Science",
+        subtitle = "Ricerca effettuata a Settembre 2020")
+ggsave(an, file="images/PlantmicroPublications.png", units = "cm", width = 20)
 #    transition_reveal(Year)
 #  animate(an, nframes = 1000, fps = 25, end_pause = 900)
 #  anim_save("images/PlantmicroPublications.gif")
-knitr::include_graphics("images/PlantmicroPublications.gif")
+knitr::include_graphics("images/PlantmicroPublications.png")
 ```
 
 ---

@@ -94,24 +94,123 @@ knitr::include_graphics("images/qr-code_lesson1.png")
 
 class: clear, middle, center
 
+# .black[Il microbiota vegetale varia?]
 
 .m0tbp[
 ```{r echo=FALSE, out.width="950px"}
-# source("extra/Lesson1_test.R")
-# knitr::include_graphics("images/Lesson1_test.png")
+# Load libraries
+library(tidyverse)
+library(googledrive)
+library(googlesheets4)
+library(patchwork)
+library(gt)
+
+# drive_auth()
+# gs4_auth(token = drive_token())
+
+# Either specify the user:
+drive_auth(email = "mc983.cam@gmail.com")
+# Or, if you don't use multiple Google identities, you can be more vague:
+drive_auth(email = TRUE)
+gs4_auth(token = drive_token())
+
+# Read data
+x <- read_sheet("https://docs.google.com/spreadsheets/d/1sdDGSWsAMKoohNJCBRrEwekarL_8xakCTmcHQFb_NnU/edit#gid=2067277305")
+
+# Domanda 1
+d1 <- x %>%
+	select(3)
+names(d1) <- "Opzioni"
+d1 %>%
+	group_by(Opzioni) %>%
+    summarise(Risposte = sum(n())) %>%
+	gt() %>%
+    text_transform(
+       locations = cells_body(
+         columns = "Risposte",
+         rows = Opzioni != "Si, varia nel tempo. In diversi momenti della vita della pianta la composizione del microbiota muta"),
+       fn = function(x) paste(x, fontawesome::fa("times-circle", fill = "red"))
+     )%>%
+    text_transform(
+       locations = cells_body(
+         columns = "Risposte",
+         rows = Opzioni == "Si, varia nel tempo. In diversi momenti della vita della pianta la composizione del microbiota muta"),
+       fn = function(x) paste(x, fontawesome::fa("check-circle", fill = "green"))
+     )
 ```
 ]
 
 ---
+
+class: clear, middle, center
+
+# .black[Qual è la forza selettiva maggiore che da forma al microbiota associato alle piante?]
+
+.m0tbp[
+```{r echo=FALSE, out.width="950px"}
+# Domanda 1
+d2 <- x %>%
+	select(4)
+names(d2) <- "Opzioni"
+d2 %>%
+	group_by(Opzioni) %>%
+    summarise(Risposte = sum(n())) %>%
+	gt() %>%
+    text_transform(
+       locations = cells_body(
+         columns = "Risposte",
+         rows = Opzioni != "La pianta"),
+       fn = function(x) paste(x, fontawesome::fa("times-circle", fill = "red"))
+     )%>%
+    text_transform(
+       locations = cells_body(
+         columns = "Risposte",
+         rows = Opzioni == "La pianta"),
+       fn = function(x) paste(x, fontawesome::fa("check-circle", fill = "green"))
+     )
+```
+]
+
+---
+
+class: clear, middle, center
+
+# .black[Per olobiote si intende...]
+
+.m0tbp[
+```{r echo=FALSE, out.width="950px"}
+# Domanda 1
+d3 <- x %>%
+	select(5)
+names(d3) <- "Opzioni"
+d3 %>%
+	group_by(Opzioni) %>%
+    summarise(Risposte = sum(n())) %>%
+	gt() %>%
+    text_transform(
+       locations = cells_body(
+         columns = "Risposte",
+         rows = Opzioni != "Un organismo vivente alla luce della convivenza con il proprio microbiota"),
+       fn = function(x) paste(x, fontawesome::fa("times-circle", fill = "red"))
+     )%>%
+    text_transform(
+       locations = cells_body(
+         columns = "Risposte",
+         rows = Opzioni == "Un organismo vivente alla luce della convivenza con il proprio microbiota"),
+       fn = function(x) paste(x, fontawesome::fa("check-circle", fill = "green"))
+     )
+```
+]
+
 ---
 layout: true
 
 # Last lesson recap
 
 ---
-<br>
 
 .pull-left[
+<br>
 .m0p[
 .h25o[
 1. Plant microbiota changes spatially and temporally
@@ -120,14 +219,16 @@ layout: true
 
 1. Plants and their associated microorganisms form a holobiont
 
+1. Core and Hub microbiota
+
 ]
 ]
 ]
 
 ---
-<br>
 
 .pull-left[
+<br>
 .m0p[
 .h25o[
 1. Plant microbiota change spatially and temporally
@@ -135,6 +236,8 @@ layout: true
 1. .opacity10[ Plant compartment is a major selective force that shapes the composition of plant-associated microbiota]
 
 1. .opacity10[ Plants and their associated microorganisms form a holobiont]
+
+1. .opacity10[ Core and Hub microbiota]
 
 ]
 ]
@@ -155,9 +258,8 @@ knitr::include_graphics("images/plantMicrobiotaTemporal.png")
 
 ---
 
-<br>
-
 .pull-left[
+<br>
 .m0p[
 .h25o[
 1. .opacity10[ Plant microbiota change spatially and temporally]
@@ -165,6 +267,8 @@ knitr::include_graphics("images/plantMicrobiotaTemporal.png")
 1. Plant compartment is a major selective force that shapes the composition of plant-associated microbiota
 
 1. .opacity10[ Plants and their associated microorganisms form a holobiont]
+
+1. .opacity10[ Core and Hub microbiota]
 
 ]
 ]
@@ -184,6 +288,7 @@ knitr::include_graphics("images/fungalDiv.png")
 ---
 
 .pull-left[
+<br>
 .m0p[
 .h25o[
 1. .opacity10[ Plant microbiota change spatially and temporally]
@@ -191,6 +296,8 @@ knitr::include_graphics("images/fungalDiv.png")
 1. .opacity10[ Plant compartment is a major selective force that shapes the composition of plant-associated microbiota]
 
 1. Plants and their associated microorganisms form a holobiont
+
+1. .opacity10[ Core and Hub microbiota]
 
 ]
 ]
@@ -200,6 +307,36 @@ knitr::include_graphics("images/fungalDiv.png")
 <br>
 ```{r echo=FALSE, out.width="800px"}
 knitr::include_graphics("images/holobiont1.png")
+```
+
+]
+
+---
+
+.pull-left[
+<br>
+.m0p[
+.h25o[
+1. .opacity10[ Plant microbiota change spatially and temporally]
+
+1. .opacity10[ Plant compartment is a major selective force that shapes the composition of plant-associated microbiota]
+
+1. .opacity10[Plants and their associated microorganisms form a holobiont]
+
+1. Core and Hub microbiota
+
+]
+]
+]
+
+.pull-right[
+<br>
+```{r echo=FALSE, out.width="200px"}
+knitr::include_graphics("images/core1.png")
+```
+
+```{r echo=FALSE, out.width="200px"}
+knitr::include_graphics("images/core2.png")
 ```
 
 ]
@@ -220,7 +357,17 @@ class: clear
 - .font140[What are they doing?]
 ]
 
+???
 
+.n[
+- Questa lezione prevede dei capitoli che riguardano la **pratica** dello studio del microbiota
+
+- Nel primo capitolo vedremo come si rispone alla domanda: "Chi è presente?"
+
+- Nel secondo capitolo risponderemo alla domanda: "Quali funzioni possono avere i microorganismi che compongono il microbiota?"
+
+- Ed infine risponderemo alla domanda, forse, più importante: "Che cosa STANNO facendo i microorganismi presenti nel microbiota"
+]
 
 
 ---
@@ -229,11 +376,18 @@ layout: true
 # How do you study the microbiota composition?
 
 
-
 ---
 class: inverse, middle, center
 
 ----
+
+???
+
+.n[
+- Inziamo a vedere come si studia la composizione del microbiota
+
+- Rispondiamo quindi alla domanda: "Chi è presente?"
+]
 
 ---
 
@@ -245,6 +399,14 @@ knitr::include_graphics("images/microbiotaCompositionTecniques.png")
 ```
 
 .right[.font60[`r Cite(bib, key = "Lebeis_2014")`]]
+]
+
+???
+
+.n30[
+- Le 2 metodologie di studio del microbiota si basano su 2 principi diametralmente opposti:
+  - Da una parta vedremo un approccio indipendete dalla coltura in vitro ma basato sul materiale genetico     
+  - Dall'altra un approccio esclusivamente incentrato sulla coltura in vitro
 ]
 
 ---
@@ -264,6 +426,18 @@ knitr::include_graphics("images/microbiotaCompositionTecniques.png")
 
 ]
 
+???
+
+.n[
+
+- **Easy Poll**
+
+- Focalizziamo la nostra attenzione sul sistema coltura dipendente
+
+- Questo approccio ha un grande punto di forza: Permette di isolare i microbi in coltura pura (ovviamente tutti quelli coltivabili in vitro - esclusi i simbioti obbligati)
+
+- Il problema di questo approccio è sicuramente la sottostima della diversità all'interno del microbiota
+]
 ---
 
 .pull-left[
@@ -284,16 +458,42 @@ knitr::include_graphics("images/microbiotaCompositionTecniques.png")
 ```
 ]
 
+???
+
+.n30[
+- Il metodo indipendente dalla coltura, che approfondiremo meglio nelle prossime slides, ha 2 indiscutibili vantaggi: 
+  - L'abilità non solo di identificare ma anche di quantificare l'abbondanza dei microorganismi presenti. Permettendo di identificare anche organismi estremamente poco abbondanti     
+  - Utilizzando approcci bioinformatici è possibile ricavare importati informazioni sul funzionamento dell'intera comunità e non solo sui singoli individui
+  
+- Questo approccio, però, non permette di isolare i singoli microrganismi
+
+- Isolare i singoli microorganismi può essere importante per la riscostruzione delle Comunità Sintetiche che permettono lo studio in laboratorio o l'applicazione in agricoltura per migliorare la resa delle colture vegetali
+]
+
 ---
 
 .center[.font150[Microbial DNA metabarcoding]]
 
 > **DNA metabarcoding** is a method of **DNA barcoding** that uses universal genetic markers to identify DNA of a mixture of organisms
 
+
+???
+
+.n30[
+
+- Vediamo ora come studiare il microbiota con **tecniche coltura indipendenti**!
+- Per studiare il microbiota e quindi identificare gli organismi lo compongono si utilizza una tecnica chiamata **DNA METABARCODING**
+
+- Questa tecnica utilizza il **DNA barcoding** per studiare la composizione del microbiota
+
+- **CHE COS'E' il DNA BARCODING"**
+]
+
 --
 
 <br>
 .content-box-grey[What is it the <br> **DNA barcoding**?]
+
 
 ---
 
@@ -307,6 +507,18 @@ knitr::include_graphics("images/microbiotaCompositionTecniques.png")
 ```{r echo=FALSE, out.width="520px"}
 knitr::include_graphics("images/DNAbarcoding.png")
 ```
+
+???
+
+.n30[
+- Il DNA Barcoding è una tecnica che permette di identificare l'organismo studiato basandosi su una sua specifica sequenza nucleotidica
+
+- L'idea è utilizzare una sequenza di DNA per identificare un organismo in maniera univoca. 
+
+- Dopo aver identificato la sequenza specifica, questa viene confrontata con un database di riferimento per essere classificata
+
+- Un paragone potrebbe essere quello di utilizzare il vostro codica fiscale per identiifcarvi. La sequenza di lettere e numeri non mi da informazioni, ma cercandolo in un database potrei conosce il vostro nome e cognome  e identificarvi in modo univoco
+]
 
 ---
 
@@ -335,6 +547,41 @@ knitr::include_graphics("images/DNAbarcoding2.png")
 .right[.font50[(Mosa et al., 2019)]]
 ]
 
+???
+
+.n30[
+- Siccome i microrganismi non sono registrati all'anagrafe e non hanno un loro CF, cosa possiamo usare come sequenza univoca per identificarli?
+
+- La selezione di queste sequenze marker (**chiamate barcode**) è cruciale per l'identificazione dei microorganismi
+
+- In un modo perfetto esisterebbe un unico barcode, cioè un singolo marker che ci permeterebbe si identificare e distinguere tutti i gruppi tassonomici
+
+- Ma ovviamente non viviamo in un mondo ideale! E questo marker non è ancora stato individuato e probabilmente non lo sarà mai
+
+- Quindi, diversi gruppi tassonomici usano diversi tipi di barcodes
+
+- Sulla destra della slide vedete un tipico cromatogramma di sequenziamento. Da quest'immagine è facile capire perchè i markers sono chiamati barcodes
+]
+
+---
+
+.center[.font150[Sequencing]]
+
+**Sanger Sequencing**
+
+.pull-left-narrow[
+.h25[
+<br><br>
+Sanger sequencing, also known as the “chain termination method”, is a method for determining the nucleotide sequence of DNA. The method was developed by two time Nobel Laureate Frederick Sanger and his colleagues in 1977, hence the name the Sanger Sequence
+]
+]
+
+.pull-right-wide[
+```{r echo=FALSE, out.width="820px"}
+knitr::include_graphics("images/sanger.png")
+```
+]
+
 ---
 
 .center[.font150[Microbial DNA metabarcoding]]
@@ -352,6 +599,39 @@ knitr::include_graphics("images/DNAbarcoding2.png")
 
 .font80[When barcoding is used to identify organisms from a sample containing DNA from more than one organism, the term DNA metabarcoding is used]
 
+???
+
+.n30[
+- Vedete qui una lista di barcodes per diversi organismi
+
+- Questi geni sono stati scelti a causa della dell'evoluzione lenta 
+
+- COX1 enzima chiave del metabolismo aerobico
+
+- Internal transcribed spacer (ITS): sono regioni non codificanti di DNA situate tra geni. ITS in partcilare tra le subunità dellRNA ribosomiale
+
+- ribulosio-1,5-bisfosfato carbossilasi/ossigenasi: tramite la fissazione del carbonio, è il principale produttore di materia organica nell'ecosistema terrestre
+
+- RNA ribosomiale 16 S (o rRNA 16 S) è una componente della subunità 30S di un ribosoma procariotico
+
+- Il 18S è l'omologo eucariota del 16S dei procariotu
+]
+
+---
+
+.center[.font150[Microbial DNA metabarcoding]]
+
+**Metabarcoding process**
+
+```{r echo=FALSE, out.width="920px"}
+knitr::include_graphics("images/barcoding.png")
+```
+
+???
+
+.n[
+- **Easy Poll**
+]
 
 ---
 
@@ -407,6 +687,11 @@ class: inverse, middle, center
 
 ----
 
+???
+
+.n[
+- Prendiamo ora in considerazione quella tecnica che oltre a permetterci di identificare i componenti del microbiota ci permette anche di capire cosa "potenzialmente" possono fare!
+]
 ---
 
 .center[.font120[Metagenomics]]
@@ -425,9 +710,22 @@ knitr::include_graphics("images/metagenomics1.png")
 - Due to its random nature, metagenomics, allows that many **under-represented organisms will be detected**
 ]
 
+???
+
+.n30[
+- La metagenomica studia il DNA isolato da un campione ambientale
+
+- Questo campione può essere considerato come un singolo campione e quindi come tale analizzato
+
+- La figura illustra la procedura di analisi di un campione di metagenomica. Come potete vedere 3 steps sono necessari:
+  1. Estrazione
+  1. Sequenziamento
+  1. Classificazione
+]
+
 ---
 
-.center[Metagenomics vs Barcoding]
+.center[Metagenomics vs Metabarcoding]
 .pull-left[
 .m0p[
 ```{r echo=FALSE, out.width="450px"}
@@ -448,6 +746,16 @@ knitr::include_graphics("images/compareBarcodingMetagenome.png")
 
 - Metagenomics allows the characterization of a large number of coding and non-coding sequences that can be used to decipher the microbial diversity or to understand its metabolic potential
 ]
+]
+
+???
+
+.n30[
+- La differenza fondamentale tra Metagenomica e Metabarcoding è che per la Metagenomica non serve alcun barcode (marker)
+
+- Questo perchè in metagenomica tutto il DNA presente nel campione viene sequenziato
+
+- Il risultato del sequenziamento permette di ricostruire gran parte dei geni presenti nel microbiota, permettondo così di capire quali organismi sono presenti ma anche cosa potenzialmente questi geni possono esprimere
 ]
 
 ---
@@ -491,12 +799,20 @@ knitr::include_graphics("images/compareBarcodingMetagenome.png")
 knitr::include_graphics("images/CompareHTS.png")
 ```
 
+???
+
+.n30[
+- Consideriamo il range tra il sanger sequencing method e 
+llumina HiSeq
+]
+
 ---
 
 .center[
 .middle[
 <iframe width="840" height="473" src="https://www.youtube.com/embed/fCd6B5HRaZ8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ]
+https://bit.ly/2IGGiJE
 ]
 ---
 
@@ -507,6 +823,17 @@ knitr::include_graphics("images/CompareHTS.png")
 knitr::include_graphics("images/Align.png")
 ```
 ]
+
+???
+
+.n[
+- I frammenti generati dal sequenziamento devono poi essere **assemblati** per ricostruire il/i genomi presenti nel campione
+
+- 2 tipi assembli a seconda che sia presente un genoma di riferimento
+
+- Mappaggio per dire chi è più o meno abbondante
+]
+
 ---
 .font120[**Functional Metagenomics Analysis**]
 
@@ -514,13 +841,15 @@ knitr::include_graphics("images/Align.png")
 .m10ulp[
 Workflow:
 
+- Binning
+
 - Metagenomic assembly
 
-- Open Reading Frames (ORF) prediction
+- Gene prediction
 
-- Annotation step performed by homology detection (at proteomic level)
+- Gene annotation 
 
-- Reconstruction of metabolic pathways is achieved from enzyme-coding genes 
+- Reconstruction of metabolic pathways (achieved from enzyme-coding genes)
 ]]
 
 .pull-right[
@@ -533,7 +862,10 @@ knitr::include_graphics("images/metagenomicsPipeline.png")
 ???
 
 .n30[
-- In metagenomica, il binning è il processo di raggruppamento di letture o contigs e di assegnarli a unità tassonomiche operative
+
+- In questa slide vediamo come facciamo a definire quali sono i potenziali processi del microbiota analizzato
+
+- In metagenomica, il binning è il processo di raggruppamento delle reads o contigs e di assegnarli a unità tassonomiche operative
 ]
 
 ---
@@ -544,13 +876,15 @@ knitr::include_graphics("images/metagenomicsPipeline.png")
 .m10ulp[
 Workflow:
 
+- Binning
+
 - Metagenomic assembly
 
-- Open Reading Frames (ORF) prediction
+- Gene prediction
 
-- Annotation step performed by homology detection (at proteomic level)
+- Gene annotation 
 
-- Reconstruction of metabolic pathways is achieved from enzyme-coding genes 
+- Reconstruction of metabolic pathways (achieved from enzyme-coding genes)
 ]]
 
 .pull-right[
@@ -571,6 +905,11 @@ class: inverse, center, middle
 
 ----
 
+???
+
+.n[
+- In fine vediamo come studiare le funzioni reali del microbiota
+]
 ---
 
 .white[Metatranscriptomics]
@@ -593,6 +932,23 @@ class: inverse, center, middle
 knitr::include_graphics("images/Meta1.png")
 ```
 .right[.font50[`r Cite(bib,  key = "VANWONTERGHEM201455")`]]
+
+???
+
+.n30[
+- Fin'ora ci siamo occupati di DNA metabarcoding e Metagenomics
+
+- Abbiamo visto come il DNA Metabercoding risponda alla domanda "Chi è presente?"
+
+- Il Metagenoma risponde sia alla domanda "Chi è presente?" sia alla domanda "Cosa potenzialmente puà fare il microbiota"
+
+- Vediamo ora quali tecniche ci permettono di studiare le funzioni del microbiota:
+
+1. Metatranscriptomics
+1. Metaproteomics
+1. Metabolomics
+1. SIP: Stable isotop probing
+]
 
 ---
 
@@ -627,6 +983,19 @@ knitr::include_graphics("images/metatrranscriptomePL.png")
 ]
 ]
 
+???
+
+.n30[
+- La metatranscrittomica studia l'espressione genica dei microorganismi nell'ambiente ovvero studia l'**mRNA**
+
+- Essendo una tecnica basata sul sequenziamento permette di ottenere tutti gi mRNA messaggeri presenti nel campione e quindi di avere il profili di espressione dell'ologenoma
+
+- Guardando la figura salla dx vediamo come si sviluppa schematicamente un'analisi di metatrascrittomica
+
+- [...]
+
+- Mi permetto di farvi notate la diversa dimensione dei 2 riquadri e dell'importanza che riveste oggi la parte di bioinformatica
+]
 ---
 
 Metaproteomics
@@ -646,7 +1015,7 @@ Metaproteomics
 
 - Metaproteomics have rapidly increased in recent years due to many technological advances in mass spectrometry (MS)
 
-- `r fontawesome::fa("plus-circle", fill = "green")` Metatranscriptomics assess the “expressed” metabolism and physiology of microbial community members, but also allows quantification of per-species biomass to determine community structure
+- `r fontawesome::fa("plus-circle", fill = "green")` Metaproteomics assess the “expressed” metabolism and physiology of microbial community members, but also allows quantification of per-species biomass to determine community structure
 
 - `r fontawesome::fa("plus-circle", fill = "green")` Proteomics quantifies the real proteins expression level, while mRNA may be degraded or translated inefficiently, resulting in a incorrect estimation of protein expression level
 ]
@@ -657,6 +1026,16 @@ Metaproteomics
 knitr::include_graphics("images/metaproteomics.png")
 ```
 .right[.font30[https://www.ecu.edu.au/schools/science/research-activity/research-support/proteomics/what-is-lc-ms-proteomics]]
+]
+
+???
+
+,n30[
+- La Metaproteomica studia le proteine espresse dalla comunità di microorganismi presa in esame
+
+- La proteomics lavora sulle proteine espresse, cioè i veri attori del metabolismo. A differenza di quanto fa la trascrittomica
+
+- Come funziona la proteomica
 ]
 
 ---
@@ -686,19 +1065,29 @@ Metabolomics
 
 .pull-rigth[
 <br><br>
-```{r echo=FALSE, out.width="480px"}
+```{r echo=FALSE, out.width="550px"}
 knitr::include_graphics("images/metabolomics.png")
 ```
 ]
-.right[.font50[`r Cite(bib,  key = "alonso2015")`]]
+.right[.font70[`r Cite(bib,  key = "alonso2015")`]]
 
 
 ???
 
 .n30[
-- hydrophilic
-  carbohydrates, volatile alcohols, ketones, amino and non- amino organic acids, hydrophobic lipids and complex natural compounds (secondary metabolites such as antibiotics, pigments, non-ribosomal peptides, cofactors)
+- La metabolomica è lo studio dei metaboliti
+
+- I metaboliti sono molecole di dimensione inferiore ai 1.5 KDa e rappresentano gli intermedi o i prodotti finali delle reazioni enzimatiche 
+
+- Ci informano per tanto sulle reali attività biochimiche in atto!!
+
+- Esempi di metaboliti sono: carboidrati idrofilici, alcool volatili, chetoni, metaboliti secondari come antibiotici e pigmenti
+
+- Descrizione figura
+
+- Spettroscopia di risonanza magnetica nucleare
 ]
+
 
 ---
 
@@ -733,6 +1122,16 @@ knitr::include_graphics("images/sip1.png")
 ```
 ]
 .right[.font50[`r Cite(bib,  key = "UHLIK2013154")`]]
+
+???
+
+.n30[
+- La Stable isotope probing è una tecnica che utilizzando isotopi radioattivi traccia il flusso dei nutrienti utilizzati dai microorganismi
+
+- Tra i pro di questa tecnica c'è la possibilità di studiare in detttaglio specifiche funzioni della popolazione microbica
+
+- Per contro questa tecnica è molto complessa a livello pratico e molto costaosa a livello economico
+]
 
 ---
 
@@ -785,6 +1184,16 @@ knitr::include_graphics("images/sb2.png")
 ```
 
 ]
+]
+
+???
+
+.n30[
+- Qual è la tecnica per studiare al meglio il microbiota?
+
+- La soluzione migliore è usarle tutte e combinarle insieme in quello che viene chiamato System biology
+
+- Tutti questi dati integrati dovrebbero permetterci una migliore comprensione del sistema studiato, aiutarci a create dei modelli e grazie a questi modelli predirre le risposte del sistema
 ]
 
 ---

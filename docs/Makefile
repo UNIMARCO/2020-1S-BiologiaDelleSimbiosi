@@ -1,4 +1,4 @@
-all : L1 L1b L2 L3
+all : clean L1 L1b L2 L3
 
 L1 : Lesson1.Rmd
 	Rscript -e "library(rmarkdown); render('Lesson1.Rmd', 'xaringan::moon_reader')"

@@ -359,7 +359,7 @@ class: clear
 
 ???
 
-.n[
+.h201[
 - Questa lezione prevede dei capitoli che riguardano la **pratica** dello studio del microbiota
 
 - Nel primo capitolo vedremo come si rispone alla domanda: "Chi è presente?"
@@ -383,7 +383,7 @@ class: inverse, middle, center
 
 ???
 
-.n[
+.h201[
 - Inziamo a vedere come si studia la composizione del microbiota
 
 - Rispondiamo quindi alla domanda: "Chi è presente?"
@@ -403,7 +403,7 @@ knitr::include_graphics("images/microbiotaCompositionTecniques.png")
 
 ???
 
-.n30[
+.h201[
 - Le 2 metodologie di studio del microbiota si basano su 2 principi diametralmente opposti:
   - Da una parta vedremo un approccio indipendete dalla coltura in vitro ma basato sul materiale genetico     
   - Dall'altra un approccio esclusivamente incentrato sulla coltura in vitro
@@ -428,7 +428,7 @@ knitr::include_graphics("images/microbiotaCompositionTecniques.png")
 
 ???
 
-.n[
+.h201[
 
 - **Easy Poll**
 
@@ -460,7 +460,7 @@ knitr::include_graphics("images/microbiotaCompositionTecniques.png")
 
 ???
 
-.n30[
+.h201[
 - Il metodo indipendente dalla coltura, che approfondiremo meglio nelle prossime slides, ha 2 indiscutibili vantaggi: 
   - L'abilità non solo di identificare ma anche di quantificare l'abbondanza dei microorganismi presenti. Permettendo di identificare anche organismi estremamente poco abbondanti     
   - Utilizzando approcci bioinformatici è possibile ricavare importati informazioni sul funzionamento dell'intera comunità e non solo sui singoli individui
@@ -479,7 +479,7 @@ knitr::include_graphics("images/microbiotaCompositionTecniques.png")
 
 ???
 
-.n30[
+.h201[
 
 - Vediamo ora come studiare il microbiota con **tecniche coltura indipendenti**!
 - Per studiare il microbiota e quindi identificare gli organismi lo compongono si utilizza una tecnica chiamata **DNA METABARCODING**
@@ -510,7 +510,7 @@ knitr::include_graphics("images/DNAbarcoding.png")
 
 ???
 
-.n30[
+.h201[
 - Il DNA Barcoding è una tecnica che permette di identificare l'organismo studiato basandosi su una sua specifica sequenza nucleotidica
 
 - L'idea è utilizzare una sequenza di DNA per identificare un organismo in maniera univoca. 
@@ -527,7 +527,7 @@ knitr::include_graphics("images/DNAbarcoding.png")
 .pull-left[
 **Marker selection**
 
-.n30[
+.h201[
 - Markers used for DNA barcoding are called barcodes and their selection is crucial
 
 - Ideally, one gene sequence would be used for developing universal PCR primers for all taxonomic group
@@ -549,7 +549,7 @@ knitr::include_graphics("images/DNAbarcoding2.png")
 
 ???
 
-.n30[
+.h201[
 - Siccome i microrganismi non sono registrati all'anagrafe e non hanno un loro CF, cosa possiamo usare come sequenza univoca per identificarli?
 
 - La selezione di queste sequenze marker (**chiamate barcode**) è cruciale per l'identificazione dei microorganismi
@@ -601,7 +601,7 @@ knitr::include_graphics("images/sanger.png")
 
 ???
 
-.n30[
+.h201[
 - Vedete qui una lista di barcodes per diversi organismi
 
 - Questi geni sono stati scelti a causa della dell'evoluzione lenta 
@@ -629,7 +629,7 @@ knitr::include_graphics("images/barcoding.png")
 
 ???
 
-.n[
+.h201[
 - **Easy Poll**
 ]
 
@@ -641,7 +641,7 @@ knitr::include_graphics("images/barcoding.png")
 .m0p[
 **Bioinformatic analysis**
 ]
-.n30[
+.h201[
 - After sequencing, raw data must be processed (**quality and cleaning step**)
 
 - Samples are clustered in operational taxonomic unit based on identity threshold (**OTU formation**)
@@ -670,7 +670,7 @@ knitr::include_graphics("images/OTU.png")
 
 ???
 
-.n30[
+.h201[
 - These databases contain the DNA barcodes assigned to previously identified taxa
 
 - An operational taxonomic unit (OTU) is an operational definition used to classify groups of closely related individuals
@@ -689,7 +689,7 @@ class: inverse, middle, center
 
 ???
 
-.n[
+.h201[
 - Prendiamo ora in considerazione quella tecnica che oltre a permetterci di identificare i componenti del microbiota ci permette anche di capire cosa "potenzialmente" possono fare!
 ]
 ---
@@ -712,7 +712,7 @@ knitr::include_graphics("images/metagenomics1.png")
 
 ???
 
-.n30[
+.h201[
 - La metagenomica studia il DNA isolato da un campione ambientale
 
 - Questo campione può essere considerato come un singolo campione e quindi come tale analizzato
@@ -750,7 +750,7 @@ knitr::include_graphics("images/compareBarcodingMetagenome.png")
 
 ???
 
-.n30[
+.h201[
 - La differenza fondamentale tra Metagenomica e Metabarcoding è che per la Metagenomica non serve alcun barcode (marker)
 
 - Questo perchè in metagenomica tutto il DNA presente nel campione viene sequenziato
@@ -801,7 +801,7 @@ knitr::include_graphics("images/CompareHTS.png")
 
 ???
 
-.n30[
+.h201[
 - Consideriamo il range tra il sanger sequencing method e 
 llumina HiSeq
 ]
@@ -826,7 +826,7 @@ knitr::include_graphics("images/Align.png")
 
 ???
 
-.n[
+.h201[
 - I frammenti generati dal sequenziamento devono poi essere **assemblati** per ricostruire il/i genomi presenti nel campione
 
 - 2 tipi assembli a seconda che sia presente un genoma di riferimento
@@ -861,7 +861,7 @@ knitr::include_graphics("images/metagenomicsPipeline.png")
 
 ???
 
-.n30[
+.h201[
 
 - In questa slide vediamo come facciamo a definire quali sono i potenziali processi del microbiota analizzato
 
@@ -907,7 +907,7 @@ class: inverse, center, middle
 
 ???
 
-.n[
+.h201[
 - In fine vediamo come studiare le funzioni reali del microbiota
 ]
 ---
@@ -935,7 +935,7 @@ knitr::include_graphics("images/Meta1.png")
 
 ???
 
-.n30[
+.h201[
 - Fin'ora ci siamo occupati di DNA metabarcoding e Metagenomics
 
 - Abbiamo visto come il DNA Metabercoding risponda alla domanda "Chi è presente?"
@@ -985,7 +985,7 @@ knitr::include_graphics("images/metatrranscriptomePL.png")
 
 ???
 
-.n30[
+.h201[
 - La metatranscrittomica studia l'espressione genica dei microorganismi nell'ambiente ovvero studia l'**mRNA**
 
 - Essendo una tecnica basata sul sequenziamento permette di ottenere tutti gi mRNA messaggeri presenti nel campione e quindi di avere il profili di espressione dell'ologenoma
@@ -1030,7 +1030,7 @@ knitr::include_graphics("images/metaproteomics.png")
 
 ???
 
-,n30[
+.h201[
 - La Metaproteomica studia le proteine espresse dalla comunità di microorganismi presa in esame
 
 - La proteomics lavora sulle proteine espresse, cioè i veri attori del metabolismo. A differenza di quanto fa la trascrittomica
@@ -1074,7 +1074,7 @@ knitr::include_graphics("images/metabolomics.png")
 
 ???
 
-.n30[
+.h201[
 - La metabolomica è lo studio dei metaboliti
 
 - I metaboliti sono molecole di dimensione inferiore ai 1.5 KDa e rappresentano gli intermedi o i prodotti finali delle reazioni enzimatiche 
@@ -1125,7 +1125,7 @@ knitr::include_graphics("images/sip1.png")
 
 ???
 
-.n30[
+.h201[
 - La Stable isotope probing è una tecnica che utilizzando isotopi radioattivi traccia il flusso dei nutrienti utilizzati dai microorganismi
 
 - Tra i pro di questa tecnica c'è la possibilità di studiare in detttaglio specifiche funzioni della popolazione microbica
@@ -1188,7 +1188,7 @@ knitr::include_graphics("images/sb2.png")
 
 ???
 
-.n30[
+.h201[
 - Qual è la tecnica per studiare al meglio il microbiota?
 
 - La soluzione migliore è usarle tutte e combinarle insieme in quello che viene chiamato System biology

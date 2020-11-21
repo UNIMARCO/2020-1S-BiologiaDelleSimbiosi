@@ -5,7 +5,7 @@ author: "Marco Chiapello"
 date: "???"
 output:
   xaringan::moon_reader:
-    css: ["scrollable.css", "mtheme_max.css", "fonts_mtheme_max.css"]
+    css: ["scrollable.css", "mtheme_max.css", "fonts_mtheme_max.css", "lesson3.css"]
     self_contained: false
     lib_dir: libs
     chakra: libs/remark-latest.min.js
@@ -69,7 +69,7 @@ class: title-slide
 .marco[
 .tada[Marco Chiapello]
 <br>
-`r Sys.Date()`
+2020-11-24 
 ]
 
 
@@ -92,15 +92,12 @@ layout: true
 ---
 
 .pull-left[
+<br>
 .m0p[
 .h25o[
-1. Plant microbiota changes spatially and temporally
+1. DNA Metabarcoding 
 
-1. Plant compartment is a major selective force that shapes the composition of plant-associated microbiota
-
-1. Plants and their associated microorganisms form a holobiont
-
-1. Several techniques can be employed to decipher the microbiota composition and functions
+1. Several techniques can be employed to decipher the microbiota functions
 
 1. System biology is the discipline that integrates the -omics techniques to formulate models that describe the structure of the system
 ]
@@ -109,101 +106,12 @@ layout: true
 
 ---
 .pull-left[
-.m0p[
-.h25o[
-1. Plant microbiota change spatially and temporally
-
-1. .opacity10[ Plant compartment is a major selective force that shapes the composition of plant-associated microbiota]
-
-1. .opacity10[ Plants and their associated microorganisms form a holobiont]
-
-1. .opacity10[ Several techniques can be employed to decipher the microbiota composition and functions]
-
-1. .opacity10[ System biology is the discipline that integrates the -omics techniques to formulate models that describe the structure of the system]
-]
-]
-]
-
-.pull-right[
-
-.m0p[
-```{r echo = FALSE, out.height="230px", out.width="230px"}
-knitr::include_graphics("images/PlantMicrobiomeComposition.png")
-```
-
-```{r echo = FALSE, out.height="270px", out.width="300px"}
-knitr::include_graphics("images/plantMicrobiotaTemporal.png")
-```
-]
-]
-
----
-
-.pull-left[
-.m0p[
-.h25o[
-1. .opacity10[ Plant microbiota change spatially and temporally]
-
-1. Plant compartment is a major selective force that shapes the composition of plant-associated microbiota
-
-1. .opacity10[ Plants and their associated microorganisms form a holobiont]
-
-1. .opacity10[ Several techniques can be employed to decipher the microbiota composition and functions]
-   
-1. .opacity10[ System biology is the discipline that integrates the -omics techniques to formulate models that describe the structure of the system]
-]
-]
-]
-
-.pull-right[
-
-```{r echo=FALSE, out.width="350px"}
-knitr::include_graphics("images/bacterialDiv.png")
-```
-
-```{r echo=FALSE, out.width="350px"}
-knitr::include_graphics("images/fungalDiv.png")
-```
-]
-
----
-
-.pull-left[
-.m0p[
-.h25o[
-1. .opacity10[ Plant microbiota change spatially and temporally]
-
-1. .opacity10[ Plant compartment is a major selective force that shapes the composition of plant-associated microbiota]
-
-1. Plants and their associated microorganisms form a holobiont
-
-1. .opacity10[ Several techniques can be employed to decipher the microbiota composition and functions]
-
-1. .opacity10[ System biology is the discipline that integrates the -omics techniques to formulate models that describe the structure of the system]
-]
-]
-]
-
-.pull-right[
 <br>
-```{r echo=FALSE, out.width="800px"}
-knitr::include_graphics("images/holobiont2.png")
-```
-
-]
-
----
-
-.pull-left[
 .m0p[
 .h25o[
-1. .opacity10[ Plant microbiota change spatially and temporally]
+1. DNA Metabarcoding 
 
-1. .opacity10[ Plant compartment is a major selective force that shapes the composition of plant-associated microbiota]
-
-1. .opacity10[ Plants and their associated microorganisms form a holobiont]
-
-1. Several techniques can be employed to decipher the microbiota composition and functions
+1. .opacity10[Several techniques can be employed to decipher the microbiota functions]
 
 1. .opacity10[ System biology is the discipline that integrates the -omics techniques to formulate models that describe the structure of the system]
 ]
@@ -211,26 +119,46 @@ knitr::include_graphics("images/holobiont2.png")
 ]
 
 .pull-right[
+
+.m0p[
+```{r echo = FALSE, out.width="230px"}
+knitr::include_graphics("images/DNAbarcoding2.png")
+```
+]
+]
+
+---
+
+.pull-left[
+<br>
+.m0p[
+.h25o[
+1. .opacity10[DNA Metabarcoding] 
+
+1. Several techniques can be employed to decipher the microbiota functions
+
+1. .opacity10[ System biology is the discipline that integrates the -omics techniques to formulate models that describe the structure of the system]
+]
+]
+]
+
+.pull-right[
+
 <br><br>
 ```{r echo=FALSE, out.width="500px"}
 knitr::include_graphics("images/recap1.png")
 ```
-
 ]
-
 
 ---
 
 .pull-left[
+<br>
 .m0p[
 .h25o[
-1. .opacity10[ Plant microbiota change spatially and temporally]
+1. .opacity10[DNA Metabarcoding] 
 
-1. .opacity10[ Plant compartment is a major selective force that shapes the composition of plant-associated microbiota]
-
-1. .opacity10[ Plants and their associated microorganisms form a holobiont]
-
-1. .opacity10[ Several techniques can be employed to decipher the microbiota composition and functions]
+1. .opacity10[Several techniques can be employed to decipher the microbiota functions]
 
 1. System biology is the discipline that integrates the -omics techniques to formulate models that describe the structure of the system
 ]
@@ -343,7 +271,7 @@ knitr::include_graphics("images/nutrientPaper.png")
 ## Introduction
 
 .pull-left[
-.h25up[
+.h202[
 .m0p[
 
 - .font70[Nitrogen (N) is a limiting nutrient in many natural and managed ecosystems]
@@ -384,14 +312,14 @@ knitr::include_graphics("images/nutr1.png")
 
 
 .tt[
-|Plot|Fungi|soil inocula| soil inocula fertilization |
+|Plot|Fungi|soil inocula| soil fertilization |
 |---|:---:|:---:|:---:|
 |control|`r fontawesome::fa("minus-circle", fill = "red")` | `r fontawesome::fa("minus-circle", fill = "red")`| none |
-|microbes (N0)| `r fontawesome::fa("minus-circle", fill = "red")`| `r fontawesome::fa("plus-circle", fill = "green")`| 0 kg N ha−1 per year|
+|microbes (N0)| `r fontawesome::fa("minus-circle", fill = "red")`| `r fontawesome::fa("plus-circle", fill = "green")`| 0 kg N / ha per year|
 |AM fungi| `r fontawesome::fa("plus-circle", fill = "green")`| `r fontawesome::fa("minus-circle", fill = "red")`| none |
-|AM fungi + microbes (N196)| `r fontawesome::fa("plus-circle", fill = "green")`| `r fontawesome::fa("plus-circle", fill = "green")`| 196 kg N ha−1 per year|
-|AM fungi + microbes (N28)| `r fontawesome::fa("plus-circle", fill = "green")`| `r fontawesome::fa("plus-circle", fill = "green")`| 28 kg N ha−1 per year|
-|AM fungi + microbes (N0)| `r fontawesome::fa("plus-circle", fill = "green")`| `r fontawesome::fa("plus-circle", fill = "green")`| 0 kg N ha_1 per year|
+|AM fungi + microbes (N196)| `r fontawesome::fa("plus-circle", fill = "green")`| `r fontawesome::fa("plus-circle", fill = "green")`| 196 kg N / ha per year|
+|AM fungi + microbes (N28)| `r fontawesome::fa("plus-circle", fill = "green")`| `r fontawesome::fa("plus-circle", fill = "green")`| 28 kg N / ha per year|
+|AM fungi + microbes (N0)| `r fontawesome::fa("plus-circle", fill = "green")`| `r fontawesome::fa("plus-circle", fill = "green")`| 0 kg N / ha per year|
 
 
 ]
@@ -422,7 +350,14 @@ knitr::include_graphics("images/nutr2.png")
 
 
 ???
-Un mesocosmo ( meso o 'media' e -cosm 'mondo' ) è un qualsiasi sistema sperimentale all'aperto che esamina l'ambiente naturale in condizioni controllate. In questo modo gli studi mesocosmo forniscono un legame tra indagini sul campo e gli esperimenti di laboratorio altamente controllate.
+
+.h201[
+- model grass Brachypodium distachyon
+
+- inoculum of fresh grassland soil containing whole soil microbial communities that had been exposed to an N enrichment gradient for eight years
+
+- Un mesocosmo ( meso o 'media' e -cosm 'mondo' ) è un qualsiasi sistema sperimentale all'aperto che esamina l'ambiente naturale in condizioni controllate. In questo modo gli studi mesocosmo forniscono un legame tra indagini sul campo e gli esperimenti di laboratorio altamente controllate.
+]
 
 ---
 
@@ -453,6 +388,12 @@ knitr::include_graphics("images/nutr3.png")
 ```
 
 ]]
+
+???
+
+.h201[
+- OM = organis matter
+]
 
 ---
 
@@ -569,9 +510,7 @@ knitr::include_graphics("images/nutr8.png")
 ## Flowering time is directly associated with the rhizosphere microbiota
 
 .pull-left[
-.h20[
-.h26v2[
-.m10bp[
+.f15l18[
 - .font120[`r fontawesome::fa("seedling", fill = "green")` Microbiota from the third-generation pgr5 (PM) or Wt cultures (WM) was used to inoculate cultures of three *Arabidopsis* lines ]
   
   - Wt  
@@ -590,8 +529,6 @@ knitr::include_graphics("images/nutr8.png")
 - .font120[`r fontawesome::fa("fire-alt", fill = "red")` This effect disappeared when the soil slurry was sterilized before inoculation, indicating that heat-stable exudates alone were not modulating *Arabidopsis* flowering time]
 
 ]]
-]
-]
 
 .pull-right[
 .m0p[

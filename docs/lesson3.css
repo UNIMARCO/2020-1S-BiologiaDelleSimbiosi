@@ -110,6 +110,16 @@
   font-size: 15px;
 }
 
+.f15l18 ul li {
+  line-height: 18px;
+  font-size: 15px;
+}
+
+.f15l18 ul li p {
+  line-height: 18px;
+  font-size: 15px;
+}
+
 .h201 ul li {
   line-height: 22px;
   font-size: 15px;
@@ -119,6 +129,7 @@
   line-height: 22px;
   font-size: 15px;
 }
+
 .h202o ol li {
   line-height: 22px;
   font-size: 18px;

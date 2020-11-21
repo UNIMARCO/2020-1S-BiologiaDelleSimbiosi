@@ -296,8 +296,17 @@ knitr::include_graphics("images/nutr1.png")
 
 ???
 
+.h201[
+
 - Azoto
 
+- La fissazione dell'azoto atmosferico o azotofissazione consiste nella riduzione, tramite la nitrogenasi, dell'azoto molecolare (N2) in azoto ammonico (NH3)
+
+- La nitrificazione e' la trasformazione dell'ammoniaca (NH3) e ioni ammonio (NH4+) in ioni nitrito (NO2-) e successivamente ioni nitrato (NO3-).
+
+- La denitrificazione e'  un processo nell'ambito del ciclo dell'azoto nel terreno, che comporta la riduzione dell'azoto nitrico con formazione di gas che si liberano nell'atmosfera
+
+]
 ---
 
 ## Experimental design
@@ -357,6 +366,12 @@ knitr::include_graphics("images/nutr2.png")
 - inoculum of fresh grassland soil containing whole soil microbial communities that had been exposed to an N enrichment gradient for eight years
 
 - Un mesocosmo ( meso o 'media' e -cosm 'mondo' ) è un qualsiasi sistema sperimentale all'aperto che esamina l'ambiente naturale in condizioni controllate. In questo modo gli studi mesocosmo forniscono un legame tra indagini sul campo e gli esperimenti di laboratorio altamente controllate.
+
+- La fissazione dell'azoto atmosferico o azotofissazione consiste nella riduzione, tramite la nitrogenasi, dell'azoto molecolare (N2) in azoto ammonico (NH3)
+
+- La nitrificazione e' la trasformazione dell'ammoniaca (NH3) e ioni ammonio (NH4+) in ioni nitrito (NO2-) e successivamente ioni nitrato (NO3-).
+
+- La denitrificazione e'  un processo nell'ambito del ciclo dell'azoto nel terreno, che comporta la riduzione dell'azoto nitrico con formazione di gas che si liberano nell'atmosfera
 ]
 
 ---
@@ -393,193 +408,6 @@ knitr::include_graphics("images/nutr3.png")
 
 .h201[
 - OM = organis matter
-]
-
----
-
-<br>
-```{r echo=FALSE, out.width="1030px"}
-knitr::include_graphics("images/nutr4.png")
-```
----
-
-## Introduction
-
-.pull-left[
-.h25up[
-.m0tbp[
-
-- .font70[Climate change has altered plant phenology]
-
-- .font70[Recent studies also suggest that root microbiota can contribute to phenotypic plasticity, which has important implications for our understanding of plant phenology in a changing climate]
-
-- .font70[Flowering can be triggered by low nitrate levels]
-  
-- .font70[Auxins can be synthesized by rhizosphere microorganisms, raising the intriguing possibility that root microbiota may regulate plant growth and development through phytohormone production]
-
-- `r fontawesome::fa("bullseye", fill = "grey")` .font70[Authors identified a novel network of molecular interactions linking the nitrogen cycle, the phytohormone IAA produced from Tryptophan (Trp), and the timing of flowering]
-]
-]
-]
-
-
-.pull-right[
-.m0p[
-```{r echo=FALSE, out.width="400px"}
-knitr::include_graphics("images/nutr5.png")
-```
-
-]]
-
-
-
-???
-
-.n30[
-
-- This has crucial biological, physical, and chemical effects on the biosphere and the earth system
-]
-
----
-
-## Experimenta design
-
-```{r echo=FALSE, out.width="800px"}
-knitr::include_graphics("images/nutr6.png")
-```
-
-.pull-left[
-.h20[
-.m0ul[
-
-- Plants growing in soil for three generations (G1, G2, or G3) inoculated with different soil microbiomes
-
-- The *pgr5* mutant is deficient in antimycin A-sensitive cyclic flow from ferredoxin to plastoquinone, which is one of the most crucial physiological processes for efficient photosynthesis
-
-]
-]
-]
-
-.pull-right[
-.h20[
-
-- The pgr5 mutant produces different exudates from the Wt *Arabidopsis*
-
-]]
-
----
-
-## The richness and diversity of the rhizosphere 
-
-.pull-left[
-.h26[
-.m0ul[
-
-- .font80[Species richness and diversity significantly decreased after the two and three generations ]
-
-- .font80[The relative abundances of Proteobacteria and Acidobacteria, the dominant bacterial phyla in the rhizosphere, decreased by generations 2 and 3 relative to generation 1]
-
-- .font80[In contrast, Bacteroidetes and cyanobacterial abundances increased by generation 3]
-
-]
-]
-]
-
-
-.pull-right[
-.m0p[
-```{r echo=FALSE, out.width="400px"}
-knitr::include_graphics("images/nutr7.png")
-```
-```{r echo=FALSE, out.width="400px"}
-knitr::include_graphics("images/nutr8.png")
-```
-
-]]
-
-
-???
-
-.n30[
-
-- abundance-based coverage (ACE)
-]
-
----
-
-## Flowering time is directly associated with the rhizosphere microbiota
-
-.pull-left[
-.f15l18[
-- .font120[`r fontawesome::fa("seedling", fill = "green")` Microbiota from the third-generation pgr5 (PM) or Wt cultures (WM) was used to inoculate cultures of three *Arabidopsis* lines ]
-  
-  - Wt  
-
-  - *pgr5*
-
-  - *pns84*: deficient in cyclic electron flow from NADPH to plastoquinone
-
-
-- .font120[`r fontawesome::fa("atom", fill = "pink")` The addition of Wt microbiota delayed flowering by 3.3, 5.5, and 5.7 days in Wt, the pnsB4 mutant, and the pgr5 mutant, respectively  ]
-
-- .font120[The shoot fresh weight of the plants treated with Wt microbiota also increased significantly in the three lines compared to the treatments with the addition of pgr5 microbiota]
-
-- .font120[`r fontawesome::fa("exclamation-circle", fill = "green")` These results clearly indicate that flowering time and shoot fresh weight are affected by the rhizosphere microbiota]
-
-- .font120[`r fontawesome::fa("fire-alt", fill = "red")` This effect disappeared when the soil slurry was sterilized before inoculation, indicating that heat-stable exudates alone were not modulating *Arabidopsis* flowering time]
-
-]]
-
-.pull-right[
-.m0p[
-<br>
-```{r echo=FALSE, out.width="600px"}
-knitr::include_graphics("images/nutr9.png")
-```
-
-]]
-
----
-
-## Linking N availability to flowering time
-
-.pull-left[
-.h202[
-.m10bp[
-
-- The enriched microbes in the WM treatment mostly have key roles in rhizosphere N regeneration
-
-- Flowering can be triggered by low nitrate levels
-
-- The authors tested whether WM treatment affects the abundance of genes involved in N cycling in soil
-
-- The *nif* genes are genes encoding enzymes involved in the fixation of atmospheric nitrogen into a form of nitrogen available to living organisms
-
-- The *amo*A gene is a gene involved in nitrification
-
-- *nir*K and *nos*Z genes are involved in denitrification (spep2 and step4 of the nitrate reduction pathway)
-
-]
-]
-]
-
-
-.pull-right[
-.m0p[
-```{r echo=FALSE, out.width="550px"}
-knitr::include_graphics("images/nutr10.png")
-```
-
-]]
-
-???
-
-.n30[
-- La fissazione dell'azoto atmosferico o azotofissazione consiste nella riduzione, tramite la nitrogenasi, dell'azoto molecolare (N2) in azoto ammonico (NH3)
-
-- La nitrificazione e' la trasformazione dell'ammoniaca (NH3) e ioni ammonio (NH4+) in ioni nitrito (NO2-) e successivamente ioni nitrato (NO3-).
-
-- La denitrificazione e'  un processo nell'ambito del ciclo dell'azoto nel terreno, che comporta la riduzione dell'azoto nitrico con formazione di gas che si liberano nell'atmosfera
 ]
 
 ---

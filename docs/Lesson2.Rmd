@@ -84,6 +84,16 @@ class: title-slide
 
 - Sarò uno dei vostri docenti per il corso "Interazioni tra piante, microrganismi e ambiente"
 ]
+
+---
+
+class: center, middle, clear
+
+```{r echo=FALSE, out.width="400px"}
+knitr::include_graphics("images/lesson2quiz.png")
+```
+.font50[https://bit.ly/39coIbU]
+
 ---
 layout: true
 
@@ -451,13 +461,26 @@ knitr::include_graphics("images/stress1.png")
 
 ]]
 
+???
+
+.h201[
+
+- MIcrobiota puo' modificare le risposte delle piante agli stress ambientali in almeno **3 modi che non sono mutualmente esclusivi**
+
+- Alterando la fitness di specifici genotipi
+
+- Alterndo l'espressione di specifiche caratteristiche della pianta legate alla fitness
+
+- Alterando direzione e forza della selezione all'interno delle popolazioni sotto stress
+]
+
 ---
 
 .pull-left[
 
 **Responses to drought**
 
-.h203[
+.h201[
 .m0tp[
 
 - `r fontawesome::fa("flask", fill = "grey")` Experiment examines plant adaptation to drought stress in a multigeneration experiment that manipulated aboveground-belowground feedbacks between plants and soil microbial communitie
@@ -482,6 +505,10 @@ knitr::include_graphics("images/stress2.png")
 .right[.font50[`r Cite(bib, key = "Lau_2012")`]]
 
 ]]
+
+???
+
+- Brassica rapa
 
 ---
 
@@ -543,6 +570,10 @@ knitr::include_graphics("images/stress3.png")
 .right[.font20px[`r Cite(bib, key = "Yuan2019aa")`]]
 ]
 ]
+
+???
+
+- The root weight ratio (RWR) was calculated as root biomass/total biomass
 
 ---
 

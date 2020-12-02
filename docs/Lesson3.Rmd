@@ -69,9 +69,10 @@ class: title-slide
 .marco[
 .tada[Marco Chiapello]
 <br>
-`r Sys.Date()`
+2020-12-04
 ]
 
+<br>
 
 .marco[
 .center[.font90[[[`r fontawesome::fa("slack", fill = "steelblue")`](https://join.slack.com/t/ipma-2020/shared_invite/zt-j9o8ig7k-LN1~U3d6QJztquYbC6iW7w) Slack - `r fontawesome::fa("envelope", fill = "steelblue")`](mailto:marco.chiapello@unito.it) marco.chiapello@unito.it]
@@ -115,7 +116,7 @@ layout: true
 
 1. Eco-evolutionary processes can influence the assembly of plant-associated microbiomes
 
-1. How the microniota can be exploited
+1. How the microbiota can be exploited
 ]
 ]
 
@@ -135,7 +136,7 @@ layout: true
 
 1. .opacity10[Eco-evolutionary processes can influence the assembly of plant-associated microbiomes]
 
-1. .opacity10[How the microniota can be exploited]
+1. .opacity10[How the microbiota can be exploited]
 ]
 ]
 
@@ -164,7 +165,7 @@ knitr::include_graphics("images/fuctionOverview.png")
 
 1. .opacity10[Eco-evolutionary processes can influence the assembly of plant-associated microbiomes]
 
-1. .opacity10[How the microniota can be exploited]
+1. .opacity10[How the microbiota can be exploited]
 ]
 ]
 
@@ -193,7 +194,7 @@ knitr::include_graphics("images/disease2.png")
 
 1. .opacity10[Eco-evolutionary processes can influence the assembly of plant-associated microbiomes]
 
-1. .opacity10[How the microniota can be exploited]
+1. .opacity10[How the microbiota can be exploited]
 ]
 ]
 
@@ -221,7 +222,7 @@ knitr::include_graphics("images/disease1.png")
 
 1. .opacity10[Eco-evolutionary processes can influence the assembly of plant-associated microbiomes]
 
-1. .opacity10[How the microniota can be exploited]
+1. .opacity10[How the microbiota can be exploited]
 ]
 ]
 
@@ -250,7 +251,7 @@ knitr::include_graphics("images/shape5.png")
 
 1. .opacity10[Eco-evolutionary processes can influence the assembly of plant-associated microbiomes]
 
-1. .opacity10[How the microniota can be exploited]
+1. .opacity10[How the microbiota can be exploited]
 ]
 ]
 
@@ -279,7 +280,7 @@ knitr::include_graphics("images/shape9.png")
 
 1. Eco-evolutionary processes can influence the assembly of plant-associated microbiomes
 
-1. .opacity10[How the microniota can be exploited]
+1. .opacity10[How the microbiota can be exploited]
 ]
 ]
 
@@ -308,7 +309,7 @@ knitr::include_graphics("images/ecoevo1.png")
 
 1. .opacity10[Eco-evolutionary processes can influence the assembly of plant-associated microbiomes]
 
-1. How the microniota can be exploited
+1. How the microbiota can be exploited
 ]
 ]
 
@@ -639,41 +640,16 @@ class: clear
 .font180[.bold[Agenda]]
 ]
 
-.agenda1[
+.h25up[
 - Ecological Significance of Viruses `r anicon::cia("images/virus-3128.png", animate="pulse", speed="slow", anitype="hover")` 
   - Ecological Importance of Viruses in the Oceans
   - Endogenous Virus Elements and Beneficial Infection in Vertebrates
   - Mycovirus involved in mutualistic symbiosis
-  - Viruses invoved in Arm’s race (killer yeast)
-  - Insect viruses involved in mutualistic symbiosis
-
-
-- Mycovirus for the control of plant diseases `r anicon::cia("images/plant-pot.png", animate="pulse", speed="slow", anitype="hover")`     
-  - The VIROPLANT H2020 project
-  - Definitions and general biological features
-  - Mycovirus biodiversity
-  - Natural biocontrol through mycovirus: the forest pathogen Cryphonectria parasitica and Cryphonectria hypovirus 1
-  - A new approach: mycocidal virus
-  - Recent technological progress: a super-donor, Zn chloride, transgenic approach
-  - VIGS and the regulatory bottleneck
 
 ]
 ]
 
 ---
-
-layout: true
-
-# Ecological Significance of Viruses
-
----
-
-class: inverse, middle, center 
-
-----
-
----
-
 
 class: clear, middle, center 
 
@@ -770,7 +746,7 @@ knitr::include_graphics("images/vir15.png")
 
 .pull-left[
 **The abundance of marine viruses**
-.par20m[
+.par20[
 
 - Six methods are used to estimate the abundance of viruses in aquatic samples
   - plaque assays (PAs) and most-probable-number assays (MPNs): are used to quantify the abundance of infectious units that cause the lysis of a particular host.
@@ -991,16 +967,16 @@ knitr::include_graphics("images/vir24.png")
 ]
 
 ---
+class: clear, middle, center 
 
+# .black[Endogenous Virus Elements]
+
+----
+
+---
 layout: true
 
 # Endogenous Virus Elements
-
----
-
-class: inverse, middle, center
-
-----
 
 ---
 
@@ -1056,3 +1032,234 @@ knitr::include_graphics("images/vir26.png")
 ```
 .right[.font50[`r Cite(bib, key = "Tarlinton:2006aa")`]]
 ]
+
+---
+
+.pull-left[
+**Syncytin is a captive retroviral envelope protein involved in human placental morphogenesis**
+.m0tp[
+.par20[
+
+- Example of a viral gene that has been sequestered to serve an important function in the physiology of a mammalian host
+
+- This gene, encoding a protein that we have called **syncytin**, is the envelope gene of a recently identified **human endogenous defective retrovirus**, HERV-W
+
+- Data indicate that syncytin may be important in **human placental morphogenesis**
+
+- **Syncytin disregulation or dysfunction** is involved in pathologies such as preeclampsia or choriocarcinoma is a focus of ongoing studies
+
+]
+]
+]
+
+.pull-right[
+```{r echo=FALSE, out.width="450px"}
+knitr::include_graphics("images/syn1.jpg")
+```
+.right[.font50[`r Cite(bib, key = "Mi:2000aa")`]]
+]
+
+???
+
+.h202[
+- integration likely occurred more than 25 million years ago
+]
+
+---
+
+.pull-left[
+**Endogenous retroviral sequences are required for tissue-specific expression of a human salivary amylase gene**
+.m0tp[
+.par20[
+
+- The human genome contains three salivary and two pancreatic amylase genes
+
+- The three **salivary amylase genes** are each associated with an **intact retroviral element**
+
+- The two **pancreatic amylase genes** either lack retroviral sequences (AMY2B) or contain a solo LTR as a result of excision of the retrovirus (AMY2A). 
+
+- The gene structures are consistent with a sequence of events in which **insertion of the retrovirus converted a pancreatic amylase gene like AMY2B into a salivary-specific gene**, and excision of the retrovirus resulted in a return to pancreas-specific expression of AMY2A. 
+
+]
+]
+]
+
+.pull-right[
+<br><br><br>
+```{r echo=FALSE, out.width="450px"}
+knitr::include_graphics("images/end1.png")
+```
+.right[.font50[`r Cite(bib, key = "Ting:1992aa")`]]
+]
+
+???
+
+.h202[
+- integration likely occurred more than 25 million years ago
+]
+
+---
+
+.pull-left[
+**An enteric virus can replace the beneficial function of commensal bacteria**
+.m0tp[
+.par20[
+
+- The symbiotic contribution on host physiology of **commensal bacteria is well established**
+
+- The **role of eukaryotic viruses** that are present in the gastrointestinal tract under homeostatic conditions is undefined
+
+- Researched demonstrate that a common enteric RNA **virus can replace the beneficial function of commensal bacteria** in the intetine
+
+- Murine norovirus (MNV) infection of germ-free or antibiotic- treated mice **restored intestinal morphology** and **lymphocyte function** without inducing overt inflammation and disease
+]
+]
+]
+
+.pull-right[
+```{r echo=FALSE, out.width="450px"}
+knitr::include_graphics("images/noro1.png")
+```
+```{r echo=FALSE, out.width="450px"}
+knitr::include_graphics("images/noro2.png")
+```
+.right[.font50[`r Cite(bib, key = "Kernbauer_2014")`]]
+]
+
+???
+
+.h202[
+- integration likely occurred more than 25 million years ago
+]
+
+---
+class: clear, middle, center 
+
+# .black[Mycovirus involved in mutualistic symbiosis]
+
+----
+
+---
+layout: true
+
+# Mycovirus involved in mutualistic symbiosis
+
+---
+
+.pull-left[
+**Mycovirus: General features**
+.m0tp[
+.par25[
+
+- Discovered in 1962
+
+- As most viruses not phylogenetically homogeneous. Different evolutionary trajectories
+
+- Mostly dsRNA...but also  ssRNA, and recently -ssDNA 
+
+- Often the result of long co-evolution. Neutral or beneficial symbiosis
+
+]
+]
+] 
+
+.pull-right[
+```{r echo=FALSE, out.width="350px"}
+knitr::include_graphics("images/myco1.jpg")
+```
+.right[.font50[(Kotta-Loizou and Coutts, 2017)]]
+
+]
+
+---
+
+.pull-left[
+**Mycovirus: Transmission**
+.m0tp[
+.par25[
+
+- Extracellular transmission was excluded until recent years
+
+- **Vertically**: during sporogenesis: asco, basidio, and conidio spores have different efficiency of transmission according to the specific virus-host interaction
+
+- **Horizontally**: regulated by vegetative compatibility groups (VC)
+
+
+
+]
+]
+] 
+
+.pull-right[
+<br><br><br><br>
+```{r echo=FALSE, out.width="550px"}
+knitr::include_graphics("images/myco2.png")
+```
+.right[.font50[`r Cite(bib, key = "Nuss_2005")`]]
+
+]
+
+---
+
+**Mycovirus biodiversity**
+
+```{r echo=FALSE, out.width="850px"}
+knitr::include_graphics("images/myco3.png")
+```
+.right[.font50[`r Cite(bib, key = "Nuss_2005")`]]
+
+
+---
+
+.pull-left[
+**A Virus in a Fungus in a Plant: Three-Way Symbiosis Required for Thermal Tolerance**
+.m0tp[
+.h202[
+
+- A mutualistic association between a fungal endophyte and a tropical panic grass allows both organisms to grow at high soil temperatures
+
+- **Fungal isolates cured of the virus are unable to confer heat tolerance**, but heat tolerance is restored after the virus is reintroduced
+
+- The virus-infected fungus **confers heat tolerance not only to its native monocot host but also to a eudicot host**, which suggests that the underlying mechanism involves pathways conserved between these two groups of plants
+]
+]
+] 
+
+.pull-right[
+```{r echo=FALSE, out.width="450px"}
+knitr::include_graphics("images/myco4.png")
+```
+```{r echo=FALSE, out.width="450px"}
+knitr::include_graphics("images/myco5.png")
+```
+.right[.font50[`r Cite(bib, key = "Marquez:2007aa")`]]
+
+]
+
+???
+
+.h202[
+- tomato (Solanum lycopersicon)
+]
+
+---
+
+**A Virus in a Fungus in a Plant: Three-Way Symbiosis Required for Thermal Tolerance**
+
+.pull-left[
+```{r echo=FALSE, out.width="450px"}
+knitr::include_graphics("images/myco6.png")
+```
+] 
+
+.pull-right[
+```{r echo=FALSE, out.width="450px"}
+knitr::include_graphics("images/myco7.png")
+```
+.right[.font50[`r Cite(bib, key = "Marquez:2007aa")`]]
+
+]
+
+---
+
+

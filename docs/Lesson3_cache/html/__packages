@@ -1,0 +1,16 @@
+base
+rmarkdown
+RefManageR
+xaringanExtra
+tidyverse
+ggplot2
+tibble
+tidyr
+readr
+purrr
+dplyr
+stringr
+forcats
+googledrive
+googlesheets4
+patchwork

@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Microbiota</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Marco Chiapello" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="libs/tile-view/tile-view.js"></script>
+    <link href="libs/font-awesome-animation/font-awesome-animation-emi.css" rel="stylesheet" />
+    <script src="libs/fontawesome/js/fontawesome-all.min.js"></script>
+    <link rel="stylesheet" href="scrollable.css" type="text/css" />
+    <link rel="stylesheet" href="mtheme_max.css" type="text/css" />
+    <link rel="stylesheet" href="fonts_mtheme_max.css" type="text/css" />
+    <link rel="stylesheet" href="lesson3.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+
+
+
+class: title-slide
+
+
+
+# .font170[Ecological Significance of Viruses]
+
+
+&lt;br&gt;&lt;br&gt;
+.marco[
+.tada[Marco Chiapello]
+&lt;br&gt;
+2020-11-25
+]
+
+
+.marco[
+.center[.font90[[[&lt;svg style="height:0.8em;top:.04em;position:relative;fill:steelblue;" viewBox="0 0 448 512"&gt;&lt;path d="M94.12 315.1c0 25.9-21.16 47.06-47.06 47.06S0 341 0 315.1c0-25.9 21.16-47.06 47.06-47.06h47.06v47.06zm23.72 0c0-25.9 21.16-47.06 47.06-47.06s47.06 21.16 47.06 47.06v117.84c0 25.9-21.16 47.06-47.06 47.06s-47.06-21.16-47.06-47.06V315.1zm47.06-188.98c-25.9 0-47.06-21.16-47.06-47.06S139 32 164.9 32s47.06 21.16 47.06 47.06v47.06H164.9zm0 23.72c25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06H47.06C21.16 243.96 0 222.8 0 196.9s21.16-47.06 47.06-47.06H164.9zm188.98 47.06c0-25.9 21.16-47.06 47.06-47.06 25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06h-47.06V196.9zm-23.72 0c0 25.9-21.16 47.06-47.06 47.06-25.9 0-47.06-21.16-47.06-47.06V79.06c0-25.9 21.16-47.06 47.06-47.06 25.9 0 47.06 21.16 47.06 47.06V196.9zM283.1 385.88c25.9 0 47.06 21.16 47.06 47.06 0 25.9-21.16 47.06-47.06 47.06-25.9 0-47.06-21.16-47.06-47.06v-47.06h47.06zm0-23.72c-25.9 0-47.06-21.16-47.06-47.06 0-25.9 21.16-47.06 47.06-47.06h117.84c25.9 0 47.06 21.16 47.06 47.06 0 25.9-21.16 47.06-47.06 47.06H283.1z"/&gt;&lt;/svg&gt;](https://join.slack.com/t/ipma-2020/shared_invite/zt-j9o8ig7k-LN1~U3d6QJztquYbC6iW7w) Slack - &lt;svg style="height:0.8em;top:.04em;position:relative;fill:steelblue;" viewBox="0 0 512 512"&gt;&lt;path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"/&gt;&lt;/svg&gt;](mailto:marco.chiapello@unito.it) marco.chiapello@unito.it]
+]
+]
+
+???
+
+.n30[
+
+- Sarò uno dei vostri docenti per il corso "Interazioni tra piante, microrganismi e ambiente"
+]
+---
+
+class: clear, middle, center
+
+.f50[.red[DISCLAIM]]
+# .black[This is **NOT** a lesson about Sars-Cov-2]
+
+.s150[<span class=" faa-pulse animated " style=" display: -moz-inline-stack; display: inline-block; transform: rotate(0deg);">&lt;img src="images/coronavirus-3908.svg" style="height:1em; width:auto; "/&gt;</span>]
+
+---
+
+layout: true
+
+# Last lesson recap
+
+---
+
+.pull-left[
+.summaryL3[
+1. The plant-associated microbiome can provide benefits to the plant through various direct or indirect mechanisms
+
+1. Disease-suppressive soils are exceptional ecosystems in which crop plants suffer less from specific soil-borne pathogens than expected owing to the activities of other soil microorganisms
+
+1. Induced Systemic Resistance (ISR) is initiated in roots by plant-growth- promoting microbes (PGPM) and leads to resistance priming in distant parts of the plant
+
+1. Correlation is not causation
+
+1. Microorganisms have a role in cooperative or competitive interactions with other members of the microbiome
+
+1. Eco-evolutionary processes can influence the assembly of plant-associated microbiomes
+
+1. How the microniota can be exploited
+]
+]
+
+---
+
+.pull-left[
+.summaryL3[
+1. The plant-associated microbiome can provide benefits to the plant through various direct or indirect mechanisms
+
+1. .opacity10[Disease-suppressive soils are exceptional ecosystems in which crop plants suffer less from specific soil-borne pathogens than expected owing to the activities of other soil microorganisms]
+
+1. .opacity10[Induced Systemic Resistance (ISR) is initiated in roots by plant-growth- promoting microbes (PGPM) and leads to resistance priming in distant parts of the plant]
+
+1. .opacity10[Correlation is not causation]
+
+1. .opacity10[Microorganisms have a role in cooperative or competitive interactions with other members of the microbiome]
+
+1. .opacity10[Eco-evolutionary processes can influence the assembly of plant-associated microbiomes]
+
+1. .opacity10[How the microniota can be exploited]
+]
+]
+
+.pull-right[
+
+.m0p[
+&lt;img src="images/fuctionOverview.png" width="530px" style="display: block; margin: auto;" /&gt;
+]
+]
+
+---
+
+.pull-left[
+.summaryL3[
+1. .opacity10[The plant-associated microbiome can provide benefits to the plant through various direct or indirect mechanisms]
+
+1. Disease-suppressive soils are exceptional ecosystems in which crop plants suffer less from specific soil-borne pathogens than expected owing to the activities of other soil microorganisms
+
+1. .opacity10[Induced Systemic Resistance (ISR) is initiated in roots by plant-growth- promoting microbes (PGPM) and leads to resistance priming in distant parts of the plant]
+
+1. .opacity10[Correlation is not causation]
+
+1. .opacity10[Microorganisms have a role in cooperative or competitive interactions with other members of the microbiome]
+
+1. .opacity10[Eco-evolutionary processes can influence the assembly of plant-associated microbiomes]
+
+1. .opacity10[How the microniota can be exploited]
+]
+]
+
+.pull-right[
+&lt;br&gt;
+.m0p[
+&lt;img src="images/disease2.png" width="530px" style="display: block; margin: auto;" /&gt;
+]
+]
+
+---
+
+.pull-left[
+.summaryL3[
+1. .opacity10[The plant-associated microbiome can provide benefits to the plant through various direct or indirect mechanisms]
+
+1. .opacity10[Disease-suppressive soils are exceptional ecosystems in which crop plants suffer less from specific soil-borne pathogens than expected owing to the activities of other soil microorganisms]
+
+1. Induced Systemic Resistance (ISR) is initiated in roots by plant-growth- promoting microbes (PGPM) and leads to resistance priming in distant parts of the plant
+
+1. .opacity10[Correlation is not causation]
+
+1. .opacity10[Microorganisms have a role in cooperative or competitive interactions with other members of the microbiome]
+
+1. .opacity10[Eco-evolutionary processes can influence the assembly of plant-associated microbiomes]
+
+1. .opacity10[How the microniota can be exploited]
+]
+]
+
+.pull-right[
+.m0p[
+&lt;img src="images/disease1.png" width="530px" style="display: block; margin: auto;" /&gt;
+]
+]
+
+---
+
+.pull-left[
+.summaryL3[
+1. .opacity10[The plant-associated microbiome can provide benefits to the plant through various direct or indirect mechanisms]
+
+1. .opacity10[Disease-suppressive soils are exceptional ecosystems in which crop plants suffer less from specific soil-borne pathogens than expected owing to the activities of other soil microorganisms]
+
+1. .opacity10[Induced Systemic Resistance (ISR) is initiated in roots by plant-growth- promoting microbes (PGPM) and leads to resistance priming in distant parts of the plant]
+
+1. Correlation is not causation
+
+1. .opacity10[Microorganisms have a role in cooperative or competitive interactions with other members of the microbiome]
+
+1. .opacity10[Eco-evolutionary processes can influence the assembly of plant-associated microbiomes]
+
+1. .opacity10[How the microniota can be exploited]
+]
+]
+
+.pull-right[
+&lt;br&gt;
+.m0p[
+&lt;img src="images/shape5.png" width="530px" style="display: block; margin: auto;" /&gt;
+]
+]
+
+---
+
+.pull-left[
+.summaryL3[
+1. .opacity10[The plant-associated microbiome can provide benefits to the plant through various direct or indirect mechanisms]
+
+1. .opacity10[Disease-suppressive soils are exceptional ecosystems in which crop plants suffer less from specific soil-borne pathogens than expected owing to the activities of other soil microorganisms]
+
+1. .opacity10[Induced Systemic Resistance (ISR) is initiated in roots by plant-growth- promoting microbes (PGPM) and leads to resistance priming in distant parts of the plant]
+
+1. .opacity10[Correlation is not causation]
+
+1. Microorganisms have a role in cooperative or competitive interactions with other members of the microbiome
+
+1. .opacity10[Eco-evolutionary processes can influence the assembly of plant-associated microbiomes]
+
+1. .opacity10[How the microniota can be exploited]
+]
+]
+
+.pull-right[
+&lt;br&gt;
+.m0p[
+&lt;img src="images/shape9.png" width="530px" style="display: block; margin: auto;" /&gt;
+]
+]
+
+---
+
+.pull-left[
+.summaryL3[
+1. .opacity10[The plant-associated microbiome can provide benefits to the plant through various direct or indirect mechanisms]
+
+1. .opacity10[Disease-suppressive soils are exceptional ecosystems in which crop plants suffer less from specific soil-borne pathogens than expected owing to the activities of other soil microorganisms]
+
+1. .opacity10[Induced Systemic Resistance (ISR) is initiated in roots by plant-growth- promoting microbes (PGPM) and leads to resistance priming in distant parts of the plant]
+
+1. .opacity10[Correlation is not causation]
+
+1. .opacity10[Microorganisms have a role in cooperative or competitive interactions with other members of the microbiome]
+
+1. Eco-evolutionary processes can influence the assembly of plant-associated microbiomes
+
+1. .opacity10[How the microniota can be exploited]
+]
+]
+
+.pull-right[
+&lt;br&gt;
+.m0p[
+&lt;img src="images/ecoevo1.png" width="280px" style="display: block; margin: auto;" /&gt;
+]
+]
+
+---
+
+.pull-left[
+.summaryL3[
+1. .opacity10[The plant-associated microbiome can provide benefits to the plant through various direct or indirect mechanisms]
+
+1. .opacity10[Disease-suppressive soils are exceptional ecosystems in which crop plants suffer less from specific soil-borne pathogens than expected owing to the activities of other soil microorganisms]
+
+1. .opacity10[Induced Systemic Resistance (ISR) is initiated in roots by plant-growth- promoting microbes (PGPM) and leads to resistance priming in distant parts of the plant]
+
+1. .opacity10[Correlation is not causation]
+
+1. .opacity10[Microorganisms have a role in cooperative or competitive interactions with other members of the microbiome]
+
+1. .opacity10[Eco-evolutionary processes can influence the assembly of plant-associated microbiomes]
+
+1. How the microniota can be exploited
+]
+]
+
+.pull-right[
+&lt;br&gt;
+.m0p[
+&lt;img src="images/bioc3.png" width="580px" style="display: block; margin: auto;" /&gt;
+]
+]
+
+---
+
+layout: false
+
+# Virus short surveys
+
+&lt;img src="images/qr-code.png" width="500px" style="display: block; margin: auto;" /&gt;
+
+.center[https://bit.ly/3iIidhV]
+---
+
+class: clear, middle, center
+
+
+.m0tbp[
+&lt;img src="images/virusPoll.png" width="950px" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+layout: true
+
+# What is a Virus?
+
+---
+
+class: inverse, middle, center 
+
+----
+
+---
+
+.center[
+.f504[.red[Who has] &lt;br&gt;right now, among us&lt;br&gt; .red[a viral infection?]]
+
+.s200[<span class=" faa-flash animated-hover faa-slow " style=" display: -moz-inline-stack; display: inline-block; transform: rotate(0deg);">&lt;img src="images/biohazard-sign.png" style="height:1em; width:auto; "/&gt;</span>]
+]
+
+???
+
+.n30[
+
+- In base a studi sierologici la maggior parte di noi è infetta da herpes
+
+- Dell'herpes non puoi liberarti
+
+- A differenza dell'amore, un herpes virus e per sempre
+]
+
+---
+
+.center[.f50[**We live and prosper in a cloud of viruses**]]
+
+.pull-left[
+.par30[
+- Viruses infect all living things
+
+- We regularly eat and breathe billions of viral particles
+
+- We carry viral genomes as part of our own genetic material
+]
+]
+
+.pull-right[
+.m0tbp[
+&lt;img src="images/vir4.png" width="400px" style="display: block; margin: auto;" /&gt;
+]
+]
+
+---
+
+.center[.f50[**How many viruses are out there?**]]
+
+.pull-left[
+.m0tp[
+.par23[
+
+- In the world's waters (salt water) there are 10&lt;sup&gt;30&lt;/sup&gt; bacteriophage (viruses that infect bacteria) particles
+
+- 10'000'000'000'000'000'000'000'000'000'000
+&lt;br&gt;
+- A bacteriophage particle weight about a femtogram (10&lt;sup&gt;-15&lt;/sup&gt; grams)
+
+- &lt;svg style="height:0.8em;top:.04em;position:relative;fill:red;" viewBox="0 0 192 512"&gt;&lt;path d="M176 432c0 44.112-35.888 80-80 80s-80-35.888-80-80 35.888-80 80-80 80 35.888 80 80zM25.26 25.199l13.6 272C39.499 309.972 50.041 320 62.83 320h66.34c12.789 0 23.331-10.028 23.97-22.801l13.6-272C167.425 11.49 156.496 0 142.77 0H49.23C35.504 0 24.575 11.49 25.26 25.199z"/&gt;&lt;/svg&gt; 10&lt;sup&gt;30&lt;/sup&gt; X 10&lt;sup&gt;-15&lt;/sup&gt; = biomass on the oceans of the bacteriophages. This exceeds the biomass of elephants by more than 1000-fold! 
+
+- The length of a head to tail line of 10&lt;sup&gt;30&lt;/sup&gt; phages is 100 millions light years!
+]
+]
+]
+
+.pull-right[
+&lt;img src="images/vir3.png" width="400px" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+.center[.f50[**VIROME**]]
+
+.pull-left[
+.m0tp[
+.par30[
+
+- The human virome is the total collection of viruses in and on the human body
+
+- Some viruses cause disease, while others may be asymptomatic or just pass by
+
+- There are roughly 40 trillion bacteria in a typical human microbiome, and generally virions outnumber bacteria 10:1 in nature
+]
+]
+]
+
+.pull-right[
+.m0tp[
+&lt;img src="images/vir5.png" width="400px" style="display: block; margin: auto;" /&gt;
+]]
+
+---
+
+&lt;img src="images/vir6.png" width="1050px" style="display: block; margin: auto;" /&gt;
+
+???
+
+.n30[
+- Abbiamo pazzi dei genomi virali come parte del nostro genoma
+
+- 1.5% rappresenta i coding genes
+
+- Osservate i LTR retrotransposons (possiedono alle estremità sequenze ripetute dalle 100 alle 5000 bp). Una buona parte di loro derivano da infezzioni da retrovirus che sono successe molto prima che noi fossimo *homo sapiens*
+
+- Alcuni di quei geni sono ad oggi utilizzati dagli esseri umani
+]
+
+---
+
+&lt;img src="images/vir7.png" width="1000px" style="display: block; margin: auto;" /&gt;
+
+???
+
+.n30[
+
+- Virus coinvolti in molte malatti e cause di morte =&gt; studiati
+
+- Ma sempre più stiamo capendo e studiando il ruolo che i virus hanno negli ecosistemi e i loro ruoli benefici
+]
+
+---
+
+.center[.f50[**Most viruses just pass through us**]]
+
+.pull-left[
+.m0tp[
+.par23[
+
+- We ingest many non-animal viruses regularly with foods
+  - Cabbage from 5 different supermarkets in Washington D.C.
+  - Each serving (~100 cm&lt;sup&gt;2&lt;/sup&gt; of leaf material) would contain up to 10&lt;sup&gt;8&lt;/sup&gt; particles of virus pathogenic for the cabbage looper (caterpiller)
+
+- Study on human feces:
+  - Most RNA virus sequences (91%) were similar to plant virus
+  - Most abundant human fecal virus: pepper mild mottle virus (10&lt;sup&gt;9&lt;/sup&gt; virions per gram of dry feces)
+
+]
+]
+]
+
+.pull-right[
+.limg[
+&lt;img src="images/vir8.png" width="300px" style="display: block; margin: auto;" /&gt;
+&lt;img src="images/vir9.png" width="120px" style="display: block; margin: auto;" /&gt;
+]
+&lt;img src="images/vir10.png" width="130px" style="display: block; margin: auto;" /&gt;
+]
+
+???
+
+.n30[
+- Molti dei virus con cui veniamo a contatto non possono riprodursi dentro di noi
+
+- Se siete interessati ci sono aziende che studiano la composizione virale delle vostre feci
+]
+
+---
+
+&lt;img src="images/vir11.png" width="1001px" style="display: block; margin: auto;" /&gt;
+
+???
+
+.n30[
+- Polyomavirus infetta chiunque, lo si prende nei primi mesi di vita dai famigliari e lo si ha per tutta la vita
+
+- Di solito non causa sintomi a meno che il soggetto non sia immunodepresso
+
+- Puo' essere usato, vista la loro diffusione, per tracciare gli spostamenti delle popolazioni (migrazioni)
+
+- Linea tratteggiata e' la migrazione dell'h. sapiens studiata grazie al sequenziamento dei genomi umani
+
+- Linea nera e' la migrazione dell'h. sapiens studiata grazie al Polyomavirus (differenti lineages hanno diversi polyomavirus)
+
+- Polyomavirus da maggiori dettagli che lo studio del genoma
+
+
+- Polyomavirus
+]
+
+---
+
+.pull-left[
+.f400[**What is a VIRUS?**] 
+.m0tp[
+.par25[
+
+- A virus is a submicroscopic **infectious** agent that replicates its **genetic material** (DNA or **RNA**) only inside the living cells of an organism (**obligate intracellular parasites**)
+
+- Viruses are often surrounded by a protein coat, somethime a membrane
+
+- Viruses **use the host's cells to replicate** by forcing it to rapidly produce thousands of identical copies of the original virus
+
+- When not inside the host, viruses **exist in the form of independent particles** (virions)
+
+
+]
+]]
+
+.pull-right[
+&lt;img src="images/vir1.png" width="500px" style="display: block; margin: auto;" /&gt;
+]
+
+???
+
+.n30[
+- non hanno metabolismo energetico proprio ne ribosomi per traduzione proteine
+
+- Se non hanno un ospite non possono replicarsi
+
+- i virus non si riproducono per fissazione, ma per assemblaggio di parti
+]
+---
+
+.pull-left[
+.f400[**Are virus a life form?**]
+
+.m0tp[
+.par23[
+
+- Viruses **can't capture or store any energy**, so they **rely on the cells of other organisms** to survive and reproduce
+
+- They can not function outside a host organism! Owing on that they are often **regarded as non-living** 
+&lt;br&gt;
+- On the other hand they **carry genetic material**, **reproduce**, and **evolve** through natural selection
+
+- Viruses are considered by some biologists to be a life form
+
+- Vviruses have been described as "**organisms at the edge of life**"
+
+]
+]
+]
+
+.pull-right[
+.m0tbp[
+&lt;img src="images/vir12.png" width="250px" style="display: block; margin: auto;" /&gt;
+&lt;img src="images/vir13.png" width="250px" style="display: block; margin: auto;" /&gt;
+]]
+
+---
+layout: false
+
+background-image: url(images/vir14.png)
+background-size: contain
+class: clear
+
+.content-box-grey4[
+Viruses do NOT think&lt;br&gt;
+They do not achieve their goal in a human-centered manner&lt;br&gt;
+**Viruses are passive agents**
+]
+
+
+---
+
+layout: false
+class: clear 
+
+.pull-left-wide[
+.magenda[
+.font180[.bold[Agenda]]
+]
+
+.agenda1[
+- Ecological Significance of Viruses <span class=" faa-pulse animated-hover faa-slow " style=" display: -moz-inline-stack; display: inline-block; transform: rotate(0deg);">&lt;img src="images/virus-3128.png" style="height:1em; width:auto; "/&gt;</span> 
+  - Ecological Importance of Viruses in the Oceans
+  - Endogenous Virus Elements and Beneficial Infection in Vertebrates
+  - Mycovirus involved in mutualistic symbiosis
+  - Viruses invoved in Arm’s race (killer yeast)
+  - Insect viruses involved in mutualistic symbiosis
+
+
+- Mycovirus for the control of plant diseases <span class=" faa-pulse animated-hover faa-slow " style=" display: -moz-inline-stack; display: inline-block; transform: rotate(0deg);">&lt;img src="images/plant-pot.png" style="height:1em; width:auto; "/&gt;</span>     
+  - The VIROPLANT H2020 project
+  - Definitions and general biological features
+  - Mycovirus biodiversity
+  - Natural biocontrol through mycovirus: the forest pathogen Cryphonectria parasitica and Cryphonectria hypovirus 1
+  - A new approach: mycocidal virus
+  - Recent technological progress: a super-donor, Zn chloride, transgenic approach
+  - VIGS and the regulatory bottleneck
+
+]
+]
+
+---
+
+layout: true
+
+# Ecological Significance of Viruses
+
+---
+
+class: inverse, middle, center 
+
+----
+
+---
+
+
+class: clear, middle, center 
+
+# .black[Ecological Importance of Viruses in the Oceans]
+
+
+----
+
+---
+layout: true
+
+# Ecological Importance of Viruses in the Oceans
+
+---
+
+.pull-left[
+.m0tp[
+.par25[
+
+- The oceans cover **more than 70%** of the Earth’s surface
+
+- They control the **climate**, provide a significant amount of the **protein** that is consumed globally and produce approximately **half of the Earth’s oxygen**
+
+- Microorganisms are a major force behind the **nutrient and energy cycles** in the world’s oceans
+
+- It is estimated that **viruses kill approximately 20% of this biomass per day**
+
+- As well as being agents of mortality, viruses are one of the **largest reservoirs of unexplored genetic diversity** on the Earth.
+]
+]
+]
+
+.pull-right[
+.m0tp[
+&lt;img src="images/vir18.png" width="400px" style="display: block; margin: auto;" /&gt;
+]
+]
+
+---
+
+.pull-left[
+.m0tp[
+.par23b[
+
+- **Virosphere** is the portion of the Earth in which viruses occur or which is affected by viruses
+
+- The virosphere is inclusive of **every environment on the Earth**, from the atmosphere to the deep biosphere
+
+- Nowhere is the importance of viruses more evident than in the world’s oceans
+
+- Viruses are substantial **agents of mortality** in heterotrophic and autotrophic plankton
+
+- Viruses are major players in the mortality of marine microorganisms and, consequently, **affect nutrient and energy cycles** as well as the structure of microbial communities
+
+- Need to incorporate viruses and virus-mediated processes into our understanding of **ocean biology** and biogeochemistry
+]
+]
+]
+
+.pull-right[
+&lt;br&gt;
+&lt;img src="images/vir19.png" width="500px" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+.pull-left[
+**The abundance of marine viruses**
+.m0tp[
+.par25[
+
+- The abundance of viruses in oceans exceeds that of bacteria and archaea by approximately 15-fold and comprising approximately **94% of the nucleic-acid-containing particles**
+
+- However, because of their extremely small size, viruses represent only approximately **5% of the biomass**
+
+- In the oceans, viral abundance decreases further offshore and deeper in the water column because it generally **varies along with the prokaryotic abundance**
+]
+]
+]
+
+.pull-right[
+&lt;br&gt;&lt;br&gt;
+&lt;img src="images/vir15.png" width="540px" style="display: block; margin: auto;" /&gt;
+.right[.font50[(Suttle, 2007)]]
+]
+
+---
+
+.pull-left[
+**The abundance of marine viruses**
+.par20m[
+
+- Six methods are used to estimate the abundance of viruses in aquatic samples
+  - plaque assays (PAs) and most-probable-number assays (MPNs): are used to quantify the abundance of infectious units that cause the lysis of a particular host.
+  - transmission electron microscopy (TEM): TEM is the only method that provides data on both the abundance and morphology of virus-like particles (fig a)
+  - **epifluorescence microscopy** (EfM): the viruses are concentrated on a membrane filter, their nucleic acids are stained with a brightly fluorescent dye and the abundance of viruses is estimated (fig b)
+  - flow cytometry (FC): accurate high-throughput method also allows the quantification of subpopulations of viruses
+  - **Next generation sequencing**
+]
+]
+
+.pull-right[
+&lt;img src="images/vir20.png" width="300px" style="display: block; margin: auto;" /&gt;
+.right[.font50[(Suttle, 2007)]]
+]
+
+---
+
+.pull-left[
+**Viruses, mortality and elemental cycling**
+.m0tp[
+.par23[
+
+- As agents of mortality, viruses have a range of effects on the world’s oceans, from altering geochemical cycles to structuring populations and communities.
+
+- 20-40% of prokaryotes in surface water are removed by viruses every day (similar to the amount killed by grazing)
+  
+- Increase in the rate of viral reproduction in response to an increase in the growth rate of host cells is a strong feedback mechanism that would probably prevent dominance by the fastest growing taxa
+
+.rigth[.right[.font50[(Middelboe and Brussaard, 2017)]]]
+]
+]
+]
+
+.pull-right[
+&lt;img src="images/vir21.png" width="370px" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+
+.pull-left[
+**Viral shunt**
+.m0tp[
+.par20[
+
+- **Viral shunt**: the viral-mediated movement of nutrients from organisms to pools of dissolved and non-living particulate organic matter
+
+- The viral shunt moves material from living organisms into **particulate organic matter** (POM) and **dissolved organic matter** (DOM) 
+
+- However, the effects can also be more profound and potentially include:
+  - the **release of dimethyl sulphide**, a gas that affects the Earth’s climate
+  - the **remobilization of the organically complexed iron** that limits primary production in much of the world’s oceans (for example, the viral lysis of prokaryotes liberates sufficient amounts of biologically available iron to support the needs of phytoplankton)
+]
+]
+]
+
+.pull-right[
+&lt;br&gt;
+&lt;img src="images/vir16.png" width="500px" style="display: block; margin: auto;" /&gt;
+.right[.font50[(Suttle, 2007)]]
+]
+
+---
+
+.pull-left[
+**Viral shunt in recycling DoM**
+.m0tp[
+.par20m[
+
+- DOM, the **largest reservoir of carbon in the oceans**, is only available for uptake by bacteria
+
+- There are **two main forms of bacterial mortality**: predation by unicellular eukaryotic grazers or lysis by phages
+  - **Grazing** moves carbon up through the trophic levels from bacteria to protozoa to zooplankton to fish and larger organisms
+  - When bacteria are **lysed by phages**, carbon and nutrients flow through the viral shunt and are remineralized by bacteria within the microbial loop, making the viral shunt function as the ocean’s recycling system
+]
+]
+]
+
+.pull-rigth[
+&lt;br&gt;
+&lt;img src="images/vir23.png" width="550px" style="display: block; margin: auto;" /&gt;
+.right[.font50[(Breitbart, Bonnain, Malki, and Sawaya, 2018)]]
+]
+
+---
+
+.pull-left[
+**Viral shunt in recycling PoM**
+.m0tp[
+.par20m[
+
+- The biological pump (BP) is a combination of processes that leads to the sequestration of carbon in the deep ocean as the result of the sinking of **PoM** from surface waters
+
+- The amount of carbon that is exported by the BP has direct implications for the concentration of carbon dioxide in the atmosphere
+
+- Carbon from cell lysis will sink more slowly and be retained to a greater extent in surface waters, where much of it will be converted to dissolved inorganic carbon by respiration or solar radiation
+
+]
+]
+]
+
+.pull-rigth[
+&lt;br&gt;
+&lt;img src="images/vir23.png" width="550px" style="display: block; margin: auto;" /&gt;
+.right[.font50[(Breitbart Bonnain, et al., 2018)]]
+]
+
+---
+
+**Viruses manipulate the marine environment**
+.pull-left[
+.m0tp[
+.par25[
+
+- Until now we focused on two areas:
+  - **viruses as pathogens** of aquatic organisms
+  - **virus-driven dynamics** of the marine microbial food web
+
+- Marine viruses can affect their hosts and environments in startling ways:
+  - **Global transfer** of niche adaptation genes
+  - Modifications of the **ontogeny and ecology** of marine organisms
+
+
+**It has become clear that the marine virome is a master of manipulation**
+]
+]
+]
+
+.pull-rigth[
+&lt;img src="images/vir24.png" width="500px" style="display: block; margin: auto;" /&gt;
+.right[.font50[(Rohwer and Thurber, 2009)]]
+]
+
+---
+
+**Virally encoded host genes**
+.pull-left[
+.m0tp[
+.par25[
+
+- Phage are known to carry and **transfer a variety of host genes**
+
+- Most studies of this phenomenon have focused on the negative effects, but **viral infections can augment the metabolism, immunity, distribution and evolution of their hosts** in many unexpected and potentially positive ways
+
+]
+]
+]
+
+.pull-rigth[
+&lt;img src="images/vir24.png" width="500px" style="display: block; margin: auto;" /&gt;
+.right[.font50[(Rohwer and Thurber, 2009)]]
+]
+
+---
+
+**Virally encoded host genes**
+.pull-left[
+*Accessory gene expression*
+.m0tp[
+.par20[
+
+- Consider the **cyanobacteria**l which together account for about 25% of global photosynthesis
+
+- Sequencing of the marine viral **cyanophage**s that infect these primary producers showed that **genes involved in photosynthesis** are commonly carried in phage genome
+
+- During the lytic cycle, most of the host’s transcription and translation is **shut down by phage**
+
+- By expressing genes involved in photosynthesis, **phage generate the energy necessary for viral production**
+
+]
+]
+]
+
+.pull-rigth[
+&lt;img src="images/vir24.png" width="500px" style="display: block; margin: auto;" /&gt;
+.right[.font50[(Rohwer and Thurber, 2009)]]
+]
+
+---
+
+**Virally encoded host genes**
+.pull-left[
+*Horizontal gene transfer*
+.m0tp[
+.par20[
+
+- One consequence of cyanophage carrying genes involved in the photosynthesis is the **horizontal gene transfer of photosynthetic genetic elements** between hosts
+
+- Specific ecotypes that live in different parts of the water column and are **tuned to the different light and nutrient regimes**
+
+- Given the prevalence of phage-encoded photosynthesis proteins and the occurrence of recombination between phage and host genes, phage populations are expected to **serve as gene reservoirs**
+
+]
+]
+]
+
+.pull-rigth[
+&lt;img src="images/vir24.png" width="500px" style="display: block; margin: auto;" /&gt;
+.right[.font50[(Rohwer and Thurber, 2009)]]
+]
+
+---
+
+layout: true
+
+# Endogenous Virus Elements
+
+---
+
+class: inverse, middle, center
+
+----
+
+---
+
+.pull-left[
+**What is endogenization?**
+.m0tp[
+.par25[
+
+- An endogenous viral element (**EVE**) is a viral DNA sequence, present within the germline of a non-viral organism
+
+- EVE may be entire viral genome or a fragment of viral genome
+
+- EVEs are **usually eliminated** from the host gene pool within a small number of generations, but they can sometimes **reach fixation**
+
+- EVEs that occur as **proviruses** can potentially remain capable of **producing infectious virus** 
+]
+]
+] 
+
+.pull-right[
+&lt;img src="images/vir25.png" width="px" style="display: block; margin: auto;" /&gt;
+.right[
+.parR[
+.font50[By Adrian.maglaqui - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=48727769]]
+]]
+
+---
+
+.pull-left[
+**Retroviral invasion of the koala genome**
+.m0tp[
+.par20[
+
+- Endogenous retroviruses are a **common ancestral feature of mammalian genomes** with most having been inactivated over time through mutation and deletion
+
+- Koala retrovirus (**KoRV**) is associated with koala neoplasia
+
+- KoRV also shows features of a recently inserted endogenous retrovirus that is vertically transmitted
+
+- **Isolated koala populations** have not yet incorporated KoRV into their genomes suggesting that KoRV is a **virus in transition** between an exogenous and endogenous element
+
+- Opportunity to study the process and consequences of retroviral endogenization in action
+]
+]
+]
+
+.pull-right[
+&lt;br&gt;
+&lt;img src="images/vir26.png" width="450px" style="display: block; margin: auto;" /&gt;
+.right[.font50[(Tarlinton, Meers, and Young, 2006)]]
+]
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="libs/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"ratio": "16:9",
+"highlightStyle": "github",
+"highlightLines": true
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

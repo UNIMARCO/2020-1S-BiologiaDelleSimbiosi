@@ -658,6 +658,11 @@ knitr::include_graphics("images/disease4.png")
 ```
 .right[.font20px[`r Cite(bib, key = "BERENDSEN2012478")`]]
 
+???
+
+.h201[
+- Esistono ecosistemi eccezionali in cui le piante soffrono meno del previsto l'attacco di specifici patogeni del suolo grazie all'attività di altri organismi del suolo. Questi ecosistemi si chiamano: **suoli soppressivi** 
+]
 
 
 ---
@@ -704,6 +709,19 @@ knitr::include_graphics("images/disease2.png")
 ]
 ]
 
+???
+
+.h201[
+- Vediamo ora un esempio 
+
+- L'obiettivo di questo studio era duplice:
+  1. Identificare i microorganismi che permettevano alla pianta di resistere
+  1. Capire il meccanismo con cui avveniva la protezione
+
+- Patogeno: _Rhizoctonia solani_, fungo che colpisce moltissime coltivazioni
+
+- Descrivere la figura
+]
 
 ---
 
@@ -739,9 +757,16 @@ knitr::include_graphics("images/disease3.png")
 
 ???
 
-.n30[
+.h201[
+- Esperimento di metagenomica
 
-- Paragone con ricetta di cucina in cui si ha la lista degli ingredienti MA soprattutto e' importante la quantita'
+- Conclusione shock: quando paragoniamo i risultati delle 6 diverse condizioni non troviamo nessuna differenza statistica nel numero di taxa batterici identificati!
+
+- Ma quando paragoniamo l'abbondanza dei diversi taxa identificati è possibile individuare 6 cluster che corrispondono ai 6 diversi terreni
+
+- Non è quindi importante chi c'è ma quanto è presente chi c'è
+
+- Paragone con ricetta di cucina in cui si ha la lista degli ingredienti MA soprattutto e' importante la quantita': uova, latte, farina: Omelettes, pancakes
 ]
 
 ---
@@ -776,6 +801,16 @@ knitr::include_graphics("images/disease5.png")
 
 ]
 
+???
+
+.h201[
+- **Antibiosi**: il batterio colonizza le radici della pianta ospite e impedisce ai patogeni di avvicinarsi alla pianta producendo delle molecole antibiotiche che andranno a localizzarsi attorno alla radice
+
+- **Resistenza sistemi indotta**: alcune molecole possono attivare una risposta sistemica nella poanta che focia nella protezione dell'intera pianta contro le malattie causate da organismi patogeni
+
+- **Competizione per i nutrienti**: alcuni microorganismi sono in grado di vincere nella competizione ai nutrienti e quindi occupare più velocemente la nicchia occupata dagli essudati radicali estromettendo dalla corsa peossibili patogeni.
+]
+
 ---
 
 .pull-left[
@@ -802,6 +837,17 @@ knitr::include_graphics("images/disease6.png")
 ```
 .right[.font50[`r Cite(bib, key = "Cazorla_2006")`]]
 
+]
+
+???
+
+.h201[
+
+- Fungo Dematofora necatrix agente del marciume bianco radicale dell'avocado
+
+- 8 Strain batterici sono stati testate in un primo esperimento di controllo dell'attività di biocontrollo
+
+- PCL1606 mostrava l'inibizione più alta e il composto individuato essere responsabile dell'antibiosi era il 2-hexyl-5propil resorcinol (HPR)
 ]
 
 ---
@@ -837,10 +883,15 @@ knitr::include_graphics("images/disease8.png")
 
 ???
 
-.n30[
+.h201[
 
-- Biocontrol strains Pseudomonas fluorescens WCS365 and P. chlororaphis PCL1391 were tested as controls
+- Due mutanti icapaci di produrre HPR  e due strain di controllo:
+  1. Pseudomonas fluorescens WCS365
+  1. Pseudomonas chlororaphis PCL1391
 
+- Descrizione del grafico
+
+- Effettivamente la mancanza di produzione di HPR si traduce in una mancanza di biocontrollo
 ]
 
 ---
@@ -1673,7 +1724,6 @@ knitr::include_graphics("images/bm1.png")
 background-image: url(images/bm2.jpg)
 background-size: cover
 
-<br>
 .content-box-grey2[
 .p20[
 **2015**<br>
@@ -1741,46 +1791,6 @@ knitr::include_graphics("images/bm6.png")
 ```{r echo=FALSE, out.width="800px"}
 knitr::include_graphics("images/bm7.png")
 ```
-
----
-
-<br>
-```{r echo=FALSE, out.width="800px"}
-knitr::include_graphics("images/bm15.png")
-```
-
----
-
-```{r echo=FALSE, out.width="1200px"}
-knitr::include_graphics("images/bm8.png")
-```
-
----
-
-```{r echo=FALSE, out.width="1200px"}
-knitr::include_graphics("images/bm9.png")
-```
-
----
-
-```{r echo=FALSE, out.width="1200px"}
-knitr::include_graphics("images/bm10.png")
-```
-
-???
-
-.h202[
-- The Agricultural Input Model (AgInput) was developed to predict a crop’s irrigation
-water and nutrients needs and to estimate the corresponding pesticide application to the
-crop under average local meteorological and soil conditions
-]
----
-
-```{r echo=FALSE, out.width="1200px"}
-knitr::include_graphics("images/bm11.png")
-```
-
-
 ---
 
 layout: true
@@ -1795,8 +1805,10 @@ layout: true
 .center[.font50px[`r fontawesome::fa("question-circle", fill = "black")`]]
 ]
 
-.center[.font90[[[`r fontawesome::fa("envelope", fill = "steelblue")`](mailto:chiapello.m@gmail.com) chiapello.m@gmail.com - `r fontawesome::fa("skype", fill = "steelblue")` marpello - `r fontawesome::fa("twitter", fill = "steelblue")`](https://twitter.com/marpello1980) @marpello1980 ]]
-
+.marco[
+.center[.font90[[[`r fontawesome::fa("slack", fill = "steelblue")`](https://join.slack.com/t/ipma-2020/shared_invite/zt-j9o8ig7k-LN1~U3d6QJztquYbC6iW7w) Slack - `r fontawesome::fa("envelope", fill = "steelblue")`](mailto:marco.chiapello@unito.it) marco.chiapello@unito.it]
+]
+]
 
 
 

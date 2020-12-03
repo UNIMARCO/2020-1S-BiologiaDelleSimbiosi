@@ -538,6 +538,15 @@ knitr::include_graphics("images/stress2.png")
 
 ]]
 
+???
+
+.h202[
+
+- I cambiamenti della comunitù microbica possono essere legati a cambiamenti nei processi che influenzano la **biodisponibilitù** delle risorse
+
+- Questi cambiamenti della comunità microbica possono anche cambiare gli equilibri tra l'abbondanza di microorganismi mutualistici e patogeni, favorendo i primi e sfavorendo i secondi
+]
+
 
 
 ---
@@ -960,6 +969,17 @@ knitr::include_graphics("images/disease9.png")
 
 ]
 
+???
+
+.h202[
+- Obiettivo: studiare se la colonizzazione radicale da parte di T34 può aumentare la resistenza contro patogeni fogliari
+
+- Patogeno: Pseudomonas syringae
+
+- WCS417r non patogenic bacteria
+- WCS417r è conosciuto per avere effetti su un ampio spettro di patogeni
+]
+
 
 ---
 
@@ -1024,6 +1044,15 @@ knitr::include_graphics("images/disease10.png")
 ]
 ]
 
+???
+
+.h202[
+- Obiettivo: sapere se T34 ha un effetto simile a WCS417r
+
+- L'induzione di ISR da parte di T34 è stata studiata contro un oomycete e un fungo necrotrofo
+
+- I risultati simostrano che T34 induce una risposta di resistenza sistemica contro patogeni fogliari
+]
 
 ---
 
@@ -1058,6 +1087,24 @@ knitr::include_graphics("images/disease11.png")
 
 .right[.font20px[`r Cite(bib, key = "Segarra_2009")`]]
 
+]
+
+???
+
+.h202[
+
+- COME T34 attiva la risposta sistemica in Arabidopsis?
+
+- Utilizzati 3 mutanti:
+  1. sid2-1 => mutante difettivo per l'acido salicilico (Utilizzato nella risposta sistemica acquisita)
+  1. npr1-1 => mutate difettivo sia per la risposta sistemica acquisita sia per la resistenza sistemica indotta
+  1. myb72-1 => mutate difettivo per le fasi precoci della resistenza sistemica indotta
+
+- sid2-1 è uguale al T34 => indipendente da acido salicilico
+
+- np1-1 => perde l'effetto protettivo, implicando che la preoina NPR1 è richiesta per l'induzione della resistenza
+
+- myb72-1 => perde l'effetto protettivo. Questa proteina è richiesta per l'induzione di ISR
 ]
 
 
@@ -1104,7 +1151,21 @@ knitr::include_graphics("images/disease13.png")
 
 ???
 
-.n30[
+.h202[
+
+- Vediamo ora uno studio sul controllo au una malattia del pomodoro controlla con il meccanismo di "competizione per i nutrienti"
+
+- Esperimento: 
+  1. Microorganismi isolati da rizospera con piante di pomodoro
+  1. Cresciuti in liquido ed utilizzati per inoculare nuove piantine
+  1. Isolamento degli apici radicali
+  1. Raccolta dei microorganismi presenti
+  1. Introdotti in un altro ciclo
+
+- 3 cicli in totale => selezione dei batteri per l'esperimento di competizione
+
+- I batteri selezionati tramite il precedente esperimento crescevano molto meglio di una selezione di batteri random dalla rizosfera.
+
 - TSA: tryptic soy agar
 ]
 
@@ -1163,6 +1224,20 @@ knitr::include_graphics("images/shape2.png")
 .right[.font50[`r Cite(bib, key = "Trivedi:2020aa")`]]
 
 ]
+
+???
+
+.h202[
+- Vediamo come le piante attirano i microorganismi che formeranno il loro microbiota
+
+  1. Le piante rilasciano essudati (ovvero un complesso mix di sostanze organiche)
+  1. I microorganismi percepiscono queste sostanze e rispondono ai segnali della pianta muovendosi verso la radice
+  1. Una volta raggiunta la pianta costituiscono un biofilm sulla superficie della radice
+
+- Molto interessante è l'elevata concetrazione di protein batteriche presenti nel suolo legare alla chemotassi, ai flagelli alla mobilità e alla formazione del biofilm nella rizosfera in confronto a quelle che è possibile trovare nel bulk soil
+]
+
+
 ---
 
 .pull-left[
@@ -1186,6 +1261,20 @@ knitr::include_graphics("images/shape2.png")
 knitr::include_graphics("images/shape3.png")
 ```
 .right[.font50[`r Cite(bib, key = "Berendsen")`]]
+]
+
+???
+
+.h202[
+- Come avrete capito il microbiata è formato e si forma tramite complesse interazioni tra pianta e microorganismi e microorganismi stessi
+
+- Ma ci siamo detti più volte che la forza che da forma al microbiota è la pianta
+
+- Si ritiene infatti che gli essudati radicali di diverse piante siano alla base della cominucazione tra la pianta e i microorganismi che formeranno il suo microbiota. Microbiota che la pianta cerca di cucirsi su misura in modo che risponda alle sue esigenze
+
+- Le esigenze della pianta possono cambiare a seconda delle condizioni in cui si trova (stress salino, attacco di patogeni) e una modificazione degli essudati potrebbe essere alla base di un reclutamento specifico
+
+- VEDIAMO UN ESEMPIO
 ]
 
 ---
@@ -1213,8 +1302,14 @@ knitr::include_graphics("images/shape4.png")
 
 ???
 
-.n30[
+.h202[
+- Vediamo come la secrezione di acido malico serva per il reclutamento di uno specifico batterio che della rizospera che aiuta la pianta a proteggersi da un'infezione area di Pseudomonas syrigae
+
+- Il grafico e l'immagine mostrano la presenza di FB17 a livello radicale quando è in atto un'infezione di P. syrigae a livello fogliare
+
 - (NPS3121) nonpathogenic *Pseudomonas syringae* 
+
+- L'infezione fogliare CORRELA con l'aumento della colonizzazione dei FB17
 ]
 
 ---
@@ -1238,6 +1333,12 @@ knitr::include_graphics("images/shape5.png")
 ```
 
 .font70[[Spurious correlation](https://www.tylervigen.com/spurious-correlations)]
+]
+
+???
+
+.h202[
+- L'infezione fogliare causa il cambiamento nella composizione degli essudati radicali?
 ]
 
 ---
@@ -1264,6 +1365,12 @@ knitr::include_graphics("images/shape5.png")
 ```{r echo=FALSE, out.width="280px"}
 knitr::include_graphics("images/shape6.png")
 ```
+]
+
+.h202[
+- La risposta è SI
+
+- Guardiamo la figura per capire come abbiamo fatto i ricercatori per capire quale fosse il composto che variava
 ]
 
 ---
@@ -1294,6 +1401,17 @@ knitr::include_graphics("images/shape7.png")
 ```
 ]
 
+
+???
+
+.h202[
+- È l'acido malico il composto reposnsabile del reclutamento di B. subtilis FB17?
+
+- La risposta è nuovamente SI
+
+- Descrizione della figura
+]
+
 ---
 
 .pull-left[
@@ -1320,59 +1438,14 @@ knitr::include_graphics("images/shape8.png")
 ```
 ]
 
----
+???
 
-.pull-left[
-**Microbial interactions** 
-.m0tp[
 .h202[
+- Cosa succede se impediamo la secrezione di acodi malico da parte della pianta?
 
+- Creato un mutante deficiente per la secrezione di acido malico (Atalmt1)
 
-- `r fontawesome::fa("bullseye", fill = "red")` Plants are able to influence the composition and activation of their rhizosphere microbiota but the **microorganisms have a role** in cooperative or competitive interactions with other members of the microbiome
-
-- The genomes of many bacteria encode interspecific and intraspecific bacteria-killing mechanisms (antibiotics), so they can modulate the abundance, distribution and diversity of other microbes
-
-- **Quorum sensing** is a well-established mechanism of bacterial cell-to-cell communication that involves the production and sensing of signalling molecules
-
-]
-]
-]
-
-.pull-right[
-<br>
-```{r echo=FALSE, out.width="580px"}
-knitr::include_graphics("images/shape9.png")
-```
-.right[.font50[`r Cite(bib, key = "BERENDSEN2012478")`]]
-]
-
-
----
-
-.pull-left[
-**Eco-evolutionary processes** 
-.m0tp[
-.h202[
-
-- `r fontawesome::fa("bullseye", fill = "red")` ecological and evolutionary processes are linked and can occur on the same time-scale.    
-  - ecological change can lead to rapid evolutionary change
-  - microevolutionary change can leave an ecological signature
-
-- `r fontawesome::fa("exclamation-circle", fill = "green")` Eco-evolutionary processes can influence the assembly of plant-associated microbiomes:
-  1. *dispersal*: movement of microorganisms between different niches
-  1. *selection*: biotic and abiotic effects causing fitness differences
-  1. *ecological drift* stochastic changes in population size that influence the abundance of a particular member
-  1. *diversification*: processes that generate genetic variation
-
-]
-]
-]
-
-.pull-right[
-<br>
-```{r echo=FALSE, out.width="280px"}
-knitr::include_graphics("images/ecoevo1.png")
-```
+- FB17 non viene più attirato
 ]
 
 ---

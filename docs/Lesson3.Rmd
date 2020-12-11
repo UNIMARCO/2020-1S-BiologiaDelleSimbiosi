@@ -102,6 +102,14 @@ layout: true
 
 ---
 
+```{r echo=FALSE, out.width="450px"}
+knitr::include_graphics("images/lesson5.png")
+```
+<br>
+.center[.black[.fon300[https://bit.ly/2LqAAwX]]]
+
+---
+
 .pull-left[
 .summaryL3[
 1. The plant-associated microbiome can provide benefits to the plant through various direct or indirect mechanisms
